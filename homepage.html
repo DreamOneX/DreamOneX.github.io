@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Homepage</title>
+	<style>
+		p {
+			background-image: linear-gradient(to bottom right, #75a4fb, #bdf637);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-family: Arial Black, Gadget, sans-serif;
+			font-style: normal;
+			font-weight: normal;
+		}
+	</style>
+</head>
+
+<body>
+	<p id="API">[Hitokoto]</p>
+	<script type="text/javascript">
+		function state_Change() {
+			if (hkjson.readyState == 4) {
+				if (hkjson.status == 200) {
+					var hk = JSON.parse(hkjson.responseText);
+					document.getElementById('API').innerHTML = hk.from + ": " + hk.hitokoto;
+				}
+			}
+		}
+
+		var hkjson = new XMLHttpRequest();
+		hkjson.onreadystatechange = state_Change;
+		hkjson.open("GET", "https://v1.hitokoto.cn/?max_length=150", true);
+		hkjson.send(null);
+	</script>
+</body>
+
+</html>
