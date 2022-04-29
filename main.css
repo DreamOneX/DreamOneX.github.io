@@ -1,0 +1,103 @@
+
+* {
+    box-sizing: border-box;
+}
+ 
+/* body 样式 */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+.p {
+	letter-spacing: -1px;
+}
+ .top-bar {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+	text-decoration: none;
+	text-align: center;
+}
+.box-top {
+    background-color: rgba(255,255,255,0.5);
+    padding: 20px;
+    border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+.box-top-right{
+}
+.top-ui {
+    width: 100%;
+    min-width: 80px;
+    height: 50px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.top-ui li{
+    width:10%;
+    min-width: 30px;
+    margin:-5px 30px 0 1px;
+    float: left;
+    text-align: center;
+    display: block;
+}
+.top-ui a{
+    color: black;
+    text-decoration: none;//下划线;
+    text-align: center;
+}
+.top-ui a:hover{
+    color: white;
+}
+.top-ui img{
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    position: relative;
+    top: -10px;
+    text-align: center;
+}
+/* 标题 */
+.header {
+    padding: 1px;
+    text-align: center;
+    background: #0000;
+    color: white;
+}
+ 
+/* 标题字体加大 */
+.header h1 {
+    font-size: 50px;
+    color: #5c6bc0;
+}
+.header h5 {
+    font-size: 10px;
+    color: #5c6bc0;
+} 
+ 
+/* 主要的内容区域 */
+.main {   
+    text-align: center;
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+ /*GitHub*/
+.GitHub {
+    padding: 20px;
+    text-align: center;
+    background: #f2f2f2;
+}
+ 
+/* 底部 */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #DCDCDC;
+}
+ 
+
