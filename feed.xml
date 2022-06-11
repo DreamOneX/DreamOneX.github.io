@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>点点晨曦</title>
+  
+  <subtitle>DreamOneX&#39;s Blog</subtitle>
+  <link href="http://example.com/feed.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2022-06-11T17:24:48.404Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>DreamOneX</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World | 博客开张 ;-</title>
+    <link href="http://example.com/2022/06/07/hello-world/"/>
+    <id>http://example.com/2022/06/07/hello-world/</id>
+    <published>2022-06-06T16:00:00.000Z</published>
+    <updated>2022-06-11T17:24:48.404Z</updated>
+    
+    <content type="html"><![CDATA[<p>2022年6月7日，把这个博客搓了出来</p><span id="more"></span><p>开这个博客，主要是分享一些学习，生活的心得 ;-)<br>很高兴见到你<br><del>先偷个懒，回头再写</del><br>2022年6月8日: 这回头好像有点久啊…<br>2022年6月12日凌晨: 还有两天就要中考了&#x3D; &#x3D;，睡不着，把这个写完吧</p><h2 id="我的情况"><a href="#我的情况" class="headerlink" title="我的情况"></a>我的情况</h2><p>大概6.20我中考结束后会开始打理这个博客，毕竟高中了，<del>一个月更新一次就不错了</del><br>不过，我还会要求自己<strong>一个月两次</strong>的  </p><h2 id="我的计划"><a href="#我的计划" class="headerlink" title="我的计划"></a>我的计划</h2><ul><li>换一个好看的主题</li><li>弄一个rss</li><li>6月写三篇博文</li></ul><hr><p>嗯就这样吧，中考加油！</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;2022年6月7日，把这个博客搓了出来&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+</feed>
