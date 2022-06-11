@@ -3,11 +3,11 @@
   <title>点点晨曦</title>
   
   <subtitle>DreamOneX&#39;s Blog</subtitle>
-  <link href="http://example.com/feed.xml" rel="self"/>
+  <link href="http://dreamonex.github.io/feed.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="http://dreamonex.github.io/"/>
   <updated>2022-06-11T17:24:48.404Z</updated>
-  <id>http://example.com/</id>
+  <id>http://dreamonex.github.io/</id>
   
   <author>
     <name>DreamOneX</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World | 博客开张 ;-</title>
-    <link href="http://example.com/2022/06/07/hello-world/"/>
-    <id>http://example.com/2022/06/07/hello-world/</id>
+    <link href="http://dreamonex.github.io/2022/06/07/hello-world/"/>
+    <id>http://dreamonex.github.io/2022/06/07/hello-world/</id>
     <published>2022-06-06T16:00:00.000Z</published>
     <updated>2022-06-11T17:24:48.404Z</updated>
     
