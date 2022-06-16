@@ -2,6 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.dreamonex.ml/en/</loc>
+    <lastmod>2022-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://blog.dreamonex.ml/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.dreamonex.ml/en/"
+                />
+  </url><url>
+    <loc>https://blog.dreamonex.ml/en/p/2022/06/hello-world/</loc>
+    <lastmod>2022-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://blog.dreamonex.ml/p/2022/06/hello-world/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.dreamonex.ml/en/p/2022/06/hello-world/"
+                />
+  </url><url>
+    <loc>https://blog.dreamonex.ml/en/post/</loc>
+    <lastmod>2022-06-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://blog.dreamonex.ml/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.dreamonex.ml/en/post/"
+                />
+  </url><url>
     <loc>https://blog.dreamonex.ml/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -12,18 +51,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://blog.dreamonex.ml/en/categories/"
-                />
-  </url><url>
-    <loc>https://blog.dreamonex.ml/en/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.dreamonex.ml/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.dreamonex.ml/en/"
                 />
   </url><url>
     <loc>https://blog.dreamonex.ml/en/tags/</loc>
