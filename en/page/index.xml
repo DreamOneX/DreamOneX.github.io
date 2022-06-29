@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on Dawn Light | DreamOneX&#39;s Blog</title>
-        <link>https://blog.dreamonex.ml/en/page/</link>
+        <link>https://blog.dreamonex.eu.org/en/page/</link>
         <description>Recent content in Pages on Dawn Light | DreamOneX&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dreamonex.ml/en/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dreamonex.eu.org/en/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Archives</title>
-        <link>https://blog.dreamonex.ml/en/page/archives/</link>
+        <link>https://blog.dreamonex.eu.org/en/page/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.dreamonex.ml/en/page/archives/</guid>
+        <guid>https://blog.dreamonex.eu.org/en/page/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>About</title>
-        <link>https://blog.dreamonex.ml/en/page/about/</link>
+        <link>https://blog.dreamonex.eu.org/en/page/about/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.dreamonex.ml/en/page/about/</guid>
+        <guid>https://blog.dreamonex.eu.org/en/page/about/</guid>
         <description>&lt;h1 id=&#34;me&#34;&gt;Me&lt;/h1&gt;
 &lt;p&gt;Hello! I&amp;rsquo;m DreamOneX. Nice to meet you&lt;/p&gt;
 &lt;h2 id=&#34;interested-stuffs&#34;&gt;interested stuffs&lt;/h2&gt;
@@ -234,20 +234,20 @@ Unless otherwise stated, all articles on my website Licensed under &lt;a class=&
         </item>
         <item>
         <title>Links</title>
-        <link>https://blog.dreamonex.ml/en/page/links/</link>
+        <link>https://blog.dreamonex.eu.org/en/page/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.dreamonex.ml/en/page/links/</guid>
+        <guid>https://blog.dreamonex.eu.org/en/page/links/</guid>
         <description>&lt;p&gt;Thanks to my friends and everyone who helped me&lt;br&gt;
 Welcome to add links&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>Search</title>
-        <link>https://blog.dreamonex.ml/en/page/search/</link>
+        <link>https://blog.dreamonex.eu.org/en/page/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.dreamonex.ml/en/page/search/</guid>
+        <guid>https://blog.dreamonex.eu.org/en/page/search/</guid>
         <description></description>
         </item>
         

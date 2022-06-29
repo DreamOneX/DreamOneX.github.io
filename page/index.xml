@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on 点点晨曦 | DreamOneX&#39;s Blog</title>
-        <link>https://blog.dreamonex.ml/page/</link>
+        <link>https://blog.dreamonex.eu.org/page/</link>
         <description>Recent content in Pages on 点点晨曦 | DreamOneX&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dreamonex.ml/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dreamonex.eu.org/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Archives</title>
-        <link>https://blog.dreamonex.ml/page/archives/</link>
+        <link>https://blog.dreamonex.eu.org/page/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.dreamonex.ml/page/archives/</guid>
+        <guid>https://blog.dreamonex.eu.org/page/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>About</title>
-        <link>https://blog.dreamonex.ml/page/about/</link>
+        <link>https://blog.dreamonex.eu.org/page/about/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.dreamonex.ml/page/about/</guid>
+        <guid>https://blog.dreamonex.eu.org/page/about/</guid>
         <description>&lt;h1 id=&#34;我&#34;&gt;我&lt;/h1&gt;
 &lt;p&gt;你好(/*´∀｀)｡*我是DreamOneX，很高兴见到你&lt;/p&gt;
 &lt;h2 id=&#34;感兴趣的东西&#34;&gt;感兴趣的东西&lt;/h2&gt;
@@ -234,19 +234,19 @@
         </item>
         <item>
         <title>Links</title>
-        <link>https://blog.dreamonex.ml/page/links/</link>
+        <link>https://blog.dreamonex.eu.org/page/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.dreamonex.ml/page/links/</guid>
+        <guid>https://blog.dreamonex.eu.org/page/links/</guid>
         <description>&lt;p&gt;感谢我的朋友们和所有帮助过我的人，欢迎友链&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>Search</title>
-        <link>https://blog.dreamonex.ml/page/search/</link>
+        <link>https://blog.dreamonex.eu.org/page/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://blog.dreamonex.ml/page/search/</guid>
+        <guid>https://blog.dreamonex.eu.org/page/search/</guid>
         <description></description>
         </item>
         
