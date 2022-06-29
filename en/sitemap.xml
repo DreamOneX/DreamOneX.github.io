@@ -41,6 +41,44 @@
                 href="https://blog.dreamonex.ml/en/post/"
                 />
   </url><url>
+    <loc>https://blog.dreamonex.ml/en/page/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://blog.dreamonex.ml/page/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.dreamonex.ml/en/page/archives/"
+                />
+  </url><url>
+    <loc>https://blog.dreamonex.ml/en/page/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://blog.dreamonex.ml/page/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.dreamonex.ml/en/page/"
+                />
+  </url><url>
+    <loc>https://blog.dreamonex.ml/en/page/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://blog.dreamonex.ml/page/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.dreamonex.ml/en/page/about/"
+                />
+  </url><url>
     <loc>https://blog.dreamonex.ml/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -51,6 +89,30 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://blog.dreamonex.ml/en/categories/"
+                />
+  </url><url>
+    <loc>https://blog.dreamonex.ml/en/page/links/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://blog.dreamonex.ml/page/links/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.dreamonex.ml/en/page/links/"
+                />
+  </url><url>
+    <loc>https://blog.dreamonex.ml/en/page/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://blog.dreamonex.ml/page/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.dreamonex.ml/en/page/search/"
                 />
   </url><url>
     <loc>https://blog.dreamonex.ml/en/tags/</loc>

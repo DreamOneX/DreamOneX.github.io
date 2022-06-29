@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.dreamonex.ml/</loc>
-    <lastmod>2022-06-15T12:08:17+08:00</lastmod>
+    <lastmod>2022-06-26T11:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://blog.dreamonex.ml/post/</loc>
-    <lastmod>2022-06-15T12:08:17+08:00</lastmod>
+    <lastmod>2022-06-26T11:00:00+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -27,6 +27,9 @@
                 hreflang="zh-cn"
                 href="https://blog.dreamonex.ml/post/"
                 />
+  </url><url>
+    <loc>https://blog.dreamonex.ml/p/2022/06/graduation/</loc>
+    <lastmod>2022-06-26T11:00:00+08:00</lastmod>
   </url><url>
     <loc>https://blog.dreamonex.ml/p/2022/06/super-power-2022/</loc>
     <lastmod>2022-06-15T12:08:17+08:00</lastmod>
@@ -47,6 +50,44 @@
                 href="https://blog.dreamonex.ml/p/2022/06/hello-world/"
                 />
   </url><url>
+    <loc>https://blog.dreamonex.ml/page/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.dreamonex.ml/en/page/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://blog.dreamonex.ml/page/archives/"
+                />
+  </url><url>
+    <loc>https://blog.dreamonex.ml/page/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.dreamonex.ml/en/page/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://blog.dreamonex.ml/page/"
+                />
+  </url><url>
+    <loc>https://blog.dreamonex.ml/page/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.dreamonex.ml/en/page/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://blog.dreamonex.ml/page/about/"
+                />
+  </url><url>
     <loc>https://blog.dreamonex.ml/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -57,6 +98,30 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://blog.dreamonex.ml/categories/"
+                />
+  </url><url>
+    <loc>https://blog.dreamonex.ml/page/links/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.dreamonex.ml/en/page/links/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://blog.dreamonex.ml/page/links/"
+                />
+  </url><url>
+    <loc>https://blog.dreamonex.ml/page/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.dreamonex.ml/en/page/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://blog.dreamonex.ml/page/search/"
                 />
   </url><url>
     <loc>https://blog.dreamonex.ml/tags/</loc>
