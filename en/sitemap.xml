@@ -2,21 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.dreamonex.eu.org/en/</loc>
-    <lastmod>2022-06-07T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.dreamonex.eu.org/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://blog.dreamonex.eu.org/en/"
-                />
-  </url><url>
     <loc>https://blog.dreamonex.eu.org/en/p/2022/06/hello-world/</loc>
-    <lastmod>2022-06-07T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-16T15:38:45+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -29,7 +16,7 @@
                 />
   </url><url>
     <loc>https://blog.dreamonex.eu.org/en/post/</loc>
-    <lastmod>2022-06-07T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-16T15:38:45+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -42,7 +29,7 @@
                 />
   </url><url>
     <loc>https://blog.dreamonex.eu.org/en/page/archives/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-16T16:18:09+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -55,7 +42,7 @@
                 />
   </url><url>
     <loc>https://blog.dreamonex.eu.org/en/page/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-30T01:30:45+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -67,7 +54,21 @@
                 href="https://blog.dreamonex.eu.org/en/page/"
                 />
   </url><url>
+    <loc>https://blog.dreamonex.eu.org/en/</loc>
+    <lastmod>2022-06-16T15:23:09+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://blog.dreamonex.eu.org/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.dreamonex.eu.org/en/"
+                />
+  </url><url>
     <loc>https://blog.dreamonex.eu.org/en/page/about/</loc>
+    <lastmod>2022-06-30T01:24:50+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -92,6 +93,7 @@
                 />
   </url><url>
     <loc>https://blog.dreamonex.eu.org/en/page/links/</loc>
+    <lastmod>2022-06-30T01:30:45+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -104,6 +106,7 @@
                 />
   </url><url>
     <loc>https://blog.dreamonex.eu.org/en/page/search/</loc>
+    <lastmod>2022-06-16T16:18:21+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
