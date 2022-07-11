@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Dawn Light | DreamOneX's Blog</title><link>https://blog.dreamonex.eu.org/en/post/</link><description>Recent content in Posts on Dawn Light | DreamOneX's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 07 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dreamonex.eu.org/en/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello World | Blog opening ;-)</title><link>https://blog.dreamonex.eu.org/en/p/2022/06/hello-world/</link><pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate><guid>https://blog.dreamonex.eu.org/en/p/2022/06/hello-world/</guid><description>Original mission The main reason I started this blog is i want to share some some experience on life and study;-) Nice to meet you~
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Dawn Light | DreamOneX&#39;s Blog</title>
+    <link>https://blog.dreamonex.eu.org/en/post/</link>
+    <description>Recent content in Posts on Dawn Light | DreamOneX&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 07 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dreamonex.eu.org/en/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World | Blog opening ;-)</title>
+      <link>https://blog.dreamonex.eu.org/en/p/2022/06/hello-world/</link>
+      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.dreamonex.eu.org/en/p/2022/06/hello-world/</guid>
+      <description>Original mission The main reason I started this blog is i want to share some some experience on life and study;-) Nice to meet you~
 2022.6.12(early morning)= =, I can&amp;rsquo;t sleep, let me finish this&amp;hellip;.
 2022.6.13 2:00 a.m.: I found hugo-theme-stack theme and it looks really nice, so i use hugo instead of hexo
-My situation After June 20th, my high school entrance examination is completely over, and I will start to take care of this blog.</description></item></channel></rss>
+My situation After June 20th, my high school entrance examination is completely over, and I will start to take care of this blog.</description>
+    </item>
+    
+  </channel>
+</rss>

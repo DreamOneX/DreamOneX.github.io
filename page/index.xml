@@ -1,1 +1,47 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on 点点晨曦 | DreamOneX's Blog</title><link>https://blog.dreamonex.eu.org/page/</link><description>Recent content in Pages on 点点晨曦 | DreamOneX's Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 07 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dreamonex.eu.org/page/index.xml" rel="self" type="application/rss+xml"/><item><title>Archives</title><link>https://blog.dreamonex.eu.org/page/archives/</link><pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate><guid>https://blog.dreamonex.eu.org/page/archives/</guid><description/></item><item><title>About</title><link>https://blog.dreamonex.eu.org/page/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.dreamonex.eu.org/page/about/</guid><description>我 你好(/*´∀｀)｡*我是DreamOneX，很高兴见到你 感兴趣的东西 喜欢的发行版 喜欢的游戏 感兴趣的数字 喜欢的编辑器 联系我(☆▽☆) 我的公</description></item><item><title>Links</title><link>https://blog.dreamonex.eu.org/page/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.dreamonex.eu.org/page/links/</guid><description>感谢我的朋友们和所有帮助过我的人，欢迎友链</description></item><item><title>Search</title><link>https://blog.dreamonex.eu.org/page/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.dreamonex.eu.org/page/search/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on 点点晨曦 | DreamOneX&#39;s Blog</title>
+    <link>https://blog.dreamonex.eu.org/page/</link>
+    <description>Recent content in Pages on 点点晨曦 | DreamOneX&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 07 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dreamonex.eu.org/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Archives</title>
+      <link>https://blog.dreamonex.eu.org/page/archives/</link>
+      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.dreamonex.eu.org/page/archives/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://blog.dreamonex.eu.org/page/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.dreamonex.eu.org/page/about/</guid>
+      <description>我 你好(/*´∀｀)｡*我是DreamOneX，很高兴见到你 感兴趣的东西 喜欢的发行版 喜欢的游戏 感兴趣的数字 喜欢的编辑器 联系我(☆▽☆) 我的公</description>
+    </item>
+    
+    <item>
+      <title>Links</title>
+      <link>https://blog.dreamonex.eu.org/page/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.dreamonex.eu.org/page/links/</guid>
+      <description>感谢我的朋友们和所有帮助过我的人，欢迎友链</description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://blog.dreamonex.eu.org/page/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.dreamonex.eu.org/page/search/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
