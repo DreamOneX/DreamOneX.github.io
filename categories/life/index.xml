@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>生活 on 点点晨曦 | DreamOneX&#39;s Blog</title>
-    <link>https://blog.dreamonex.eu.org/categories/life/</link>
-    <description>Recent content in 生活 on 点点晨曦 | DreamOneX&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="https://blog.dreamonex.eu.org/categories/life/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>初中毕业</title>
-      <link>https://blog.dreamonex.eu.org/p/2022/06/graduation/</link>
-      <pubDate>Sun, 26 Jun 2022 11:00:00 +0800</pubDate>
-      
-      <guid>https://blog.dreamonex.eu.org/p/2022/06/graduation/</guid>
-      <description>昨夜星辰曾与 昨夜风 相拥， 昨夜风告别了 那一夜 苍穹， 坠落人海入梦 化故事 翻涌， 你眼中 才星河 茂盛， 向来人间好梦 是有始有终， 前尘镌刻眼瞳 余生控于手中，</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>生活 on 点点晨曦 | DreamOneX&#39;s Blog</title>
+        <link>https://blog.dreamonex.eu.org/categories/life/</link>
+        <description>Recent content in 生活 on 点点晨曦 | DreamOneX&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language><atom:link href="https://blog.dreamonex.eu.org/categories/life/index.xml" rel="self" type="application/rss+xml" />
+    </channel>
 </rss>

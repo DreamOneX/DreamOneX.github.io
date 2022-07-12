@@ -1,47 +1,254 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Pages on 点点晨曦 | DreamOneX&#39;s Blog</title>
-    <link>https://blog.dreamonex.eu.org/page/</link>
-    <description>Recent content in Pages on 点点晨曦 | DreamOneX&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Tue, 07 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dreamonex.eu.org/page/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Archives</title>
-      <link>https://blog.dreamonex.eu.org/page/archives/</link>
-      <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.dreamonex.eu.org/page/archives/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://blog.dreamonex.eu.org/page/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.dreamonex.eu.org/page/about/</guid>
-      <description>我 你好(/*´∀｀)｡*我是DreamOneX，很高兴见到你 感兴趣的东西 喜欢的发行版 喜欢的游戏 感兴趣的数字 喜欢的编辑器 联系我(☆▽☆) 我的公</description>
-    </item>
-    
-    <item>
-      <title>Links</title>
-      <link>https://blog.dreamonex.eu.org/page/links/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.dreamonex.eu.org/page/links/</guid>
-      <description>感谢我的朋友们和所有帮助过我的人，欢迎友链</description>
-    </item>
-    
-    <item>
-      <title>Search</title>
-      <link>https://blog.dreamonex.eu.org/page/search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.dreamonex.eu.org/page/search/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Pages on 点点晨曦 | DreamOneX&#39;s Blog</title>
+        <link>https://blog.dreamonex.eu.org/page/</link>
+        <description>Recent content in Pages on 点点晨曦 | DreamOneX&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Tue, 07 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dreamonex.eu.org/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Archives</title>
+        <link>https://blog.dreamonex.eu.org/page/archives/</link>
+        <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.dreamonex.eu.org/page/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>About</title>
+        <link>https://blog.dreamonex.eu.org/page/about/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.dreamonex.eu.org/page/about/</guid>
+        <description>&lt;h1 id=&#34;我&#34;&gt;我&lt;/h1&gt;
+&lt;p&gt;你好(/*´∀｀)｡*我是DreamOneX，很高兴见到你&lt;/p&gt;
+&lt;h2 id=&#34;感兴趣的东西&#34;&gt;感兴趣的东西&lt;/h2&gt;
+&lt;h3 id=&#34;喜欢的发行版&#34;&gt;喜欢的发行版&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&amp;amp;logo=arch-linux&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;arch&#34;
+	
+	
+&gt; &lt;img src=&#34;https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&amp;amp;logo=debian&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;debian&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;喜欢的游戏&#34;&gt;喜欢的游戏&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/Minecraft-62B47A?style=for-the-badge&amp;amp;logo=mojangstudios&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Minecraft&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;感兴趣的数字&#34;&gt;感兴趣的数字&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/42-000000?style=for-the-badge&amp;amp;logo=42&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;42&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;喜欢的编辑器&#34;&gt;喜欢的编辑器&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/NeoVIM-019733?style=for-the-badge&amp;amp;logo=vim&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;neivim&#34;
+	
+	
+&gt; &lt;img src=&#34;https://img.shields.io/badge/GNU_Emacs-7F5AB6?style=for-the-badge&amp;amp;logo=gnuemacs&amp;amp;logoColor=white&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;emacs&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;联系我&#34;&gt;联系我(☆▽☆)&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://t.me/dreamonex1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://img.shields.io/badge/-@dreamonex1-2E9FD7?logo=telegram&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Telegram&#34;
+	
+	
+&gt;&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://qm.qq.com/cgi-bin/qm/qr?k=rbknx18REkcU12VBJTxX7wAnNnrPLBZ8&amp;amp;noverify=0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://img.shields.io/badge/-1538874738-00C2F2?logo=tencentqq&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Tencent QQ&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://discordhub.com/profile/877528571214692382&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://img.shields.io/badge/-DreamOneX%238950-5865F2?logo=discord&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Discord&#34;
+	
+	
+&gt;&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://twitter.com/dreamonex1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://img.shields.io/badge/-@dreamonex1-1DA1F2?logo=twitter&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Twitter&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/DreamOneX&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://img.shields.io/badge/-DreamOneX-181717?logo=github&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Github&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;mailto:dreamonex@qq.com&#34; &gt;&lt;img src=&#34;https://img.shields.io/badge/-dreamonex@qq.com-00C2F2?logo=Mail.RU&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;QQMail&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;mailto:dreamonex1@outlook.com&#34; &gt;&lt;img src=&#34;https://img.shields.io/badge/-dreamonex1@outlook.com-0E73CD?logo=microsoftoutlook&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Outlook&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;mailto:dreamonex1@gmail.com&#34; &gt;&lt;img src=&#34;https://img.shields.io/badge/-dreamonex1@gmail.com-EA4335?logo=gmail&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Gmail&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;我的公钥ᴗ-&#34;&gt;我的公钥(｡•̀ᴗ-)✧&lt;/h2&gt;
+&lt;h4 id=&#34;pgp&#34;&gt;PGP&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fingerprint&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://keys.openpgp.org/vks/v1/by-fingerprint/47926B6E5C3D04E93A2A627F67C3390010A1A57A&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://img.shields.io/badge/PGP-4792%206B6E%205C3D%2004E9%203A2A%20%20627F%2067C3%203900%2010A1%20A57A-green?style=for-the-badge&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;47926B6E5C3D04E93A2A627F67C3390010A1A57A&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;Fingerprint&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;4792&lt;/span&gt; 6B6E 5C3D 04E9 3A2A 627F 67C3 &lt;span class=&#34;m&#34;&gt;3900&lt;/span&gt; 10A1 A57A
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;public keys
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://keys.openpgp.org/vks/v1/by-fingerprint/47926B6E5C3D04E93A2A627F67C3390010A1A57A&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;OpenPGP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/DreamOneX.gpg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;ssh&#34;&gt;SSH&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/DreamOneX.keys&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;我的博客&#34;&gt;我的博客(≧▽≦)&lt;/h1&gt;
+&lt;h2 id=&#34;初心使命&#34;&gt;&lt;del&gt;初心使命&lt;/del&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;分享学习生活的心得&lt;/li&gt;
+&lt;li&gt;给自己当笔记&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;折腾&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;更新频率&#34;&gt;更新频率&lt;/h2&gt;
+&lt;p&gt;一个月两次（？）&lt;/p&gt;
+&lt;h2 id=&#34;许可&#34;&gt;许可&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.creativecommons.org/l/by-sa/4.0/88x31.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;CC-BY-SA 4.0&#34;
+	
+	
+&gt;&lt;br&gt;
+本站所有文章，如无特殊声明，均采用&lt;a class=&#34;link&#34; href=&#34;http://creativecommons.org/licenses/by-sa/4.0/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;知识共享 署名-相同方式共享 4.0 国际许可协议&lt;/a&gt;进行许可&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Links</title>
+        <link>https://blog.dreamonex.eu.org/page/links/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.dreamonex.eu.org/page/links/</guid>
+        <description>&lt;p&gt;感谢我的朋友们和所有帮助过我的人，欢迎友链&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://blog.dreamonex.eu.org/page/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.dreamonex.eu.org/page/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
 </rss>
