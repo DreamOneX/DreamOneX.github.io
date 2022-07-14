@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='我 你好(/*´∀｀)｡*我是DreamOneX，很高兴见到你 感兴趣的东西 喜欢的发行版 喜欢的游戏 感兴趣的数字 喜欢的编辑器 联系我(☆▽☆) 我的公'><title>About</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='nginx是个很著名的http服务器，nginx-quic分支使它支持http/3的分支之一（来自nginx官方）了解quic后，迫不及待（划掉）地想搞一个玩玩，但踩了N个坑，所以留个笔记（顺便证明一下我的博客还活着）'><title>Nginx-quic部署笔记</title>
 
-<link rel='canonical' href='https://blog.dreamonex.eu.org/page/about/'>
+<link rel='canonical' href='https://blog.dreamonex.eu.org/p/2022/07/nginx-quic/'>
 
-<link rel="stylesheet" href="/scss/style.min.9b1b18b8f21943afaebc844b3b7821094f40989c37855d2f6b2ff45b1bb98710.css"><meta property='og:title' content='About'>
-<meta property='og:description' content='我 你好(/*´∀｀)｡*我是DreamOneX，很高兴见到你 感兴趣的东西 喜欢的发行版 喜欢的游戏 感兴趣的数字 喜欢的编辑器 联系我(☆▽☆) 我的公'>
-<meta property='og:url' content='https://blog.dreamonex.eu.org/page/about/'>
+<link rel="stylesheet" href="/scss/style.min.9b1b18b8f21943afaebc844b3b7821094f40989c37855d2f6b2ff45b1bb98710.css"><meta property='og:title' content='Nginx-quic部署笔记'>
+<meta property='og:description' content='nginx是个很著名的http服务器，nginx-quic分支使它支持http/3的分支之一（来自nginx官方）了解quic后，迫不及待（划掉）地想搞一个玩玩，但踩了N个坑，所以留个笔记（顺便证明一下我的博客还活着）'>
+<meta property='og:url' content='https://blog.dreamonex.eu.org/p/2022/07/nginx-quic/'>
 <meta property='og:site_name' content='点点晨曦 | DreamOneX&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='article:modified_time' content='2022-07-14T14:05:21&#43;00:00'/>
-<meta name="twitter:title" content="About">
-<meta name="twitter:description" content="我 你好(/*´∀｀)｡*我是DreamOneX，很高兴见到你 感兴趣的东西 喜欢的发行版 喜欢的游戏 感兴趣的数字 喜欢的编辑器 联系我(☆▽☆) 我的公">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-07-14T21:48:18&#43;08:00'/><meta property='article:modified_time' content='2022-07-14T14:05:21&#43;00:00'/><meta property='og:image' content='https://blog.dreamonex.eu.org/p/2022/07/nginx-quic/internet.png' />
+<meta name="twitter:title" content="Nginx-quic部署笔记">
+<meta name="twitter:description" content="nginx是个很著名的http服务器，nginx-quic分支使它支持http/3的分支之一（来自nginx官方）了解quic后，迫不及待（划掉）地想搞一个玩玩，但踩了N个坑，所以留个笔记（顺便证明一下我的博客还活着）"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://blog.dreamonex.eu.org/p/2022/07/nginx-quic/internet.png' />
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-10XR3FX2WN"></script>
 <script>
 var doNotTrack = false;
@@ -222,7 +223,7 @@ if (!doNotTrack) {
         
         
 
-        <li  class='current' >
+        <li >
             <a href='/page/about/' >
                 
                 
@@ -350,22 +351,51 @@ if (!doNotTrack) {
     </ol>
 </aside>
 <main class="main full-width">
-    <article class="main-article">
+    <article class="has-image main-article">
     <header class="article-header">
+        <div class="article-image">
+            <a href="/p/2022/07/nginx-quic/">
+                <img src="/p/2022/07/nginx-quic/internet_hude5ec0799e6727eb2b0caf20abd48656_209693_800x0_resize_box_3.png"
+                        srcset="/p/2022/07/nginx-quic/internet_hude5ec0799e6727eb2b0caf20abd48656_209693_800x0_resize_box_3.png 800w, /p/2022/07/nginx-quic/internet_hude5ec0799e6727eb2b0caf20abd48656_209693_1600x0_resize_box_3.png 1600w"
+                        width="800" 
+                        height="448" 
+                        loading="lazy"
+                        alt="Featured image of post Nginx-quic部署笔记" />
+                
+            </a>
+        </div>
+    
 
     <div class="article-details">
     
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/page/about/">About</a>
+            <a href="/p/2022/07/nginx-quic/">Nginx-quic部署笔记</a>
         </h2>
     
+        
+        <h3 class="article-subtitle">
+            nginx是个很著名的http服务器，nginx-quic分支使它支持http/3的分支之一（来自nginx官方）了解quic后，迫不及待（划掉）地想搞一个玩玩，但踩了N个坑，所以留个笔记（顺便证明一下我的博客还活着）
+        </h3>
         
     </div>
 
     
     <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2022-07-14</time>
+            </div>
         
 
         
@@ -379,7 +409,7 @@ if (!doNotTrack) {
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -387,241 +417,123 @@ if (!doNotTrack) {
     
 
     
-        <footer class="article-translations">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M4 5h7" />
-  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
-  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
-  <path d="M12 20l4 -9l4 9" />
-  <path d="M19.1 18h-6.2" />
-</svg>
-
-
-
-            <div>
-                
-                    <a href="https://blog.dreamonex.eu.org/en/page/about/" class="link">English</a>
-                
-            </div>
-        </footer>
-    
 </div>
 </header>
 
     <section class="article-content">
     
     
-    <h1 id="我">我</h1>
-<p>你好(/*´∀｀)｡*我是DreamOneX，很高兴见到你</p>
-<h2 id="感兴趣的东西">感兴趣的东西</h2>
-<h3 id="喜欢的发行版">喜欢的发行版</h3>
-<p><img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&amp;logo=arch-linux&amp;logoColor=white"
-	
-	
-	
-	loading="lazy"
-	
-		alt="arch"
-	
-	
-> <img src="https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&amp;logo=debian&amp;logoColor=white"
-	
-	
-	
-	loading="lazy"
-	
-		alt="debian"
-	
-	
-></p>
-<h3 id="喜欢的游戏">喜欢的游戏</h3>
-<p><img src="https://img.shields.io/badge/Minecraft-62B47A?style=for-the-badge&amp;logo=mojangstudios&amp;logoColor=white"
-	
-	
-	
-	loading="lazy"
-	
-		alt="Minecraft"
-	
-	
-></p>
-<h3 id="感兴趣的数字">感兴趣的数字</h3>
-<p><img src="https://img.shields.io/badge/42-000000?style=for-the-badge&amp;logo=42&amp;logoColor=white"
-	
-	
-	
-	loading="lazy"
-	
-		alt="42"
-	
-	
-></p>
-<h3 id="喜欢的编辑器">喜欢的编辑器</h3>
-<p><img src="https://img.shields.io/badge/NeoVIM-019733?style=for-the-badge&amp;logo=vim&amp;logoColor=white"
-	
-	
-	
-	loading="lazy"
-	
-		alt="neivim"
-	
-	
-> <img src="https://img.shields.io/badge/GNU_Emacs-7F5AB6?style=for-the-badge&amp;logo=gnuemacs&amp;logoColor=white"
-	
-	
-	
-	loading="lazy"
-	
-		alt="emacs"
-	
-	
-></p>
-<h2 id="联系我">联系我(☆▽☆)</h2>
-<p><a class="link" href="https://t.me/dreamonex1"  target="_blank" rel="noopener"
-    ><img src="https://img.shields.io/badge/-@dreamonex1-2E9FD7?logo=telegram&amp;logoColor=white&amp;style=for-the-badge"
-	
-	
-	
-	loading="lazy"
-	
-		alt="Telegram"
-	
-	
-></a> <a class="link" href="https://qm.qq.com/cgi-bin/qm/qr?k=rbknx18REkcU12VBJTxX7wAnNnrPLBZ8&amp;noverify=0"  target="_blank" rel="noopener"
-    ><img src="https://img.shields.io/badge/-1538874738-00C2F2?logo=tencentqq&amp;logoColor=white&amp;style=for-the-badge"
-	
-	
-	
-	loading="lazy"
-	
-		alt="Tencent QQ"
-	
-	
-></a><br>
-<a class="link" href="https://discordhub.com/profile/877528571214692382"  target="_blank" rel="noopener"
-    ><img src="https://img.shields.io/badge/-DreamOneX%238950-5865F2?logo=discord&amp;logoColor=white&amp;style=for-the-badge"
-	
-	
-	
-	loading="lazy"
-	
-		alt="Discord"
-	
-	
-></a> <a class="link" href="https://twitter.com/dreamonex1"  target="_blank" rel="noopener"
-    ><img src="https://img.shields.io/badge/-@dreamonex1-1DA1F2?logo=twitter&amp;logoColor=white&amp;style=for-the-badge"
-	
-	
-	
-	loading="lazy"
-	
-		alt="Twitter"
-	
-	
-></a><br>
-<a class="link" href="https://github.com/DreamOneX"  target="_blank" rel="noopener"
-    ><img src="https://img.shields.io/badge/-DreamOneX-181717?logo=github&amp;logoColor=white&amp;style=for-the-badge"
-	
-	
-	
-	loading="lazy"
-	
-		alt="Github"
-	
-	
-></a><br>
-<a class="link" href="mailto:dreamonex@qq.com" ><img src="https://img.shields.io/badge/-dreamonex@qq.com-00C2F2?logo=Mail.RU&amp;logoColor=white&amp;style=for-the-badge"
-	
-	
-	
-	loading="lazy"
-	
-		alt="QQMail"
-	
-	
-></a><br>
-<a class="link" href="mailto:dreamonex1@outlook.com" ><img src="https://img.shields.io/badge/-dreamonex1@outlook.com-0E73CD?logo=microsoftoutlook&amp;logoColor=white&amp;style=for-the-badge"
-	
-	
-	
-	loading="lazy"
-	
-		alt="Outlook"
-	
-	
-></a><br>
-<a class="link" href="mailto:dreamonex1@gmail.com" ><img src="https://img.shields.io/badge/-dreamonex1@gmail.com-EA4335?logo=gmail&amp;logoColor=white&amp;style=for-the-badge"
-	
-	
-	
-	loading="lazy"
-	
-		alt="Gmail"
-	
-	
-></a></p>
-<h2 id="我的公钥ᴗ-">我的公钥(｡•̀ᴗ-)✧</h2>
-<h4 id="pgp">PGP</h4>
-<ul>
-<li>Fingerprint<br>
-<a class="link" href="https://keys.openpgp.org/vks/v1/by-fingerprint/47926B6E5C3D04E93A2A627F67C3390010A1A57A"  target="_blank" rel="noopener"
-    ><img src="https://img.shields.io/badge/PGP-4792%206B6E%205C3D%2004E9%203A2A%20%20627F%2067C3%203900%2010A1%20A57A-green?style=for-the-badge"
-	
-	
-	
-	loading="lazy"
-	
-		alt="47926B6E5C3D04E93A2A627F67C3390010A1A57A"
-	
-	
-></a></li>
-</ul>
+    <p>其实，编译安装nginx-quic的教程很多，但关于nginx配置有的过时（写于<strong>2022-07-14</strong>，<del>俺也不能保证我这个不会过时对吧</del>），要么<del>很难找到</del>（事实上我就没找到）</p>
+<h1 id="编译安装"><del>编译</del>安装</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">Fingerprint</span> <span class="o">=</span> <span class="m">4792</span> 6B6E 5C3D 04E9 3A2A 627F 67C3 <span class="m">3900</span> 10A1 A57A
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">paru -S nginx-quic  
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ul>
-<li>public keys
+</div><p><del>ok了，Arch真好</del></p>
+<h1 id="配置">配置</h1>
+<p><code>http/3</code>使用udp，所以需要额外添加一个listen语句</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">listen</span> <span class="mi">443</span> <span class="s">ssl</span> <span class="s">http2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">listen</span> <span class="mi">443</span> <span class="s">http3</span> <span class="s">reuseport</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>IMPORTANT</strong>: 一个端口只需要写一次<code>reuseport</code>
+举个例子:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">...</span>
+</span></span><span class="line"><span class="cl"><span class="s">server</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">...</span>
+</span></span><span class="line"><span class="cl">    <span class="s">listen</span> <span class="mi">443</span> <span class="s">http3</span> <span class="s">reuseport</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">...</span>
+</span></span><span class="line"><span class="cl"><span class="err">}</span>
+</span></span><span class="line"><span class="cl"><span class="s">server</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">...</span>
+</span></span><span class="line"><span class="cl">    <span class="s">listen</span> <span class="mi">443</span> <span class="s">http3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">...</span>
+</span></span><span class="line"><span class="cl"><span class="err">}</span>
+</span></span><span class="line"><span class="cl"><span class="s">...</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="踩雷时间到"><del>踩雷时间到</del></h1>
+<h3 id="1-防火墙未放行-443udp">1. 防火墙未放行 <code>443/udp</code></h3>
+<blockquote>
+<p><del>激动的心，颤抖的手</del>，但是，忘放行了</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo firewall-cmd --zone<span class="o">=</span>public --add-port<span class="o">=</span>443/udp
+</span></span><span class="line"><span class="cl">sudo firewall-cmd --zone<span class="o">=</span>public --add-port<span class="o">=</span>443/udp --permanent
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="2-alt-svc标头和quic-status标头">2. Alt-Svc标头和QUIC-Status标头</h3>
+<blockquote>
+<p>当时按照网上的教程，抄了一个Alt-Svc，用curl检测时，无法发起http/3请求，查了很久找不到资料，然后 <del>灵机一动</del> 找了个支持http/3的网站抄了一个</p>
+</blockquote>
+<p>部分教程<code>Alt-Svc</code>标头过期，导致无法发起<code>http/3</code>请求</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">add_header</span> <span class="s">Alt-Svc</span> <span class="s">&#39;h3=&#34;:443&#34;</span><span class="p">;</span> <span class="k">ma=86400&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">add_header</span> <span class="s">QUIC-Status</span> <span class="nv">$http3</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="3-ssl_stapling-ignored">3. <code>ssl_stapling ignored</code></h3>
+<blockquote>
+<p><del>特大号巨坑，全网没几篇文章提到</del>，手搓了半天证书，一直没起作用，搞了好久才发现nginx-quic不支持OCSP而不是证书有问题，另外，实际使用中差别并不大，如果有需要可以用OpenSSL编译nginx-quic</p>
+</blockquote>
+<p>nginx-quic使用<code>BoringSSL</code>，但是nginx的ocsp实现完全基于<code>OpenSSL</code>，所以<code>sudo nginx -t</code>会提示：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="s2">&#34;ssl_stapling&#34;</span> ignored, not supported
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><del>没特殊需要，不必管它</del></p>
+<hr>
+<h1 id="最后">最后</h1>
+<h4 id="检测http3支持">检测HTTP/3支持</h4>
 <ul>
-<li><a class="link" href="https://keys.openpgp.org/vks/v1/by-fingerprint/47926B6E5C3D04E93A2A627F67C3390010A1A57A"  target="_blank" rel="noopener"
-    >OpenPGP</a></li>
-<li><a class="link" href="https://github.com/DreamOneX.gpg"  target="_blank" rel="noopener"
-    >Github</a></li>
+<li><a class="link" href="https://http3check.net/"  target="_blank" rel="noopener"
+    >http3check</a></li>
 </ul>
-</li>
-</ul>
-<h3 id="ssh">SSH</h3>
+<h4 id="nginx配置文件生成">nginx配置文件生成</h4>
 <ul>
-<li><a class="link" href="https://github.com/DreamOneX.keys"  target="_blank" rel="noopener"
-    >Github</a></li>
+<li><a class="link" href="https://www.digitalocean.com/community/tools/nginx"  target="_blank" rel="noopener"
+    >NGINXConfig | DigitalOcean</a></li>
 </ul>
-<h1 id="我的博客">我的博客(≧▽≦)</h1>
-<h2 id="初心使命"><del>初心使命</del></h2>
-<ul>
-<li>分享学习生活的心得</li>
-<li>给自己当笔记</li>
-<li><del>折腾</del></li>
-</ul>
-<h2 id="更新频率">更新频率</h2>
-<p>一个月两次（？）</p>
-<h2 id="许可">许可</h2>
-<p><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"
-	
-	
-	
-	loading="lazy"
-	
-		alt="CC-BY-SA 4.0"
-	
-	
-><br>
-本站所有文章，如无特殊声明，均采用<a class="link" href="http://creativecommons.org/licenses/by-sa/4.0/"  target="_blank" rel="noopener"
-    >知识共享 署名-相同方式共享 4.0 国际许可协议</a>进行许可</p>
 
 </section>
 
@@ -639,7 +551,7 @@ if (!doNotTrack) {
 
 
 
-        <span>Licensed under CC BY-ND 4.0</span>
+        <span>Licensed under CC BY-SA 4.0</span>
     </section>
     <section class="article-lastmod">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -806,31 +718,26 @@ if (!doNotTrack) {
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#感兴趣的东西">感兴趣的东西</a>
+    <li>
       <ol>
-        <li><a href="#喜欢的发行版">喜欢的发行版</a></li>
-        <li><a href="#喜欢的游戏">喜欢的游戏</a></li>
-        <li><a href="#感兴趣的数字">感兴趣的数字</a></li>
-        <li><a href="#喜欢的编辑器">喜欢的编辑器</a></li>
-      </ol>
-    </li>
-    <li><a href="#联系我">联系我(☆▽☆)</a></li>
-    <li><a href="#我的公钥ᴗ-">我的公钥(｡•̀ᴗ-)✧</a>
-      <ol>
-        <li>
-          <ol>
-            <li><a href="#pgp">PGP</a></li>
-          </ol>
-        </li>
-        <li><a href="#ssh">SSH</a></li>
+        <li><a href="#1-防火墙未放行-443udp">1. 防火墙未放行 <code>443/udp</code></a></li>
+        <li><a href="#2-alt-svc标头和quic-status标头">2. Alt-Svc标头和QUIC-Status标头</a></li>
+        <li><a href="#3-ssl_stapling-ignored">3. <code>ssl_stapling ignored</code></a></li>
       </ol>
     </li>
   </ol>
 
   <ol>
-    <li><a href="#初心使命">初心使命</a></li>
-    <li><a href="#更新频率">更新频率</a></li>
-    <li><a href="#许可">许可</a></li>
+    <li>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#检测http3支持">检测HTTP/3支持</a></li>
+            <li><a href="#nginx配置文件生成">nginx配置文件生成</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
