@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Tags on 点点晨曦 | DreamOneX&#39;s Blog</title>
+        <link>https://blog.dreamonex.eu.org/tags/</link>
+        <description>Recent content in Tags on 点点晨曦 | DreamOneX&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Thu, 21 Jul 2022 13:55:43 +0800</lastBuildDate><atom:link href="https://blog.dreamonex.eu.org/tags/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <title>arch</title>
+        <link>https://blog.dreamonex.eu.org/tags/arch/</link>
+        <pubDate>Thu, 21 Jul 2022 13:55:43 +0800</pubDate>
+        
+        <guid>https://blog.dreamonex.eu.org/tags/arch/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>linux</title>
+        <link>https://blog.dreamonex.eu.org/tags/linux/</link>
+        <pubDate>Thu, 21 Jul 2022 13:55:43 +0800</pubDate>
+        
+        <guid>https://blog.dreamonex.eu.org/tags/linux/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>nginx</title>
+        <link>https://blog.dreamonex.eu.org/tags/nginx/</link>
+        <pubDate>Thu, 14 Jul 2022 21:48:18 +0800</pubDate>
+        
+        <guid>https://blog.dreamonex.eu.org/tags/nginx/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>web</title>
+        <link>https://blog.dreamonex.eu.org/tags/web/</link>
+        <pubDate>Thu, 14 Jul 2022 21:48:18 +0800</pubDate>
+        
+        <guid>https://blog.dreamonex.eu.org/tags/web/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

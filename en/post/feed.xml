@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Dawn Light | DreamOneX&#39;s Blog</title>
+        <link>https://blog.dreamonex.eu.org/en/post/</link>
+        <description>Recent content in Posts on Dawn Light | DreamOneX&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Tue, 07 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.dreamonex.eu.org/en/post/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hello World | Blog opening ;-)</title>
+        <link>https://blog.dreamonex.eu.org/en/p/2022/06/hello-world/</link>
+        <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://blog.dreamonex.eu.org/en/p/2022/06/hello-world/</guid>
+        <description>&lt;h2 id=&#34;original-mission&#34;&gt;&lt;del&gt;Original mission&lt;/del&gt;&lt;/h2&gt;
+&lt;p&gt;The main reason I started this blog is i want to share some some experience on life and study;-)   &lt;br&gt;
+Nice to meet you~&lt;br&gt;
+2022.6.12(early morning)= =, I can&amp;rsquo;t sleep, let me finish this&amp;hellip;.&lt;br&gt;
+2022.6.13 2:00 a.m.: I found hugo-theme-stack theme and it looks really nice, so i use hugo instead of hexo&lt;/p&gt;
+&lt;h2 id=&#34;my-situation&#34;&gt;My situation&lt;/h2&gt;
+&lt;p&gt;After June 20th, my high school entrance examination is completely over, and I will start to take care of this blog. After the summer vacation, my write post frequency will definitely decrease. After all I&amp;rsquo;m a high school student.&lt;br&gt;
+However, I should be able to write two posts a month.&lt;/p&gt;
+&lt;h2 id=&#34;my-plan&#34;&gt;My plan&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; a nice theme&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; RSS Feed &lt;a class=&#34;link&#34; href=&#34;https://blog.dreamonex.ml/index.xml&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Maybe..&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 3 post in June.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;That&amp;rsquo;s it, come on in the high school entrance examination!&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
