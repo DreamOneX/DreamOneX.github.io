@@ -19,9 +19,9 @@
 &lt;li&gt;DNS服务器（&lt;code&gt;/etc/resolv.conf&lt;/code&gt;）&lt;/li&gt;
 &lt;li&gt;SSH 密钥&lt;/li&gt;
 &lt;li&gt;Grub配置&lt;/li&gt;
-&lt;li&gt;硬件信息（&lt;code&gt;/etc/modules.conf&lt;/code&gt;）&lt;br&gt;
-&lt;strong&gt;推荐备份完整的&lt;code&gt;/etc&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;硬件信息（&lt;code&gt;/etc/modules.conf&lt;/code&gt;）&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;推荐备份完整的&lt;code&gt;/etc&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;思考是否应该手动安装&#34;&gt;思考是否应该手动安装&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;自动化不一定是脚本小子，只是为了避免不必要的麻烦&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
