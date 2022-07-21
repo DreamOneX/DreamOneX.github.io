@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='nginx是个很著名的http服务器，nginx-quic分支使它支持http/3的分支之一（来自nginx官方）了解quic后，迫不及待（划掉）地想搞一个玩玩，但踩了N个坑，所以留个笔记（顺便证明一下我的博客还活着）'><title>nginx-quic部署笔记</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='朋友送了一台vps，第一个想法当然是换个Arch'><title>利用Bootstrap从已有的Linux发行版上安装ArchLinux</title>
 
-<link rel='canonical' href='https://blog.dreamonex.eu.org/p/2022/07/nginx-quic/'>
+<link rel='canonical' href='https://blog.dreamonex.eu.org/p/2022/07/install-arch-from-linux/'>
 
-<link rel="stylesheet" href="/scss/style.min.9b1b18b8f21943afaebc844b3b7821094f40989c37855d2f6b2ff45b1bb98710.css"><meta property='og:title' content='nginx-quic部署笔记'>
-<meta property='og:description' content='nginx是个很著名的http服务器，nginx-quic分支使它支持http/3的分支之一（来自nginx官方）了解quic后，迫不及待（划掉）地想搞一个玩玩，但踩了N个坑，所以留个笔记（顺便证明一下我的博客还活着）'>
-<meta property='og:url' content='https://blog.dreamonex.eu.org/p/2022/07/nginx-quic/'>
+<link rel="stylesheet" href="/scss/style.min.9b1b18b8f21943afaebc844b3b7821094f40989c37855d2f6b2ff45b1bb98710.css"><meta property='og:title' content='利用Bootstrap从已有的Linux发行版上安装ArchLinux'>
+<meta property='og:description' content='朋友送了一台vps，第一个想法当然是换个Arch'>
+<meta property='og:url' content='https://blog.dreamonex.eu.org/p/2022/07/install-arch-from-linux/'>
 <meta property='og:site_name' content='点点晨曦 | DreamOneX&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='nginx' /><meta property='article:tag' content='linux' /><meta property='article:tag' content='web' /><meta property='article:published_time' content='2022-07-14T21:48:18&#43;08:00'/><meta property='article:modified_time' content='2022-07-21T06:10:37&#43;00:00'/><meta property='og:image' content='https://blog.dreamonex.eu.org/p/2022/07/nginx-quic/internet.png' />
-<meta name="twitter:title" content="nginx-quic部署笔记">
-<meta name="twitter:description" content="nginx是个很著名的http服务器，nginx-quic分支使它支持http/3的分支之一（来自nginx官方）了解quic后，迫不及待（划掉）地想搞一个玩玩，但踩了N个坑，所以留个笔记（顺便证明一下我的博客还活着）"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://blog.dreamonex.eu.org/p/2022/07/nginx-quic/internet.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='linux' /><meta property='article:tag' content='arch' /><meta property='article:published_time' content='2022-07-21T13:55:43&#43;08:00'/><meta property='article:modified_time' content='2022-07-21T06:10:37&#43;00:00'/><meta property='og:image' content='https://blog.dreamonex.eu.org/p/2022/07/install-arch-from-linux/archlinux.png' />
+<meta name="twitter:title" content="利用Bootstrap从已有的Linux发行版上安装ArchLinux">
+<meta name="twitter:description" content="朋友送了一台vps，第一个想法当然是换个Arch"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://blog.dreamonex.eu.org/p/2022/07/install-arch-from-linux/archlinux.png' />
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-10XR3FX2WN"></script>
 <script>
 var doNotTrack = false;
@@ -354,13 +354,13 @@ if (!doNotTrack) {
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
-            <a href="/p/2022/07/nginx-quic/">
-                <img src="/p/2022/07/nginx-quic/internet_hude5ec0799e6727eb2b0caf20abd48656_209693_800x0_resize_box_3.png"
-                        srcset="/p/2022/07/nginx-quic/internet_hude5ec0799e6727eb2b0caf20abd48656_209693_800x0_resize_box_3.png 800w, /p/2022/07/nginx-quic/internet_hude5ec0799e6727eb2b0caf20abd48656_209693_1600x0_resize_box_3.png 1600w"
+            <a href="/p/2022/07/install-arch-from-linux/">
+                <img src="/p/2022/07/install-arch-from-linux/archlinux_huabecfadfdd744de844b8ea7b92f798ac_30720_800x0_resize_box_3.png"
+                        srcset="/p/2022/07/install-arch-from-linux/archlinux_huabecfadfdd744de844b8ea7b92f798ac_30720_800x0_resize_box_3.png 800w, /p/2022/07/install-arch-from-linux/archlinux_huabecfadfdd744de844b8ea7b92f798ac_30720_1600x0_resize_box_3.png 1600w"
                         width="800" 
-                        height="448" 
+                        height="450" 
                         loading="lazy"
-                        alt="Featured image of post nginx-quic部署笔记" />
+                        alt="Featured image of post 利用Bootstrap从已有的Linux发行版上安装ArchLinux" />
                 
             </a>
         </div>
@@ -379,12 +379,12 @@ if (!doNotTrack) {
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/2022/07/nginx-quic/">nginx-quic部署笔记</a>
+            <a href="/p/2022/07/install-arch-from-linux/">利用Bootstrap从已有的Linux发行版上安装ArchLinux</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            nginx是个很著名的http服务器，nginx-quic分支使它支持http/3的分支之一（来自nginx官方）了解quic后，迫不及待（划掉）地想搞一个玩玩，但踩了N个坑，所以留个笔记（顺便证明一下我的博客还活着）
+            朋友送了一台vps，第一个想法当然是换个Arch
         </h3>
         
     </div>
@@ -402,7 +402,7 @@ if (!doNotTrack) {
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2022-07-14</time>
+                <time class="article-time--published">2022-07-21</time>
             </div>
         
 
@@ -431,31 +431,137 @@ if (!doNotTrack) {
     <section class="article-content">
     
     
-    <p>其实，编译安装nginx-quic的教程很多，但关于nginx配置有的过时（写于<strong>2022-07-14</strong>，<del>俺也不能保证我这个不会过时对吧</del>），要么<del>很难找到</del>（事实上我就没找到）</p>
-<h1 id="编译安装"><del>编译</del>安装</h1>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">paru -S nginx-quic  
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p><del>ok了，Arch真好</del></p>
-<h1 id="配置">配置</h1>
-<p><code>http/3</code>使用udp，所以需要额外添加一个listen语句</p>
+    <h1 id="准备">准备</h1>
+<h2 id="备份">备份</h2>
+<ul>
+<li>网络相关信息（如子网，IP地址，网卡名，网关）</li>
+<li>主机名（hostname <code>/etc/hosts</code>）</li>
+<li>DNS服务器（<code>/etc/resolv.conf</code>）</li>
+<li>SSH 密钥</li>
+<li>Grub配置</li>
+<li>硬件信息（<code>/etc/modules.conf</code>）<br>
+<strong>推荐备份完整的<code>/etc</code></strong></li>
+</ul>
+<h2 id="思考是否应该手动安装">思考是否应该手动安装</h2>
+<p><strong>自动化不一定是脚本小子，只是为了避免不必要的麻烦</strong></p>
+<ul>
+<li><a class="link" href="https://gitlab.com/drizzt/vps2arch"  target="_blank" rel="noopener"
+    >vps2arch</a> 可以全程自动化操作，<del>虽然年久失修</del></li>
+</ul>
+<p>另外，如需<code>lvm</code>你可以直接按上面的脚本或者找别的教程了，<del>原因竟是我没弄过</del></p>
+<h1 id="正式开始">正式开始</h1>
+<h2 id="下载bootstrap">下载Bootstrap</h2>
+<p>（按实际情况修改时间及镜像，可参考<a class="link" href="https://archlinux.org/download/"  target="_blank" rel="noopener"
+    >Archlinux Downloads</a>）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">listen</span> <span class="mi">443</span> <span class="s">ssl</span> <span class="s">http2</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="k">listen</span> <span class="mi">443</span> <span class="s">http3</span> <span class="s">reuseport</span><span class="p">;</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> /tmp
+</span></span><span class="line"><span class="cl">wget https://geo.mirror.pkgbuild.com/iso/xxxx.xx.xx/archlinux-bootstrap-x86_64.tar.gz
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><strong>IMPORTANT</strong>: 一个端口只需要写一次<code>reuseport</code>
-举个例子:</p>
+</div><h2 id="校验">校验</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget https://geo.mirror.pkgbuild.com/iso/xxxx.xx.xx/sha256sums.txt
+</span></span><span class="line"><span class="cl">cat ...
+</span></span><span class="line"><span class="cl">sha256sum
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="释放bootstrap">释放bootstrap</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tar xzf archlinux-bootstrap-*-x86_64.tar.gz --numeric-owner
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>IMPORTANT</strong>：编辑<code>/tmp/root.x86_64/etc/pacman.d/mirrorlist</code>选择镜像源</p>
+<h2 id="准备resolvconf">准备<code>resolv.conf</code></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">rm /tmp/root.x86_64/etc/resolv.conf
+</span></span><span class="line"><span class="cl">cp /etc/resolv.conf /tmp/root.x86_64/etc/
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="进入chroot">进入<code>chroot</code></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mount --bind /boot/efi <span class="s2">&#34;/root.x86_64/mnt/boot/efi&#34;</span> <span class="c1"># 挂载efi</span>
+</span></span><span class="line"><span class="cl">/tmp/root.x86_64/bin/arch-chroot /tmp/root.x86_64/
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol>
+<li>若提示<code>FATAL: kernel too old</code>应更新系统内核</li>
+<li>若不支持<code>--fork</code>、<code>--pid</code>请参考<a class="link" href="https://wiki.archlinux.org/title/Install_Arch_Linux_from_existing_Linux"  target="_blank" rel="noopener"
+    >ArchLinux Wiki</a>，或尝试更新系统</li>
+</ol>
+<h2 id="使用chroot环境">使用<code>chroot</code>环境</h2>
+<h3 id="pacman-key-初始化">pacman-key 初始化</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pacman-key --init
+</span></span><span class="line"><span class="cl">pacman-key --populate archlinux
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="安装软件包">安装软件包</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pacstrap /mnt base linux linux-firmware
+</span></span><span class="line"><span class="cl">pacman -S nano vim man-pages mandb texinfo grub
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="生成fstab">生成fstab</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">genfstab /mnt &gt;&gt; /etc/fstab
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="本地化">本地化</h3>
+<ul>
+<li><code>/etc/locale.gen</code></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">en_US.UTF-8
+</span></span><span class="line"><span class="cl">zh_CN.UTF-8
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>/etc/locale.conf</code></li>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -470,78 +576,171 @@ if (!doNotTrack) {
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">...</span>
-</span></span><span class="line"><span class="cl"><span class="s">server</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kn">...</span>
-</span></span><span class="line"><span class="cl">    <span class="s">listen</span> <span class="mi">443</span> <span class="s">http3</span> <span class="s">reuseport</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="kn">...</span>
-</span></span><span class="line"><span class="cl"><span class="err">}</span>
-</span></span><span class="line"><span class="cl"><span class="s">server</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kn">...</span>
-</span></span><span class="line"><span class="cl">    <span class="s">listen</span> <span class="mi">443</span> <span class="s">http3</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="kn">...</span>
-</span></span><span class="line"><span class="cl"><span class="err">}</span>
-</span></span><span class="line"><span class="cl"><span class="s">...</span>
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">LANG</span><span class="p">=</span><span class="nx">zh_CN</span><span class="p">.</span><span class="nx">UTF-8</span>
+</span></span><span class="line"><span class="cl"><span class="nx">LANGUAGE</span><span class="p">=</span><span class="nx">zh_CN</span><span class="p">.</span><span class="nx">UTF-8</span><span class="err">:</span><span class="nx">en_US</span><span class="p">.</span><span class="nx">UTF-8</span>
+</span></span><span class="line"><span class="cl"><span class="nx">LC_CTYPE</span><span class="p">=</span><span class="nx">en_US</span><span class="p">.</span><span class="nx">UTF-8</span>
+</span></span><span class="line"><span class="cl"><span class="nx">LC_NUMERIC</span><span class="p">=</span><span class="nx">zh_CN</span><span class="p">.</span><span class="nx">UTF-8</span>
+</span></span><span class="line"><span class="cl"><span class="nx">LC_TIME</span><span class="p">=</span><span class="nx">zh_CN</span><span class="p">.</span><span class="nx">UTF-8</span>
+</span></span><span class="line"><span class="cl"><span class="nx">LC_COLLATE</span><span class="p">=</span><span class="nx">en_US</span><span class="p">.</span><span class="nx">UTF-8</span>
+</span></span><span class="line"><span class="cl"><span class="nx">LC_MONETARY</span><span class="p">=</span><span class="nx">zh_CN</span><span class="p">.</span><span class="nx">UTF-8</span>
+</span></span><span class="line"><span class="cl"><span class="nx">LC_MESSAGES</span><span class="p">=</span><span class="nx">zh_CN</span><span class="p">.</span><span class="nx">UTF-8</span>
+</span></span><span class="line"><span class="cl"><span class="nx">LC_PAPER</span><span class="p">=</span><span class="nx">zh_CN</span><span class="p">.</span><span class="nx">UTF-8</span>
+</span></span><span class="line"><span class="cl"><span class="nx">LC_NAME</span><span class="p">=</span><span class="nx">zh_CN</span><span class="p">.</span><span class="nx">UTF-8</span>
+</span></span><span class="line"><span class="cl"><span class="nx">LC_ADDRESS</span><span class="p">=</span><span class="nx">zh_CN</span><span class="p">.</span><span class="nx">UTF-8</span>
+</span></span><span class="line"><span class="cl"><span class="nx">LC_TELEPHONE</span><span class="p">=</span><span class="nx">zh_CN</span><span class="p">.</span><span class="nx">UTF-8</span>
+</span></span><span class="line"><span class="cl"><span class="nx">LC_MEASUREMENT</span><span class="p">=</span><span class="nx">zh_CN</span><span class="p">.</span><span class="nx">UTF-8</span>
+</span></span><span class="line"><span class="cl"><span class="nx">LC_IDENTIFICATION</span><span class="p">=</span><span class="nx">en_US</span><span class="p">.</span><span class="nx">UTF-8</span>
+</span></span><span class="line"><span class="cl"><span class="nx">LC_ALL</span><span class="p">=</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="踩雷时间到"><del>踩雷时间到</del></h1>
-<h3 id="1-防火墙未放行-443udp">1. 防火墙未放行 <code>443/udp</code></h3>
-<blockquote>
-<p><del>激动的心，颤抖的手</del>，但是，忘放行了</p>
-</blockquote>
+</div><h3 id="时区">时区</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo firewall-cmd --zone<span class="o">=</span>public --add-port<span class="o">=</span>443/udp
-</span></span><span class="line"><span class="cl">sudo firewall-cmd --zone<span class="o">=</span>public --add-port<span class="o">=</span>443/udp --permanent
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime <span class="c1"># UTC +8</span>
+</span></span><span class="line"><span class="cl">hwclock --systohc
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="2-alt-svc标头和quic-status标头">2. Alt-Svc标头和QUIC-Status标头</h3>
-<blockquote>
-<p>当时按照网上的教程，抄了一个Alt-Svc，用curl检测时，无法发起http/3请求，查了很久找不到资料，然后 <del>灵机一动</del> 找了个支持http/3的网站抄了一个</p>
-</blockquote>
-<p>部分教程<code>Alt-Svc</code>标头过期，导致无法发起<code>http/3</code>请求</p>
+</div><h3 id="设置密码">设置密码</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">passwd
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>在执行<code>lsblk</code>确认无误后，挂载磁盘</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">add_header</span> <span class="s">Alt-Svc</span> <span class="s">&#39;h3=&#34;:443&#34;</span><span class="p">;</span> <span class="k">ma=86400&#39;</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="k">add_header</span> <span class="s">QUIC-Status</span> <span class="nv">$http3</span><span class="p">;</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mount /dev/sda /mnt
+</span></span><span class="line"><span class="cl">rm -r ...
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="3-ssl_stapling-ignored">3. <code>ssl_stapling ignored</code></h3>
-<blockquote>
-<p><del>特大号巨坑，全网没几篇文章提到</del>，手搓了半天证书，一直没起作用，搞了好久才发现nginx-quic不支持OCSP而不是证书有问题，另外，实际使用中差别并不大，如果有需要可以用OpenSSL编译nginx-quic</p>
-</blockquote>
-<p>nginx-quic使用<code>BoringSSL</code>，但是nginx的ocsp实现完全基于<code>OpenSSL</code>，所以<code>sudo nginx -t</code>会提示：</p>
+</div><h2 id="important"><strong>IMPORTANT</strong></h2>
+<p><strong>/dev</strong>, <strong>/sys</strong>, <strong>/run</strong>, <strong>/tmp</strong>, <strong>/proc</strong> <strong>不应删除</strong><br>
+<del><code>rm -rf /*</code></del></p>
+<h2 id="开启网络ssh">开启网络、ssh</h2>
+<ul>
+<li>编辑<code>/etc/systemd/network/default.network</code></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-service" data-lang="service"><span class="line"><span class="cl"><span class="k">[Match]</span>
+</span></span><span class="line"><span class="cl"><span class="na">Name</span><span class="o">=</span><span class="s">eth0 #改为你的网卡名</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">[Network]</span>
+</span></span><span class="line"><span class="cl"><span class="na">Gateway</span><span class="o">=</span><span class="s">114.145.114.145 #你的网关</span>
+</span></span><span class="line"><span class="cl"><span class="na">Address</span><span class="o">=</span><span class="s">114.145.114.137/24 #你的子网</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>使用systemd启用服务</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl <span class="nb">enable</span> systemd-networkd
+</span></span><span class="line"><span class="cl">systemctl <span class="nb">enable</span> sshd
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="准备引导">准备引导</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">grub-install --target<span class="o">=</span>x86_64-efi --efi-directory<span class="o">=</span>/boot/efi
+</span></span><span class="line"><span class="cl">grub-mkconfig -o /boot/grub/grub.cfg
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>IMPORTANT</strong>：在不支持efi的情况下</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="s2">&#34;ssl_stapling&#34;</span> ignored, not supported
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">grub-install --target<span class="o">=</span>i386-pc --recheck --force /dev/sda
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><del>没特殊需要，不必管它</del></p>
-<hr>
-<h1 id="最后">最后</h1>
-<h4 id="检测http3支持">检测HTTP/3支持</h4>
+</div><h2 id="done-">Done !</h2>
+<p>现在，重启系统，就能看到<code>Arch Linux</code>的字样了<br>
+<del>啥？咋重启，好问题</del></p>
+<h3 id="怎么重启">怎么重启</h3>
 <ul>
-<li><a class="link" href="https://http3check.net/"  target="_blank" rel="noopener"
-    >http3check</a></li>
+<li>先尝试<code>reboot</code>，<code>init 6</code>，<code>shutdown -r</code>等，如果无效（<del>有效才有鬼了</del>）再进行下面的步骤</li>
+<li>确保所有数据写入硬盘</li>
 </ul>
-<h4 id="nginx配置文件生成">nginx配置文件生成</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sync
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol>
+<li>利用内核参数</li>
+</ol>
 <ul>
-<li><a class="link" href="https://www.digitalocean.com/community/tools/nginx"  target="_blank" rel="noopener"
-    >NGINXConfig | DigitalOcean</a></li>
+<li>激活<code>Magic System Request Key</code></li>
 </ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="m">1</span> &gt; /proc/sys/kernel/sysrq  
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>重启</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;b&#34;</span> &gt; /proc/sysrq-trigger
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>暴力重启<br>
+<del>包括但不限于，断电，强行关机，服务器控制面板等</del></li>
+</ol>
+<h1 id="参考资料">参考资料</h1>
+<ol>
+<li><a class="link" href="https://wiki.archlinux.org/title/Install_Arch_Linux_from_existing_Linux"  target="_blank" rel="noopener"
+    >Arch Linux Wiki Install Arch Linux from existing Linux</a><br>
+中文页面貌似已过期</li>
+<li><a class="link" href="https://wiki.archlinux.org/title/Installation_guide_%28%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%29"  target="_blank" rel="noopener"
+    >Arch Linux Wiki Installation Guide</a></li>
+</ol>
 
 </section>
 
@@ -550,11 +749,9 @@ if (!doNotTrack) {
     
     <section class="article-tags">
         
-            <a href="/tags/nginx/">nginx</a>
-        
             <a href="/tags/linux/">linux</a>
         
-            <a href="/tags/web/">web</a>
+            <a href="/tags/arch/">arch</a>
         
     </section>
 
@@ -623,23 +820,23 @@ if (!doNotTrack) {
             
                 
 <article class="has-image">
-    <a href="/p/2022/07/install-arch-from-linux/">
+    <a href="/p/2022/07/nginx-quic/">
         
         
             <div class="article-image">
-                <img src="/p/2022/07/install-arch-from-linux/archlinux.8c4c8b498e274b5bd74f6b5d3bef5219_huabecfadfdd744de844b8ea7b92f798ac_30720_250x150_fill_box_smart1_3.png" 
+                <img src="/p/2022/07/nginx-quic/internet.787f5c2eba360eb7a75fff0d3a7af5d7_hude5ec0799e6727eb2b0caf20abd48656_209693_250x150_fill_box_smart1_3.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
-                        alt="Featured image of post 利用Bootstrap从已有的Linux发行版上安装ArchLinux"
-                        data-key="install-arch-from-linux" 
-                        data-hash="md5-jEyLSY4nS1vXT2tdO&#43;9SGQ==">
+                        alt="Featured image of post nginx-quic部署笔记"
+                        data-key="nginx-quic" 
+                        data-hash="md5-eH9cLro2DrenX/8NOnr11w==">
                 
             </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">利用Bootstrap从已有的Linux发行版上安装ArchLinux</h2>
+            <h2 class="article-title">nginx-quic部署笔记</h2>
         </div>
     </a>
 </article>
@@ -788,24 +985,32 @@ if (!doNotTrack) {
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li>
-      <ol>
-        <li><a href="#1-防火墙未放行-443udp">1. 防火墙未放行 <code>443/udp</code></a></li>
-        <li><a href="#2-alt-svc标头和quic-status标头">2. Alt-Svc标头和QUIC-Status标头</a></li>
-        <li><a href="#3-ssl_stapling-ignored">3. <code>ssl_stapling ignored</code></a></li>
-      </ol>
-    </li>
+    <li><a href="#备份">备份</a></li>
+    <li><a href="#思考是否应该手动安装">思考是否应该手动安装</a></li>
   </ol>
 
   <ol>
-    <li>
+    <li><a href="#下载bootstrap">下载Bootstrap</a></li>
+    <li><a href="#校验">校验</a></li>
+    <li><a href="#释放bootstrap">释放bootstrap</a></li>
+    <li><a href="#准备resolvconf">准备<code>resolv.conf</code></a></li>
+    <li><a href="#进入chroot">进入<code>chroot</code></a></li>
+    <li><a href="#使用chroot环境">使用<code>chroot</code>环境</a>
       <ol>
-        <li>
-          <ol>
-            <li><a href="#检测http3支持">检测HTTP/3支持</a></li>
-            <li><a href="#nginx配置文件生成">nginx配置文件生成</a></li>
-          </ol>
-        </li>
+        <li><a href="#pacman-key-初始化">pacman-key 初始化</a></li>
+        <li><a href="#安装软件包">安装软件包</a></li>
+        <li><a href="#生成fstab">生成fstab</a></li>
+        <li><a href="#本地化">本地化</a></li>
+        <li><a href="#时区">时区</a></li>
+        <li><a href="#设置密码">设置密码</a></li>
+      </ol>
+    </li>
+    <li><a href="#important"><strong>IMPORTANT</strong></a></li>
+    <li><a href="#开启网络ssh">开启网络、ssh</a></li>
+    <li><a href="#准备引导">准备引导</a></li>
+    <li><a href="#done-">Done !</a>
+      <ol>
+        <li><a href="#怎么重启">怎么重启</a></li>
       </ol>
     </li>
   </ol>
