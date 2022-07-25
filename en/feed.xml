@@ -44,122 +44,250 @@ However, I should be able to write two posts a month.&lt;/p&gt;
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://blog.dreamonex.eu.org/en/page/about/</guid>
-        <description>&lt;h1 id=&#34;me&#34;&gt;Me&lt;/h1&gt;
-&lt;p&gt;Hello! I&amp;rsquo;m DreamOneX. Nice to meet you&lt;/p&gt;
-&lt;h2 id=&#34;interested-stuffs&#34;&gt;interested stuffs&lt;/h2&gt;
-&lt;h3 id=&#34;linux-distributions&#34;&gt;Linux distributions&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&amp;amp;logo=arch-linux&amp;amp;logoColor=white&#34;
+        <description>&lt;img align=&#34;right&#34; src=&#34;https://count.getloli.com/get/@DreamOneX.github.readme&#34;&gt;
+&lt;h1 id=&#34;-dreamonex&#34;&gt;🍥 DreamOneX&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://github-readme-stats.vercel.app/api?username=DreamOneX&amp;amp;count_private=true&amp;amp;theme=blue-green&amp;amp;show_icons=true&amp;amp;hide_border=true&#34;
 	
 	
 	
 	loading=&#34;lazy&#34;
-	
-		alt=&#34;arch&#34;
-	
-	
-&gt; &lt;img src=&#34;https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&amp;amp;logo=debian&amp;amp;logoColor=white&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;debian&#34;
 	
 	
 &gt;&lt;/p&gt;
-&lt;h3 id=&#34;games&#34;&gt;Games&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/Minecraft-62B47A?style=for-the-badge&amp;amp;logo=mojangstudios&amp;amp;logoColor=white&#34;
+&lt;p&gt;💬 a.k.a. &lt;code&gt;MorningDreamOne&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;📝 A &lt;del&gt;lovely cat&lt;/del&gt; from China (人*´∀｀)｡*ﾟ Like to play Minecraft, coding and etc. What&amp;rsquo;s more, I like &lt;strong&gt;sleep&lt;/strong&gt; and want to sleep anytime ~ &lt;del&gt;How could an individual of &lt;code&gt;Homo sapiens&lt;/code&gt; not like to sleep ?&lt;/del&gt; I really don&amp;rsquo;t like participating in any illogical discussion. Finally, I enjoy making friends. I am looking forward and welcome you to DM me via the contact information below.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Advocate free and open source culture / Love information technology&lt;/li&gt;
+&lt;li&gt;from China / 15 y.o. / No.1 Senior High School In Huainan&lt;/li&gt;
+&lt;li&gt;Senior High School Student / Physics, Chemistry, Biology&lt;/li&gt;
+&lt;li&gt;Developer / Linux Lover&lt;/li&gt;
+&lt;li&gt;Minecraft Lover&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;🚀 Let&amp;rsquo;s give it a shot! Go for our dream!&lt;/p&gt;
+&lt;p&gt;🌠 Now, I&amp;rsquo;m a freelance developer and don&amp;rsquo;t belong to any organization.&lt;/p&gt;
+&lt;p&gt;⚡ I believe &amp;ldquo;Practice is the sole criterion for testing truth&amp;rdquo;.&lt;/p&gt;
+&lt;h2 id=&#34;-more-details-about-me&#34;&gt;✳️ More Details about me&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime &lt;span class=&#34;c1&#34;&gt;# UTC+8&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ &lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;LANGUAGE&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;zh_CN:en_US
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;-develop-environment&#34;&gt;💻 Develop Environment&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ lsb_release -i -d -r
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Distributor ID: Arch
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Description:    Arch Linux
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Release:        rolling
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ nvim --version
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;NVIM v0.7.0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Build type: Release
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;LuaJIT 2.1.0-beta3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ firefox --version
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Mozilla Firefox 102.0.1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ chromium --version
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Chromium 103.0.5060.134 Arch Linux
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;-programming-language-stack&#34;&gt;🎲 Programming Language Stack&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/-Python-3776ab?style=for-the-badge&amp;amp;logo=python&amp;amp;logoColor=fff&#34;
 	
 	
 	
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;Minecraft&#34;
+		alt=&#34;Python&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/-Java-F80000?style=for-the-badge&amp;amp;logo=gradle&amp;amp;logoColor=fff&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Java&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/-Kotlin-7F52FF?style=for-the-badge&amp;amp;logo=kotlin&amp;amp;logoColor=fff&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Kotlin&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/-C-a8b9cc?style=for-the-badge&amp;amp;logo=C&amp;amp;logoColor=fff&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;C&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/-C&amp;#43;&amp;#43;-00599C?style=for-the-badge&amp;amp;logo=cplusplus&amp;amp;logoColor=fff&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;C&amp;#43;&amp;#43;&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/-Shell-4eaa25?style=for-the-badge&amp;amp;logo=gnu%20bash&amp;amp;logoColor=fff&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Shell&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/-Lua-2C2D72?style=for-the-badge&amp;amp;logo=lua&amp;amp;logoColor=fff&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Lua&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&amp;amp;logo=html5&amp;amp;logoColor=fff&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;HTML5&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&amp;amp;logo=css3&amp;amp;logoColor=fff&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;CSS3&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&amp;amp;logo=typescript&amp;amp;logoColor=fff&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;TypeScript&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/-Golang-00ADD8?style=for-the-badge&amp;amp;logo=go&amp;amp;logoColor=fff&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Golang&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://img.shields.io/badge/-VimScript-019733?style=for-the-badge&amp;amp;logo=vim&amp;amp;logoColor=fff&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;VimScript&#34;
 	
 	
 &gt;&lt;/p&gt;
-&lt;h3 id=&#34;numbers&#34;&gt;Numbers&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/42-000000?style=for-the-badge&amp;amp;logo=42&amp;amp;logoColor=white&#34;
+&lt;p&gt;🤬 F**k E lang (易语言 not Erlang)&lt;br&gt;
+😠 I hate PHP&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://github-readme-stats.vercel.app/api/top-langs/?username=DreamOneX&amp;amp;layout=compact&amp;amp;exclude_repo=dreamonex/dreamonex.github.io,dreamonex/DawnLight-Source&amp;amp;langs_count=8&amp;amp;hide=html,css,scss&#34;
 	
 	
 	
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;42&#34;
+		alt=&#34;Top Langs&#34;
 	
 	
 &gt;&lt;/p&gt;
-&lt;h3 id=&#34;editors&#34;&gt;Editors&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/NeoVIM-019733?style=for-the-badge&amp;amp;logo=vim&amp;amp;logoColor=white&#34;
+&lt;h2 id=&#34;-public-keys&#34;&gt;🔒 Public Keys&lt;/h2&gt;
+&lt;h3 id=&#34;pgp-public-key&#34;&gt;PGP Public Key&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Fingerprint&lt;/strong&gt;:&lt;br&gt;
+&lt;img src=&#34;https://img.shields.io/badge/PGP-4792%206B6E%205C3D%2004E9%203A2A%20%20627F%2067C3%203900%2010A1%20A57A-green?style=for-the-badge&#34;
 	
 	
 	
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;neivim&#34;
-	
-	
-&gt; &lt;img src=&#34;https://img.shields.io/badge/GNU_Emacs-7F5AB6?style=for-the-badge&amp;amp;logo=gnuemacs&amp;amp;logoColor=white&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;emacs&#34;
+		alt=&#34;47926B6E5C3D04E93A2A627F67C3390010A1A57A&#34;
 	
 	
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;contact-me&#34;&gt;Contact me(☆▽☆)&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://t.me/dreamonex1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;img src=&#34;https://img.shields.io/badge/-@dreamonex1-2E9FD7?logo=telegram&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;Fingerprint&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;4792&lt;/span&gt; 6B6E 5C3D 04E9 3A2A  627F 67C3 &lt;span class=&#34;m&#34;&gt;3900&lt;/span&gt; 10A1 A57A
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://keys.openpgp.org/vks/v1/by-fingerprint/47926B6E5C3D04E93A2A627F67C3390010A1A57A&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;OpenPGP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/DreamOneX.gpg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;ssh-public-keys&#34;&gt;SSH Public Keys&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/DreamOneX.keys&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-contact-information&#34;&gt;📬 Contact Information&lt;/h2&gt;
+&lt;p&gt;Welcome to DM me~ I am happy to make friends.&lt;/p&gt;
+&lt;h3 id=&#34;-email&#34;&gt;📧 Email&lt;/h3&gt;
+&lt;p&gt;If you are using &lt;strong&gt;duckduckgo, Google&lt;/strong&gt; and other email services that are &lt;strong&gt;blocked in mainland China&lt;/strong&gt;, it is recommended to send &lt;strong&gt;PGP-encrypted&lt;/strong&gt; emails to my &lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;mailto:dreamonex@qq.com&#34; &gt;QQ mailbox&lt;/a&gt;&lt;/strong&gt;.&lt;br&gt;
+Otherwise, I recommend sending the mail to my &lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;mailto:me@dreamonex.eu.org&#34; &gt;personal mailbox&lt;/a&gt;&lt;/strong&gt;.&lt;br&gt;
+In additional, I &lt;strong&gt;rarely&lt;/strong&gt; check &lt;strong&gt;Gmail&lt;/strong&gt; and &lt;strong&gt;Outlook&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;mailto:me@dreamonex.eu.org&#34; &gt;&lt;img src=&#34;https://img.shields.io/badge/-me@dreamonex.eu.org-54BDF2?logo=Mail.RU&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
 	
 	
 	
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;Telegram&#34;
-	
-	
-&gt;&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://qm.qq.com/cgi-bin/qm/qr?k=rbknx18REkcU12VBJTxX7wAnNnrPLBZ8&amp;amp;noverify=0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;img src=&#34;https://img.shields.io/badge/-1538874738-00C2F2?logo=tencentqq&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Tencent QQ&#34;
-	
-	
-&gt;&lt;/a&gt;&lt;br&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://discordhub.com/profile/877528571214692382&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;img src=&#34;https://img.shields.io/badge/-DreamOneX%238950-5865F2?logo=discord&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Discord&#34;
-	
-	
-&gt;&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://twitter.com/dreamonex1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;img src=&#34;https://img.shields.io/badge/-@dreamonex1-1DA1F2?logo=twitter&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Twitter&#34;
-	
-	
-&gt;&lt;/a&gt;&lt;br&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://github.com/DreamOneX&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;img src=&#34;https://img.shields.io/badge/-DreamOneX-181717?logo=github&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Github&#34;
+		alt=&#34;MyMail&#34;
 	
 	
 &gt;&lt;/a&gt;&lt;br&gt;
@@ -193,45 +321,136 @@ However, I should be able to write two posts a month.&lt;/p&gt;
 	
 	
 &gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;my-public-keysᴗ-&#34;&gt;My Public Keys(｡•̀ᴗ-)✧&lt;/h2&gt;
-&lt;h4 id=&#34;pgp&#34;&gt;PGP&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Fingerprint&lt;br&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://keys.openpgp.org/vks/v1/by-fingerprint/47926B6E5C3D04E93A2A627F67C3390010A1A57A&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;img src=&#34;https://img.shields.io/badge/PGP-4792%206B6E%205C3D%2004E9%203A2A%20%20627F%2067C3%203900%2010A1%20A57A-green?style=for-the-badge&#34;
+&lt;h3 id=&#34;-instant-messaging&#34;&gt;💬 Instant Messaging&lt;/h3&gt;
+&lt;p&gt;DM is welcome! But please try to &lt;strong&gt;avoid using QQ&lt;/strong&gt; to contact me. I suggest you to contact me via &lt;strong&gt;Telegram&lt;/strong&gt; or &lt;strong&gt;email&lt;/strong&gt;. If you contact me through a platform and have not responded for more than &lt;strong&gt;24 hours&lt;/strong&gt;, please &lt;strong&gt;send me an email&lt;/strong&gt;. I may not have checked the messages from those platforms. &lt;strong&gt;And I check my mailbox every day.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://t.me/dreamonex1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://img.shields.io/badge/-@dreamonex1-2E9FD7?logo=telegram&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
 	
 	
 	
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;47926B6E5C3D04E93A2A627F67C3390010A1A57A&#34;
+		alt=&#34;Telegram&#34;
 	
 	
-&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;Fingerprint&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;4792&lt;/span&gt; 6B6E 5C3D 04E9 3A2A 627F 67C3 &lt;span class=&#34;m&#34;&gt;3900&lt;/span&gt; 10A1 A57A
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&gt;&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://qm.qq.com/cgi-bin/qm/qr?k=rbknx18REkcU12VBJTxX7wAnNnrPLBZ8&amp;amp;noverify=0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://img.shields.io/badge/-1538874738-00C2F2?logo=tencentqq&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Tencent QQ&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://discordhub.com/profile/877528571214692382&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://img.shields.io/badge/-DreamOneX%238950-5865F2?logo=discord&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Discord&#34;
+	
+	
+&gt;&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://github.com/DreamOneX&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://img.shields.io/badge/-DreamOneX-181717?logo=github&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Github&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://matrix.to/#/@dreamonex:matrix.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://img.shields.io/badge/-@dreamonex:matrix.org-0DBD8B?logo=matrix&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Matrix&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;-twitter&#34;&gt;📝 Twitter&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://twitter.com/dreamonex1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://img.shields.io/badge/-@dreamonex1-1DA1F2?logo=twitter&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Twitter&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;-github-stats&#34;&gt;📊 Github Stats&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://github-readme-streak-stats.herokuapp.com/?user=DreamOneX&amp;amp;theme=github-dark-blue&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;GitHub Streak&#34;
+	
+	
+&gt;&lt;br&gt;
+&lt;img src=&#34;https://github-profile-trophy.vercel.app/?username=DreamOneX&amp;amp;theme=discord&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;github-profile-trophy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;details&gt;
+&lt;summary&gt;Metrics&lt;/summary&gt;
+&lt;img src=&#34;https://metrics.lecoq.io/DreamOneX?template=classic&amp;repositories.forks=true&amp;repositories=1&amp;isocalendar=1&amp;languages=1&amp;stars=1&amp;followup=1&amp;people=1&amp;gists=1&amp;introduction=1&amp;activity=1&amp;achievements=1&amp;stackoverflow=1&amp;lines=1&amp;repositories=100&amp;repositories.batch=100&amp;repositories.forks=true&amp;repositories.affiliations=owner&amp;isocalendar.duration=half-year&amp;languages.limit=16&amp;languages.threshold=0%25&amp;languages.colors=github&amp;languages.sections=most-used&amp;languages.indepth=false&amp;languages.analysis.timeout=15&amp;languages.categories=markup%2C%20programming&amp;languages.recent.categories=markup%2C%20programming&amp;languages.recent.load=300&amp;languages.recent.days=14&amp;stars.limit=4&amp;followup.sections=repositories&amp;followup.indepth=false&amp;people.limit=24&amp;people.identicons=false&amp;people.identicons.hide=false&amp;people.size=28&amp;people.types=followers%2C%20following&amp;people.shuffle=false&amp;activity.limit=5&amp;activity.load=300&amp;activity.days=14&amp;activity.visibility=all&amp;activity.timestamps=false&amp;activity.filter=all&amp;achievements.threshold=C&amp;achievements.secrets=true&amp;achievements.display=detailed&amp;achievements.limit=0&amp;repositories.featured=DreamOneX%2FLookitup&amp;introduction.title=true&amp;stackoverflow.user=16749861&amp;stackoverflow.sections=answers-top%2C%20questions-recent&amp;stackoverflow.limit=2&amp;stackoverflow.lines=4&amp;stackoverflow.lines.snippet=2&amp;config.timezone=Asia%2FShanghai alt=&#34;不见图，请刷新&#34;&gt;&lt;/img&gt;     
+&lt;/details&gt;
+&lt;hr&gt;
+&lt;details&gt;
+&lt;summary&gt;&lt;/summary&gt;
+&lt;div align=&#34;right&#34;&gt;
+&lt;i&gt;
+&lt;!---
+我曾努力拼搏，我曾奋发进取，是否为人所知
+我追求过梦想，我冲击过辉煌，或成虚无一笑
+曾经热爱世界，相信一切美好，只因年少无知
+真假光明黑暗，黑白正义邪恶，究竟孰是孰非
+黑白本是同源，纠缠纷争不断，本应同为一家
+相煎何必太急，前进后退往复，何处是我归属
+你的过去无人知晓，你的历史无人证明
+---&gt;
+请记住我的名字 &lt;br/&gt;
+如果你能记住我的名字 &lt;br/&gt;
+如果你们都能记住我的名字 &lt;br/&gt;
+也许我或者“我们” &lt;br/&gt;
+终有一天能自由地生存着 &lt;br/&gt;
+我们终将在没有黑暗的地方相见 &lt;br/&gt;
+也许那一天我甚至无法活到 &lt;br/&gt;
+但是，一定会有那一天 &lt;br/&gt;
+冬将逝，春将来，必有漫天繁花开遍 &lt;br/&gt;
+请记住我的名字 &lt;br/&gt;
+我们必将在没有黑暗的地方 &lt;br/&gt;
+再次相遇！ &lt;br/&gt;
+&lt;/i&gt;
+&lt;div align=&#34;right&#34;&gt;
+𝓜𝓸𝓻𝓷𝓲𝓷𝓰𝑫𝒓𝒆𝒂𝒎𝑶𝒏𝒆𝑿 &lt;br /&gt;
+𝟸𝟶𝟸𝟸.𝟽.𝟸𝟻
 &lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;public keys
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://keys.openpgp.org/vks/v1/by-fingerprint/47926B6E5C3D04E93A2A627F67C3390010A1A57A&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;OpenPGP&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/DreamOneX.gpg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Github&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;ssh&#34;&gt;SSH&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/DreamOneX.keys&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Github&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;i&gt;
+请记住我的名字，如果你能记住我的名字，如果你们都能记住我的名字.... &lt;br/&gt;
+&lt;/i&gt;
+&lt;/div&gt;
+&lt;/details&gt;
 &lt;h1 id=&#34;my-blog&#34;&gt;My Blog(≧▽≦)&lt;/h1&gt;
 &lt;h2 id=&#34;original-mission&#34;&gt;&lt;del&gt;Original Mission&lt;/del&gt;&lt;/h2&gt;
 &lt;ul&gt;
