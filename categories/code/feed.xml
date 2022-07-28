@@ -28,7 +28,8 @@
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gitlab.com/drizzt/vps2arch&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;vps2arch&lt;/a&gt; 可以全程自动化操作，&lt;del&gt;虽然年久失修&lt;/del&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;另外，如需&lt;code&gt;lvm&lt;/code&gt;你可以直接按上面的脚本或者找别的教程了，&lt;del&gt;原因竟是我没弄过&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;~~另外，如需&lt;code&gt;lvm&lt;/code&gt;你可以直接按上面的脚本或者找别的教程了，原因竟是我没弄过 ~~
+统统划掉，因为我现在在搞，搞好了会更新这篇post&lt;/p&gt;
 &lt;h1 id=&#34;正式开始&#34;&gt;正式开始&lt;/h1&gt;
 &lt;h2 id=&#34;下载bootstrap&#34;&gt;下载Bootstrap&lt;/h2&gt;
 &lt;p&gt;（按实际情况修改时间及镜像，可参考&lt;a class=&#34;link&#34; href=&#34;https://archlinux.org/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -117,7 +118,7 @@
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pacman -Syu
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pacstrap /mnt base linux linux-firmware
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pacman -S nano vim man-pages mandb texinfo grub openssh
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pacman -S vim man-pages mandb texinfo grub openssh lvm2
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;生成fstab&#34;&gt;生成fstab&lt;/h3&gt;
@@ -222,7 +223,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;rm -r ...
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;important&#34;&gt;&lt;strong&gt;IMPORTANT&lt;/strong&gt;&lt;/h2&gt;
+&lt;/div&gt;&lt;p&gt;若使用&lt;code&gt;LVM&lt;/code&gt;，则将对应的逻辑卷挂载到对应的目录&lt;br&gt;
+举个例子&lt;code&gt;mount /dev/lv/root /mnt&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;important&#34;&gt;&lt;strong&gt;IMPORTANT&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;/dev&lt;/strong&gt;, &lt;strong&gt;/sys&lt;/strong&gt;, &lt;strong&gt;/run&lt;/strong&gt;, &lt;strong&gt;/tmp&lt;/strong&gt;, &lt;strong&gt;/proc&lt;/strong&gt; &lt;strong&gt;不应删除&lt;/strong&gt;&lt;br&gt;
 &lt;del&gt;&lt;code&gt;rm -rf /*&lt;/code&gt;&lt;/del&gt;&lt;/p&gt;
 &lt;h2 id=&#34;开启网络ssh&#34;&gt;开启网络、ssh&lt;/h2&gt;
