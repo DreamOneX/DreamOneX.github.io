@@ -212,24 +212,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;passwd
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;hr&gt;
-&lt;p&gt;在执行&lt;code&gt;lsblk&lt;/code&gt;确认无误后，挂载磁盘&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mount /dev/sda /mnt
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;rm -r ...
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;若使用&lt;code&gt;LVM&lt;/code&gt;，则将对应的逻辑卷挂载到对应的目录&lt;br&gt;
-举个例子&lt;code&gt;mount /dev/lv/root /mnt&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;important&#34;&gt;&lt;strong&gt;IMPORTANT&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;/dev&lt;/strong&gt;, &lt;strong&gt;/sys&lt;/strong&gt;, &lt;strong&gt;/run&lt;/strong&gt;, &lt;strong&gt;/tmp&lt;/strong&gt;, &lt;strong&gt;/proc&lt;/strong&gt; &lt;strong&gt;不应删除&lt;/strong&gt;&lt;br&gt;
-&lt;del&gt;&lt;code&gt;rm -rf /*&lt;/code&gt;&lt;/del&gt;&lt;/p&gt;
-&lt;h2 id=&#34;开启网络ssh&#34;&gt;开启网络、ssh&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;开启网络ssh&#34;&gt;开启网络、ssh&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;编辑&lt;code&gt;/etc/systemd/network/default.network&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -269,9 +252,11 @@
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;grub-install --target&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;x86_64-efi --efi-directory&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/boot/efi
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mount /dev/sda1 /boot/efi
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;grub-install --target&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;x86_64-efi --efi-directory&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;/boot/efi
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;grub-mkconfig -o /boot/grub/grub.cfg
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
@@ -284,7 +269,24 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;grub-install --target&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;i386-pc --recheck --force /dev/sda
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;done-&#34;&gt;Done !&lt;/h2&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;在执行&lt;code&gt;lsblk&lt;/code&gt;确认无误后，挂载磁盘&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mount /dev/sda /mnt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;rm -r ...
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;若使用&lt;code&gt;LVM&lt;/code&gt;，则将对应的逻辑卷挂载到对应的目录&lt;br&gt;
+举个例子&lt;code&gt;mount /dev/lv/root /mnt&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;important&#34;&gt;&lt;strong&gt;IMPORTANT&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;/dev&lt;/strong&gt;, &lt;strong&gt;/sys&lt;/strong&gt;, &lt;strong&gt;/run&lt;/strong&gt;, &lt;strong&gt;/tmp&lt;/strong&gt;, &lt;strong&gt;/proc&lt;/strong&gt; &lt;strong&gt;不应删除&lt;/strong&gt;&lt;br&gt;
+&lt;del&gt;&lt;code&gt;rm -rf /*&lt;/code&gt;&lt;/del&gt;&lt;/p&gt;
+&lt;h2 id=&#34;done-&#34;&gt;Done !&lt;/h2&gt;
 &lt;p&gt;现在，重启系统，就能看到&lt;code&gt;Arch Linux&lt;/code&gt;的字样了&lt;br&gt;
 &lt;del&gt;啥？咋重启，好问题&lt;/del&gt;&lt;/p&gt;
 &lt;h3 id=&#34;怎么重启&#34;&gt;怎么重启&lt;/h3&gt;
