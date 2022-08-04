@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>白嫖 on 点点晨曦 | DreamOneX&#39;s Blog</title>
+        <link>https://blog.dreamonex.eu.org/tags/%E7%99%BD%E5%AB%96/</link>
+        <description>Recent content in 白嫖 on 点点晨曦 | DreamOneX&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Thu, 04 Aug 2022 21:17:08 +0800</lastBuildDate><atom:link href="https://blog.dreamonex.eu.org/tags/%E7%99%BD%E5%AB%96/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <title>白嫖Github学生开发包</title>
+        <link>https://blog.dreamonex.eu.org/p/2022/08/apply-github-student-development-pack/</link>
+        <pubDate>Thu, 04 Aug 2022 21:17:08 +0800</pubDate>
+        
+        <guid>https://blog.dreamonex.eu.org/p/2022/08/apply-github-student-development-pack/</guid>
+        <description>&lt;p&gt;7.23，&lt;strong&gt;到学校报道&lt;/strong&gt;，才拿到录取通知书（小城市的录取通知书都是高中发吗&amp;hellip;），拿到录取通知书，第一件事当然是&lt;del&gt;整活&lt;/del&gt;。整什么活呢，第一个想法当然是Github的学生开发包。说干就干！&lt;/p&gt;
+&lt;h1 id=&#34;选择设备&#34;&gt;选择设备&lt;/h1&gt;
+&lt;p&gt;嗯，这也是个问题，如果使用不支持&lt;code&gt;GPS&lt;/code&gt;的设备貌似要在卫星地图上选择学校位置，听说有不少人是&lt;strong&gt;在这&lt;/strong&gt;被坑了~~（感谢前人避坑）~~，所以建议使用手机，另外，建议使用一个正常点的浏览器（比如Kiwi，Firefox，Chrome）&lt;/p&gt;
+&lt;h1 id=&#34;准备证明资料&#34;&gt;准备证明资料&lt;/h1&gt;
+&lt;p&gt;如果你的学校提供了edu邮箱，请掠过&lt;br&gt;
+如准考证，学生证，甚至课程表，成绩单。网上教程很多，GitHub给的文档也很&lt;del&gt;详细&lt;/del&gt;（可以看&lt;a class=&#34;link&#34; href=&#34;https://docs.github.com/cn/education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-for-your-schoolwork/apply-for-a-student-developer-pack#requirements&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;这里&lt;/a&gt;），此处不再赘述&lt;/p&gt;
+&lt;h1 id=&#34;主要过程&#34;&gt;主要过程&lt;/h1&gt;
+&lt;p&gt;如果你打算申请学生开发包，我相信你已经看过Github的文档了，如果你没看过，就在我上面提到过的文档下面（甚至是同一个页面）（好吧，&lt;a class=&#34;link&#34; href=&#34;https://docs.github.com/cn/education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-for-your-schoolwork/apply-for-a-student-developer-pack#%E7%94%B3%E8%AF%B7-github-student-developer-pack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;戳这&lt;/a&gt;）&lt;/p&gt;
+&lt;h2 id=&#34;如果你不知道你想干嘛这个问题怎么回答&#34;&gt;如果你不知道~~&lt;code&gt;你想干嘛&lt;/code&gt;~~这个问题怎么回答&lt;/h2&gt;
+&lt;p&gt;这里是一些参考&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Participate in open source projects&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Publish open source projects&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Participate in the open source community&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;一般不会太难为你的，如果这里真卡住了，再提交一次&lt;/p&gt;
+&lt;h1 id=&#34;避坑&#34;&gt;&lt;strong&gt;避坑&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;重点啊，重点来了！！&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;证明需要翻译&#34;&gt;证明需要翻译&lt;/h2&gt;
+&lt;p&gt;我就是栽在这里，连栽两次，Github的邮件写的是&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;System could not translate proof.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;第一次我以为是照片不够清楚，我问了我的某位朋友，证明（对我来说是录取通知书）是否要翻译之后，她说&lt;strong&gt;她申请的时候不用&lt;/strong&gt;，然后我拍的清清楚楚又提交了一次&amp;hellip;结果当然还是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;System could not translate proof.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;del&gt;人是懵逼的（投诉！投诉！！不公平待遇啊喂）&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;两封邮件：&lt;br&gt;
+&lt;img src=&#34;https://blog.dreamonex.eu.org/p/2022/08/apply-github-student-development-pack/first-fail.jpg&#34;
+	width=&#34;1080&#34;
+	height=&#34;1841&#34;
+	srcset=&#34;https://blog.dreamonex.eu.org/p/2022/08/apply-github-student-development-pack/first-fail_huffd573c4381be6830eae9ec8145881d4_390008_480x0_resize_q75_box.jpg 480w, https://blog.dreamonex.eu.org/p/2022/08/apply-github-student-development-pack/first-fail_huffd573c4381be6830eae9ec8145881d4_390008_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;第一封&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;58&#34;
+		data-flex-basis=&#34;140px&#34;
+	
+&gt;&lt;br&gt;
+&lt;img src=&#34;https://blog.dreamonex.eu.org/p/2022/08/apply-github-student-development-pack/second-fail.jpg&#34;
+	width=&#34;1080&#34;
+	height=&#34;1638&#34;
+	srcset=&#34;https://blog.dreamonex.eu.org/p/2022/08/apply-github-student-development-pack/second-fail_hu3d379456cc1353808697b1f838dafe5e_453911_480x0_resize_q75_box.jpg 480w, https://blog.dreamonex.eu.org/p/2022/08/apply-github-student-development-pack/second-fail_hu3d379456cc1353808697b1f838dafe5e_453911_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;第二封&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;65&#34;
+		data-flex-basis=&#34;158px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;不要挂梯子&#34;&gt;不要挂梯子&lt;/h2&gt;
+&lt;p&gt;老生常谈了&amp;hellip;，Github会用IP确定你的位置&lt;/p&gt;
+&lt;h3 id=&#34;上不去&#34;&gt;上不去？&lt;/h3&gt;
+&lt;p&gt;上不去怎么办？上不去，上不去，就是上不去，诶嘿就是玩。&lt;br&gt;
+说正经的：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;改host&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;多逝世&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;填form要用英语&#34;&gt;填Form要用英语&lt;/h2&gt;
+&lt;p&gt;&lt;del&gt;老生常谈&lt;/del&gt; 这种国际平台肯定是要英语的（人家甚至还是&lt;del&gt;带美利坚&lt;/del&gt;的）&lt;/p&gt;
+&lt;h1 id=&#34;等待通过或失败&#34;&gt;等待通过或失败&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;成功&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;?&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;开始白嫖&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;吹逼&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;回环往复&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;details&gt;
+&lt;summary&gt;&lt;/summary&gt;
+Github的动作还是蛮快的（第一次申请是真的压线），第二次两天不到就收到了邮件（当然是失败的），收到邮件的时候是29号的1:01（凌晨），2:23提交了第三次申请，4:17就通过了（&lt;s&gt;哦，好巧，是我生日的日期&lt;/s&gt;）   
+&lt;img alt=&#34;成功的邮件&#34; src=&#34;./success.jpg&#34; /&gt;
+&lt;p&gt;&lt;del&gt;第一件事当然是发个动态吹个逼（&lt;/del&gt;&lt;/p&gt;
+&lt;/details&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
