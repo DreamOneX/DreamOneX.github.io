@@ -70,7 +70,7 @@ However, I should be able to write two posts a month.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;Advocate free and open source culture / Love information technology&lt;/li&gt;
-&lt;li&gt;from China / 15 y.o. / No.1 Senior High School In Huainan&lt;/li&gt;
+&lt;li&gt;from China / 15 y.o.&lt;/li&gt;
 &lt;li&gt;Senior High School Student / Physics, Chemistry, Biology&lt;/li&gt;
 &lt;li&gt;Developer / Linux Lover&lt;/li&gt;
 &lt;li&gt;Minecraft Lover&lt;/li&gt;
@@ -102,22 +102,18 @@ However, I should be able to write two posts a month.&lt;/p&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ lsb_release -i -d -r
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Distributor ID: Arch
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Description:    Arch Linux
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Release:        rolling
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ zsh --version
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;zsh 5.9
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ nvim --version
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;NVIM v0.7.0
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Build type: Release
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;LuaJIT 2.1.0-beta3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;NVIM v0.8.1
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ firefox --version
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Mozilla Firefox 102.0.1
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ chromium --version
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Chromium 103.0.5060.134 Arch Linux
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Mozilla Firefox 108.0.1
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;-programming-language-stack&#34;&gt;🎲 Programming Language Stack&lt;/h2&gt;
@@ -221,7 +217,7 @@ However, I should be able to write two posts a month.&lt;/p&gt;
 	
 	
 &gt;
-&lt;img src=&#34;https://img.shields.io/badge/-Golang-00ADD8?style=for-the-badge&amp;amp;logo=go&amp;amp;logoColor=fff&#34;
+&lt;img src=&#34;https://img.shields.io/badge/-Golang-00ADD8?style=for-the-badge&amp;amp;logoo&amp;amp;logoColor=fff&#34;
 	
 	
 	
@@ -288,8 +284,7 @@ However, I should be able to write two posts a month.&lt;/p&gt;
 &lt;h2 id=&#34;-contact-information&#34;&gt;📬 Contact Information&lt;/h2&gt;
 &lt;p&gt;Welcome to DM me~ I am happy to make friends.&lt;/p&gt;
 &lt;h3 id=&#34;-email&#34;&gt;📧 Email&lt;/h3&gt;
-&lt;p&gt;If you are using &lt;strong&gt;duckduckgo, Google&lt;/strong&gt; and other email services that are &lt;strong&gt;blocked in mainland China&lt;/strong&gt;, it is recommended to send &lt;strong&gt;PGP-encrypted&lt;/strong&gt; emails to my &lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;mailto:dreamonex@qq.com&#34; &gt;QQ mailbox&lt;/a&gt;&lt;/strong&gt;.&lt;br&gt;
-Otherwise, I recommend sending the mail to my &lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;mailto:me@dreamonex.eu.org&#34; &gt;personal mailbox&lt;/a&gt;&lt;/strong&gt;.&lt;br&gt;
+&lt;p&gt;I recommend sending the mail to my &lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;mailto:me@dreamonex.eu.org&#34; &gt;personal mailbox&lt;/a&gt;&lt;/strong&gt;.&lt;br&gt;
 In additional, I &lt;strong&gt;rarely&lt;/strong&gt; check &lt;strong&gt;Gmail&lt;/strong&gt; and &lt;strong&gt;Outlook&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;mailto:me@dreamonex.eu.org&#34; &gt;&lt;img src=&#34;https://img.shields.io/badge/-me@dreamonex.eu.org-54BDF2?logo=Mail.RU&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
 	
@@ -298,16 +293,6 @@ In additional, I &lt;strong&gt;rarely&lt;/strong&gt; check &lt;strong&gt;Gmail&l
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;MyMail&#34;
-	
-	
-&gt;&lt;/a&gt;&lt;br&gt;
-&lt;a class=&#34;link&#34; href=&#34;mailto:dreamonex@qq.com&#34; &gt;&lt;img src=&#34;https://img.shields.io/badge/-dreamonex@qq.com-00C2F2?logo=Mail.RU&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;QQMail&#34;
 	
 	
 &gt;&lt;/a&gt;&lt;br&gt;
@@ -332,7 +317,7 @@ In additional, I &lt;strong&gt;rarely&lt;/strong&gt; check &lt;strong&gt;Gmail&l
 	
 &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;-instant-messaging&#34;&gt;💬 Instant Messaging&lt;/h3&gt;
-&lt;p&gt;DM is welcome! But please try to &lt;strong&gt;avoid using QQ&lt;/strong&gt; to contact me. I suggest you to contact me via &lt;strong&gt;Telegram&lt;/strong&gt; or &lt;strong&gt;email&lt;/strong&gt;. If you contact me through a platform and have not responded for more than &lt;strong&gt;24 hours&lt;/strong&gt;, please &lt;strong&gt;send me an email&lt;/strong&gt;. I may not have checked the messages from those platforms. &lt;strong&gt;And I check my mailbox every day.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;DM is welcome! I suggest you to contact me via &lt;strong&gt;Telegram&lt;/strong&gt; or &lt;strong&gt;email&lt;/strong&gt;. If you contact me through a platform and have not responded for more than &lt;strong&gt;24 hours&lt;/strong&gt;, please &lt;strong&gt;send me an email&lt;/strong&gt;. I may not have checked the messages from those platforms. &lt;strong&gt;And I check my mailbox every day.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://t.me/dreamonex&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;img src=&#34;https://img.shields.io/badge/-@dreamonex-2E9FD7?logo=telegram&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
 	
@@ -343,17 +328,7 @@ In additional, I &lt;strong&gt;rarely&lt;/strong&gt; check &lt;strong&gt;Gmail&l
 		alt=&#34;Telegram&#34;
 	
 	
-&gt;&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://qm.qq.com/cgi-bin/qm/qr?k=rbknx18REkcU12VBJTxX7wAnNnrPLBZ8&amp;amp;noverify=0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;img src=&#34;https://img.shields.io/badge/-1538874738-00C2F2?logo=tencentqq&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Tencent QQ&#34;
-	
-	
-&gt;&lt;/a&gt;&lt;br&gt;
+&gt;&lt;/a&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://discordhub.com/profile/877528571214692382&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;img src=&#34;https://img.shields.io/badge/-DreamOneX%238950-5865F2?logo=discord&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
 	
@@ -474,7 +449,8 @@ In additional, I &lt;strong&gt;rarely&lt;/strong&gt; check &lt;strong&gt;Gmail&l
 &lt;li&gt;&lt;del&gt;play&lt;/del&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;update-frequency&#34;&gt;Update Frequency&lt;/h2&gt;
-&lt;p&gt;Twice a month (?)&lt;/p&gt;
+&lt;p&gt;Twice a month (?)
+&lt;del&gt;Impossible !&lt;/del&gt;&lt;/p&gt;
 &lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.creativecommons.org/l/by-sa/4.0/88x31.png&#34;
 	

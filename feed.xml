@@ -726,7 +726,7 @@ Github的动作还是蛮快的（第一次申请是真的压线），第二次�
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;倡导自由开源文化/热爱信息技术&lt;/li&gt;
-&lt;li&gt;来自中国 / 15 y.o. / 淮南一中&lt;/li&gt;
+&lt;li&gt;来自中国 / 15 y.o.&lt;/li&gt;
 &lt;li&gt;高中学生 / 选修理化生&lt;/li&gt;
 &lt;li&gt;开发者 / Linux爱好者&lt;/li&gt;
 &lt;li&gt;Minecraft 玩家&lt;/li&gt;
@@ -758,22 +758,18 @@ Github的动作还是蛮快的（第一次申请是真的压线），第二次�
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ lsb_release -i -d -r
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Distributor ID: Arch
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Description:    Arch Linux
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Release:        rolling
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ zsh --version
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;zsh 5.9
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ nvim --version
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;NVIM v0.7.0
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Build type: Release
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;LuaJIT 2.1.0-beta3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;NVIM v0.8.1
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ firefox --version
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Mozilla Firefox 102.0.1
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ chromium --version
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Chromium 103.0.5060.134 Arch Linux
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Mozilla Firefox 108.0.1
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;-编程语言栈&#34;&gt;🎲 编程语言栈&lt;/h2&gt;
@@ -944,8 +940,7 @@ Github的动作还是蛮快的（第一次申请是真的压线），第二次�
 &lt;h2 id=&#34;-联系信息&#34;&gt;📬 联系信息&lt;/h2&gt;
 &lt;p&gt;欢迎DM我~ 我乐于交新朋友。&lt;/p&gt;
 &lt;h3 id=&#34;-email&#34;&gt;📧 Email&lt;/h3&gt;
-&lt;p&gt;如果你正在使用&lt;strong&gt;duckduckgo, Google&lt;/strong&gt;或其他&lt;strong&gt;被中国大陆屏蔽的邮件服务&lt;/strong&gt;, 我建议你向我的 &lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;mailto:dreamonex@qq.com&#34; &gt;QQ邮箱&lt;/a&gt;&lt;/strong&gt; 发送经过&lt;strong&gt;PGP加密&lt;/strong&gt;的邮件。&lt;br&gt;
-否则, 我建议你把邮件发到 &lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;mailto:me@dreamonex.eu.org&#34; &gt;我自建的邮箱&lt;/a&gt;&lt;/strong&gt; 。 &lt;br&gt;
+&lt;p&gt;我建议你把邮件发到 &lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;mailto:me@dreamonex.eu.org&#34; &gt;我自建的邮箱&lt;/a&gt;&lt;/strong&gt; 。 &lt;br&gt;
 另外, 我 &lt;strong&gt;很少&lt;/strong&gt; 查看我的 &lt;strong&gt;Gmail&lt;/strong&gt; 和 &lt;strong&gt;Outlook&lt;/strong&gt; 。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;mailto:me@dreamonex.eu.org&#34; &gt;&lt;img src=&#34;https://img.shields.io/badge/-me@dreamonex.eu.org-54BDF2?logo=Mail.RU&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
 	
@@ -954,16 +949,6 @@ Github的动作还是蛮快的（第一次申请是真的压线），第二次�
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;MyMail&#34;
-	
-	
-&gt;&lt;/a&gt;&lt;br&gt;
-&lt;a class=&#34;link&#34; href=&#34;mailto:dreamonex@qq.com&#34; &gt;&lt;img src=&#34;https://img.shields.io/badge/-dreamonex@qq.com-00C2F2?logo=Mail.RU&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;QQMail&#34;
 	
 	
 &gt;&lt;/a&gt;&lt;br&gt;
@@ -988,7 +973,7 @@ Github的动作还是蛮快的（第一次申请是真的压线），第二次�
 	
 &gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;-即时通讯&#34;&gt;💬 即时通讯&lt;/h3&gt;
-&lt;p&gt;欢迎DM！但请尽量&lt;strong&gt;避免使用QQ&lt;/strong&gt;联系我。 我建议你通过 &lt;strong&gt;Telegram&lt;/strong&gt; 或 &lt;strong&gt;email&lt;/strong&gt;联系我。如果你连续我通过某个平台，且我超过&lt;strong&gt;24h&lt;/strong&gt;没有任何回复，请给我&lt;strong&gt;发送一封电子邮件&lt;/strong&gt;提醒我。我也许没有检查那些平台的消息。另外，我每天&lt;strong&gt;查看我的邮箱&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;欢迎DM！我建议你通过 &lt;strong&gt;Telegram&lt;/strong&gt; 或 &lt;strong&gt;email&lt;/strong&gt; 联系我。如果你连续我通过某个平台，且我超过&lt;strong&gt;24h&lt;/strong&gt;没有任何回复，请给我&lt;strong&gt;发送一封电子邮件&lt;/strong&gt;提醒我。我也许没有检查那些平台的消息。另外，我每天&lt;strong&gt;查看我的邮箱&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://t.me/dreamonex&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;img src=&#34;https://img.shields.io/badge/-@dreamonex-2E9FD7?logo=telegram&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
 	
@@ -999,17 +984,7 @@ Github的动作还是蛮快的（第一次申请是真的压线），第二次�
 		alt=&#34;Telegram&#34;
 	
 	
-&gt;&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://qm.qq.com/cgi-bin/qm/qr?k=rbknx18REkcU12VBJTxX7wAnNnrPLBZ8&amp;amp;noverify=0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;img src=&#34;https://img.shields.io/badge/-1538874738-00C2F2?logo=tencentqq&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Tencent QQ&#34;
-	
-	
-&gt;&lt;/a&gt;&lt;br&gt;
+&gt;&lt;/a&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://discordhub.com/profile/877528571214692382&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;img src=&#34;https://img.shields.io/badge/-DreamOneX%238950-5865F2?logo=discord&amp;amp;logoColor=white&amp;amp;style=for-the-badge&#34;
 	
@@ -1130,7 +1105,8 @@ Github的动作还是蛮快的（第一次申请是真的压线），第二次�
 &lt;li&gt;&lt;del&gt;折腾&lt;/del&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;更新频率&#34;&gt;更新频率&lt;/h2&gt;
-&lt;p&gt;一个月两次（？）&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;一个月两次（？)&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;鬼啊，这是不可能的&lt;/del&gt;&lt;/p&gt;
 &lt;h2 id=&#34;许可&#34;&gt;许可&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.creativecommons.org/l/by-sa/4.0/88x31.png&#34;
 	
