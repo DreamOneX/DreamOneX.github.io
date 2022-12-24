@@ -6,6 +6,185 @@
         <description>Recent content on 点点晨曦 | DreamOneX&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language><atom:link href="https://blog.dreamonex.eu.org/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <title>加入萌备</title>
+        <link>https://blog.dreamonex.eu.org/p/2022/12/join-moe-tcp/</link>
+        <pubDate>Sun, 25 Dec 2022 01:52:08 +0800</pubDate>
+        
+        <guid>https://blog.dreamonex.eu.org/p/2022/12/join-moe-tcp/</guid>
+        <description>&lt;p&gt;萌ICP备20229192号&lt;br&gt;
+这一天，或许有很多称呼，是&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;公元 2022 年 12 月 23 日&lt;/li&gt;
+&lt;li&gt;农历 壬寅年 腊月 初一&lt;/li&gt;
+&lt;li&gt;希吉来历 1444 年 Jumada I-Ula 29&lt;/li&gt;
+&lt;li&gt;波斯历 1401 年 Dey 2&lt;/li&gt;
+&lt;li&gt;blabla&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这一天，这个 blog 有了这个萌号，先记录一下它最初的样子&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.dreamonex.eu.org/p/2022/12/join-moe-tcp/earliest.jpg&#34;
+	width=&#34;525&#34;
+	height=&#34;253&#34;
+	srcset=&#34;https://blog.dreamonex.eu.org/p/2022/12/join-moe-tcp/earliest_hu38c64543aa176ff636ef03a003c135a9_42072_480x0_resize_q75_box.jpg 480w, https://blog.dreamonex.eu.org/p/2022/12/join-moe-tcp/earliest_hu38c64543aa176ff636ef03a003c135a9_42072_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;最初的样子&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;207&#34;
+		data-flex-basis=&#34;498px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;大概明天，或者后天会把它弄的漂亮一点&lt;br&gt;
+这也算是 blog 历史上不大不小的一件 &lt;code&gt;event&lt;/code&gt;&lt;br&gt;
+所以博主傻傻的敲下了&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;t add &lt;span class=&#34;s2&#34;&gt;&amp;#34;@blog +post due:2022-12-25 join moe icp&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;details&gt;
+&lt;summary&gt;&lt;/summary&gt;
+    
+
+&lt;p&gt;&lt;s&gt;也许你不知道这是什么，那正是自然的事情&lt;/s&gt;，因为啊，有一个笨蛋博主，早早的就写了 todo，&lt;s&gt;但是他没有 do&lt;/s&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;alias t=todo.sh&lt;/code&gt;，也许你并不知道 &lt;code&gt;t&lt;/code&gt; 是什么，看上下文或许脑子里浮现出了 &lt;a href=&#34;http://todotxt.org&#34;&gt;&lt;code&gt;todo.txt&lt;/code&gt;&lt;/a&gt; (这是可以戳的，&lt;s&gt;不信你试试&lt;/s&gt;) 这个名字，它真的太出色了&lt;/p&gt;
+
+&lt;p&gt;&lt;s&gt;下面是吹水&lt;/s&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+    &lt;p&gt;The easiest to-do list I ever used. -Dennis&lt;/p&gt;&lt;p&gt;Brilliant... the &amp;quot;cool&amp;quot; factor is off the charts. -John&lt;/p&gt;
+    &lt;p&gt;So simple, yet also very versatile and flexible. I love it! -mschooler93&lt;/p&gt;
+    &lt;p&gt;Extremely useful and well executed. -nemof&lt;/p&gt;
+    &lt;p&gt;No frills, highly effective and convenient. -Will&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;反正，给自己定的期限是 3 天，~~不出所料的拖到了最后~~&lt;/p&gt;
+
+
+&lt;/details&gt;
+
+&lt;p&gt;于是在今天 &lt;del&gt;水&lt;/del&gt; 了这篇文章&lt;/p&gt;
+&lt;h1 id=&#34;moe-icp&#34;&gt;Moe ICP&lt;/h1&gt;
+&lt;p&gt;当然要先介绍一下 &lt;strong&gt;萌备&lt;/strong&gt; 啊！&lt;br&gt;
+&lt;del&gt;hhhh其实全是博主 cv&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; 来的 (不要打啊qwq)&lt;/del&gt;&lt;/p&gt;
+&lt;h2 id=&#34;启元&#34;&gt;启元&lt;/h2&gt;
+&lt;p&gt;自从某萌主申请了 icp.gov.moe 域名以后&lt;br&gt;
+萌童鞋在百忙中抽空写了个萌备系统&lt;br&gt;
+然后大家看到萌国ICP备案查询系统就上线了&lt;br&gt;
+然后又过了很久很久的时间，某博主又去申请了一个萌备&lt;/p&gt;
+&lt;h2 id=&#34;萌备的世界&#34;&gt;萌备的世界&lt;/h2&gt;
+&lt;p&gt;嗯，你没看错，这是萌国的ICP备案。&lt;br&gt;
+萌国在哪呢，听某萌主说，好像是个网络上虚拟的国度。&lt;br&gt;
+反正别问博主了，本博主也是听来的。&lt;br&gt;
+我们说的是萌国ICP备案，号称萌ICP备，简称萌备&lt;/p&gt;
+&lt;p style=&#34;color:red&#34;&gt;&lt;b&gt;&lt;i&gt;划重点，萌ICP备 非真实 中华人民共和国ICP备案&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;h2 id=&#34;萌备的价值观&#34;&gt;萌备的价值观&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;萌ICP备 纯属萌友网站联萌！&lt;br&gt;
+是一种次元中的爱好，文化的展现。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;若你在万千网站中遇到萌备&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;甚有缘分&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;申请过程&#34;&gt;申请过程&lt;/h1&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://icp.gov.moe/join.php&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;戳这，戳这，戳这！&lt;/a&gt;&lt;br&gt;
+&lt;del&gt;下面请按提示操作(跑)&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;PS: 萌号是 &lt;code&gt;四位年份 + 四位自选&lt;/code&gt;，所以可以捡个靓号玩玩 =-=&lt;/p&gt;
+&lt;h1 id=&#34;关于本博客&#34;&gt;关于本博客&lt;/h1&gt;
+&lt;p&gt;说完了 &lt;em&gt;萌备&lt;/em&gt;，就要说说 &lt;em&gt;&lt;strong&gt;咱自己&lt;/strong&gt;&lt;/em&gt; 了&lt;/p&gt;
+&lt;h2 id=&#34;申请的日期&#34;&gt;申请的日期&lt;/h2&gt;
+&lt;p&gt;如前，这个日期是 12 月 23 日，为什么是呢因为在这一天博主突发奇想跑去申请了萌备，所以就是这一天了&lt;/p&gt;
+&lt;h2 id=&#34;为什么萌号是-20229192&#34;&gt;为什么萌号是 &lt;code&gt;20229192&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;2022&lt;/code&gt; 当然是咱申请的年份了 (&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;9192&lt;/code&gt; 就有一堆话头了，&lt;del&gt;下面是&lt;code&gt;甲乙丙丁&lt;/code&gt;时间&lt;/del&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;已经是年末了，很多很多很多的靓号已经被选完了，比如&lt;code&gt;6666&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;年份也是一样，一些有趣的年份也被选去了&lt;/li&gt;
+&lt;li&gt;很多常数也是一样的情况，比如 $ \pi $ 和 $ \e $&lt;/li&gt;
+&lt;li&gt;那么就需要选一个不那么常见的常数了&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;在--4135-和-9192-间的选择&#34;&gt;在  &lt;code&gt;4135&lt;/code&gt; 和 &lt;code&gt;9192&lt;/code&gt; 间的选择&lt;/h2&gt;
+&lt;h3 id=&#34;4135&#34;&gt;4135&lt;/h3&gt;
+&lt;p&gt;$$h = 4.135667662(25)\times 10^{-15} eV \cdot s$$&lt;/p&gt;
+&lt;p&gt;普朗克常数记为 $h$，是一个物理常数，用以描述量子大小。量子力学中占有重要的角色，马克斯·普朗克在1900年研究物体热辐射的规律时发现，只有假定电磁波的发射和吸收不是连续的，而是一份一份地进行的，计算的结果才能和试验结果是相符。这样的一份能量叫做能量子，每一份能量子等于普朗克常数乘以电磁辐射的频率。&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;kg 是 SI 制中质量的基本单位，其由 普朗克常数，时间，和米定义，即&lt;/p&gt;
+&lt;p&gt;$$1 kg = \dfrac{h}{6.662607015 \times 10^{-34}m^{2} \cdot s^{-1}}$$&lt;/p&gt;
+&lt;p&gt;其实普朗克常数在 ISO 标准中的值是 $ h = 6.62607015 \times 10^{-34} J \cdot s$，只不过 6626 没了 XD&lt;/p&gt;
+&lt;h3 id=&#34;9192&#34;&gt;9192&lt;/h3&gt;
+&lt;p&gt;$$1s = \dfrac{9192631770}{\Delta V_{Cs}}$$&lt;/p&gt;
+&lt;p&gt;(将铯-133原子不受扰动的基态超精细能级跃迁频率$\Delta V_{Cs}$的值固定为9192631770赫兹( $1Hz = 1 s^{-1}$ ))&lt;/p&gt;
+&lt;p&gt;秒 是 SI 制时间的基本单位，铯-133原子不受扰动的基态超精细能级跃迁所对应的辐射的 9192631770 个周期的持续时间为一秒&lt;/p&gt;
+&lt;h2 id=&#34;最后的选择&#34;&gt;最后的选择&lt;/h2&gt;
+&lt;p&gt;最后觉得 9192 比较 &lt;em&gt;重声叠韵&lt;/em&gt; 所以就选了 9192 XD，总之，也就加入了萌备&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://icp.gov.moe/?keyword=20229192&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://blog.dreamonex.eu.org/p/2022/12/join-moe-tcp/result.jpg&#34;
+	width=&#34;1583&#34;
+	height=&#34;974&#34;
+	srcset=&#34;https://blog.dreamonex.eu.org/p/2022/12/join-moe-tcp/result_hu1b1f3b6508bbb9a4381cbc7373d0919f_719646_480x0_resize_q75_box.jpg 480w, https://blog.dreamonex.eu.org/p/2022/12/join-moe-tcp/result_hu1b1f3b6508bbb9a4381cbc7373d0919f_719646_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;查询结果&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;162&#34;
+		data-flex-basis=&#34;390px&#34;
+	
+&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;近况&#34;&gt;近况&lt;/h1&gt;
+&lt;p&gt;决定 &lt;code&gt;due: 2022-12-25&lt;/code&gt; 有一半原因是为了时效性，另一半原因是为了说明一下自己的近况和计划&lt;/p&gt;
+&lt;h2 id=&#34;twice-a-month-&#34;&gt;twice a month ?&lt;/h2&gt;
+&lt;p&gt;一个月两篇 post 成了不可能，最近的折腾是因为疫情被关在了家里 @_@，所以近期会猛发 post，现在已经决定的有&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Stack 主题 diy&lt;/li&gt;
+&lt;li&gt;todo.txt 的笔记&lt;/li&gt;
+&lt;li&gt;jq 的笔记&lt;/li&gt;
+&lt;li&gt;以前的 post 的英语翻译&lt;/li&gt;
+&lt;li&gt;子网掩码相关笔记&lt;/li&gt;
+&lt;li&gt;Linux shell 下的简易 totp 工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;del&gt;至于能不能写完，那就是另一个故事了 hhhhhh&lt;/del&gt;&lt;/p&gt;
+&lt;h2 id=&#34;一篇还没有写完的-post&#34;&gt;一篇还没有写完的 post&lt;/h2&gt;
+&lt;p&gt;看着这个时间，傻傻的博主又一次陷入了沉思&lt;code&gt;2022-09-26T02:17:14+08:00&lt;/code&gt;，这是一篇关于位操作的笔记，说了&lt;del&gt;一堆废话&lt;/del&gt;，所以至今(三个月)还没有完稿。虽然时间长，但是只写了 400 多行 XD，可能到最后会写到 1500 行吧。&lt;del&gt;学业真是太繁忙了&lt;/del&gt;&lt;/p&gt;
+&lt;h1 id=&#34;last&#34;&gt;Last&lt;/h1&gt;
+&lt;p&gt;呼，写完了，4:09，两个多小时，好耶！睡觉！&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ git add --all
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ git commit -v -a -S
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;post join moe icp
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ git push
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ t &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; x
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;cv 自 &lt;a class=&#34;link&#34; href=&#34;https://moe.blog/icp.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;萌博客&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;话不能乱说，所以从 &lt;a class=&#34;link&#34; href=&#34;https://zh.m.wikipedia.org/wiki/%e6%99%ae%e6%9c%97%e5%85%8b%e5%b8%b8%e6%95%b0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Wikipedia&lt;/a&gt; 抄了一段来&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        <item>
         <title>Python re.findall() 的巨坑</title>
         <link>https://blog.dreamonex.eu.org/p/2022/10/python-findall/</link>
         <pubDate>Sun, 02 Oct 2022 00:23:26 +0800</pubDate>
