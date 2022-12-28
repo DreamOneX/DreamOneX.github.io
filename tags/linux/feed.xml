@@ -347,7 +347,7 @@
         <pubDate>Thu, 14 Jul 2022 21:48:18 +0800</pubDate>
         
         <guid>https://blog.dreamonex.eu.org/p/2022/07/nginx-quic/</guid>
-        <description>&lt;img src="https://blog.dreamonex.eu.org/p/2022/07/nginx-quic/internet.png" alt="Featured image of post nginx-quic部署笔记" /&gt;&lt;p&gt;其实，编译安装nginx-quic的教程很多，但关于nginx配置有的过时（写于&lt;strong&gt;2022-07-14&lt;/strong&gt;，&lt;del&gt;俺也不能保证我这个不会过时对吧&lt;/del&gt;），要么&lt;del&gt;很难找到&lt;/del&gt;（事实上我就没找到）&lt;/p&gt;
+        <description>&lt;img src="https://blog.dreamonex.eu.org/p/2022/07/nginx-quic/internet.png" alt="Featured image of post nginx-quic部署笔记" /&gt;&lt;p&gt;其实，编译安装nginx-quic的教程很多，但关于nginx配置有的过时（写于&lt;strong&gt;2022-07-14&lt;/strong&gt;，&lt;del&gt;咱也不能保证这个不会过时对吧&lt;/del&gt;），要么&lt;del&gt;很难找到&lt;/del&gt;（事实上我就没找到）&lt;/p&gt;
 &lt;h1 id=&#34;编译安装&#34;&gt;&lt;del&gt;编译&lt;/del&gt;安装&lt;/h1&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

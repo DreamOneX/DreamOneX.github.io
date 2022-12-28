@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='从几年前（大概是17年吧）初学 C&#43;&#43; 到不久前，都没理解 位运算 的意义，看别人写的算法或多或少也都有位运算参与，看不懂。这就很令人伤心了，于是决定好'><title>位运算笔记</title>
+
+<link rel='canonical' href='https://blog.dreamonex.eu.org/p/2022/12/bitopt-1/'>
+
+<link rel="stylesheet" href="/scss/style.min.d98d5879621e97a6e64057b69dd7b73239d1ce4cc37b430b17044c3d0703e4b9.css"><meta property='og:title' content='位运算笔记'>
+<meta property='og:description' content='从几年前（大概是17年吧）初学 C&#43;&#43; 到不久前，都没理解 位运算 的意义，看别人写的算法或多或少也都有位运算参与，看不懂。这就很令人伤心了，于是决定好'>
+<meta property='og:url' content='https://blog.dreamonex.eu.org/p/2022/12/bitopt-1/'>
+<meta property='og:site_name' content='点点晨曦 | DreamOneX&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='basic' /><meta property='article:tag' content='code' /><meta property='article:published_time' content='2022-12-29T01:40:08&#43;08:00'/><meta property='article:modified_time' content='2022-12-28T17:53:45&#43;00:00'/><meta property='og:image' content='https://blog.dreamonex.eu.org/p/2022/12/bitopt-1/binary.webp' />
+<meta name="twitter:title" content="位运算笔记">
+<meta name="twitter:description" content="从几年前（大概是17年吧）初学 C&#43;&#43; 到不久前，都没理解 位运算 的意义，看别人写的算法或多或少也都有位运算参与，看不懂。这就很令人伤心了，于是决定好"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://blog.dreamonex.eu.org/p/2022/12/bitopt-1/binary.webp' />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-10XR3FX2WN"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-10XR3FX2WN', { 'anonymize_ip': false });
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+SC&family=Noto+Serif&family=Noto+Serif+SC&family=Ubuntu+Mono&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont/lxgwwenkaiscreen.css" rel="stylesheet">
+
+<style>
+    :root {
+        --article-font-family: "LXGW WenKai Screen", var(--base-font-family);
+        --code-font-family: "Ubuntu Mono", "LXGW WenKai Screen", var(--base-font-family);
+    }
+
+    .site-name {
+        font-family: "ZCOOL KuaiLe", var(--base-font-family);
+    }
+    .site-description {
+        font-family: "ZCOOL KuaiLe", var(--base-font-family);
+    }
+    .menu {
+        font-family: "Noto Serif", var(--base-font-family);
+    }
+
+</style>
+
+<script>
+		(function () {
+		    const customFont = document.createElement('link');
+		    customFont.href = "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap";
+		
+		    customFont.type = "text/css";
+		    customFont.rel = "stylesheet";
+		
+		    document.head.appendChild(customFont);
+		}());
+</script>
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hua0079ca89f3d360774fc5d1667ca8afb_4542306_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">DreamOneX</a></h1>
+            <h2 class="site-description">实践是检验真理的唯一标准</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='mailto:me@dreamonex.eu.org'
+                        target="_blank"
+                        title="Email"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="3" y="5" width="18" height="14" rx="2" />
+  <polyline points="3 7 12 13 21 7" />
+</svg>
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/DreamOneX'
+                        target="_blank"
+                        title="GitHub"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/post/feed.xml'
+                        target="_blank"
+                        title="RSS"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://t.me/dreamonex1'
+                        target="_blank"
+                        title="Telegram"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-telegram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com/dreamonex1'
+                        target="_blank"
+                        title="Twitter"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/page/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/page/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/page/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/page/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+                <li id="i18n-switch">  
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                    <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
+                        
+                            <option value="https://blog.dreamonex.eu.org/" selected>中文</option>
+                        
+                            <option value="https://blog.dreamonex.eu.org/en/" >English</option>
+                        
+                    </select>
+                </li>
+            
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>暗色模式</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/2022/12/bitopt-1/">
+                <img src="/p/2022/12/bitopt-1/binary_hu4118a7b697a4ce4f0cc2ee52bd40cfca_4625612_800x0_resize_q75_h2_box_2.webp"
+                        srcset="/p/2022/12/bitopt-1/binary_hu4118a7b697a4ce4f0cc2ee52bd40cfca_4625612_800x0_resize_q75_h2_box_2.webp 800w, /p/2022/12/bitopt-1/binary_hu4118a7b697a4ce4f0cc2ee52bd40cfca_4625612_1600x0_resize_q75_h2_box_2.webp 1600w"
+                        width="800" 
+                        height="566" 
+                        loading="lazy"
+                        alt="Featured image of post 位运算笔记" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/code/" style="background-color: #a39e9e; color: #fff;">
+                计算机
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/2022/12/bitopt-1/">位运算笔记</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2022-12-29</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 10 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>从几年前（大概是17年吧）初学 C++ 到不久前，都没理解 <em>位运算</em> 的意义，看别人写的算法或多或少也都有位运算参与，<del>看不懂</del>。这就很令人伤心了，于是决定好好研究一下这个 <em>位运算</em></p>
+<blockquote>
+<p>💡 <strong>Tips:</strong> 由于这篇文章是我的笔记，可能有一些废话，如果你是奔着位运算来的，不希望看过多的废话，请戳 <em>TL; DR</em>, 或者<a class="link" href="#%e4%ba%8c%e8%bf%9b%e5%88%b6%e8%bf%90%e7%ae%97" >点这里直达二进制运算</a> 或者直达 <a class="link" href="#%e4%bd%8d%e8%bf%90%e7%ae%97%e7%9a%84%e5%a5%87%e6%b7%ab%e6%8a%80%e5%b7%a7" >位运算的奇淫技巧</a></p>
+</blockquote>
+<h1 id="历史遗留问题">历史遗留问题</h1>
+<hr>
+<h2 id="tl-dr二进制究竟是啥"><a class="link" href="#%e4%ba%8c%e8%bf%9b%e5%88%b6%e7%a9%b6%e7%ab%9f%e6%98%af%e5%95%a5" >TL; DR</a></h2>
+<p>计算机只认识 <strong>二进制</strong> 数字，也是基于 <em>二进制</em> 完成计算和其他工作；选择 <em>二进制</em> 的两个原因是存储效率和设计难度</p>
+<hr>
+<p>众所周知，<strong>计算机只认 <em>二进制</em> 数</strong> ，所以他是不认我们的十进制数滴，当然也不认什么八进制，十二进制，十六进制，六十进制，blablabla</p>
+<details>
+<summary></summary>
+虽然某国三进制计算机 <i>Сетунь</i> 认的是三进制，<s>可是你用的不是 C*****，所以就不要想那么多了</s><br>
+当然，<i>ENIAC</i> 用的是十进制，可你用的也不是 E****
+</details>
+<h2 id="为什么是二进制">为什么是二进制</h2>
+<p>选择二进制当然是有原因的，历史原因<del>不可避免的</del>成为主要原因，但是，在那个寸 bit 寸金的年代里，效率和设计难易程度也直接导致了计算机选择二进制。</p>
+<p>关于效率，这里直接抄 <a class="link" href="https://www.zhihu.com/question/314924440/answer/617706217"  target="_blank" rel="noopener"
+    >某个知乎老哥</a> 的解释<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>设$r \in R, r \gt 0$为进制数，即 $r$进制.</p>
+<p>假如这里有 $n$ 个坑 _ _ _ _ &hellip; _，那么可表示 $m = r^{n}$ 个数.
+每个坑可以填 $r$ 种符号，也就是说，每个坑有 $r$ 种状态，$n$ 个坑共有 $s = r \cdot n$ 种状态.</p>
+<p>前面提到过，那个年代寸 bit 寸金，所以存储效率最高的就是最合适的，用数学语言描述就是：为了表示 $m$ 个数，当 $r$ 为多少时，$s$ 可取得最小值？</p>
+<p>然后就有 $s = \frac{r}{\ln (r)} \ln(m)$</p>
+<p>对 $r$ 求导，可得 $r = e \approx 2.71828182845904523536\cdots$ 时，$s$ 取最小值 $e \cdot \ln(m)$</p>
+<p>很明显，<strong>$r = e$ 是最优情况</strong>，<strong>但是</strong>，$e$进制 的电路很明显是不切实际的，所以，在存储效率方面 <strong>三进制</strong> 成了最优选择，<strong>二进制</strong> 次之，然而 <em>二进制</em> 的逻辑运算比 <em>三进制</em> 简单不少（至少是在电路设计上），损失一点存储效率，也算是 <em>鱼与熊掌</em> 吧.</p>
+<p><del>啥？你问我为什么简单？？鄙人不配，请戳<a class="link" href="https://www.bing.com/"  target="_blank" rel="noopener"
+    >这个</a>，<a class="link" href="https://www.google.com"  target="_blank" rel="noopener"
+    >这个</a>，<a class="link" href="https://www.baidu.com/"  target="_blank" rel="noopener"
+    >这个</a> 或 <a class="link" href="https://www.duckduckgo.com/"  target="_blank" rel="noopener"
+    >这个</a></del></p>
+<details>
+<summary></summary>
+你要是非要我说，我只能扯些淡了<br />
+比如说“道生一，一生二，二生三，三生万物”<br />
+或者说 三进制可以认为 Bool 值有三个，即 真 不知道 假，可是纸带上的控只有打了和没打，不存在不知道打没打（喂，这不是加速度） <br />
+或者说 二进制只要高低电平 简单呗，就像我们有十根手指头一样 
+<p>附个 v2ex 的链接吧 <a class="link" href="https://v2ex.com/t/114165"  target="_blank" rel="noopener"
+    >https://v2ex.com/t/114165</a></p>
+</details>
+<h1 id="二进制究竟是啥">二进制究竟是啥</h1>
+<hr>
+<h2 id="tl-dr二进制运算"><a class="link" href="#%e4%ba%8c%e8%bf%9b%e5%88%b6%e8%bf%90%e7%ae%97" >TL; DR</a></h2>
+<p><strong>只通过1或0表示数字, 逢2进1</strong> 的计数系统</p>
+<hr>
+<p>那这个 <em>二进制</em> 究竟是个什么东西呢，先从 <a class="link" href="https://zh.m.wikipedia.org/wiki/%E4%BA%8C%E8%BF%9B%E5%88%B6"  target="_blank" rel="noopener"
+    >Wikipedia</a> 抄一段 <del>富有文化气息的高大上的</del>   <strong>而且看不懂</strong> 的解释：</p>
+<blockquote>
+<p>二进制（binary）在<a class="link" href="https://zh.m.wikipedia.org/wiki/%E6%95%B8%E5%AD%B8"  target="_blank" rel="noopener"
+    >数学</a>和<a class="link" href="https://zh.m.wikipedia.org/wiki/%E6%95%B8%E4%BD%8D%E9%9B%BB%E8%B7%AF"  target="_blank" rel="noopener"
+    >数字电路</a>中指以2为<a class="link" href="https://zh.m.wikipedia.org/wiki/%E5%BA%95%E6%95%B0_%28%E8%BF%9B%E5%88%B6%29"  target="_blank" rel="noopener"
+    >底数</a>的记数系统，以2为基数代表系统是二进位制的。</p>
+</blockquote>
+<p><del>扯这些高大上的东西，就不像是百科全书的样子.jpg</del></p>
+<p>底数是个啥玩意？既然它扯了，那我们顺着链接点下去，了解一下吧</p>
+<blockquote>
+<p>进位制的底数（radix， base）是指此进位制中，用于表示数所使用的数字符号（包括0）数量。以目前最常使用的十进制为例，每一位的数字可以从0至9，共10个数字，因此底数为10。</p>
+</blockquote>
+<p>熟悉吗？熟悉就对了，我们刚刚才<a class="link" href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e6%98%af%e4%ba%8c%e8%bf%9b%e5%88%b6" >提过</a>，所谓 $r$进制 就是每个“坑”需要 $r$ 种状态，$r$ 就是<strong>底数</strong></p>
+<p>一个数和它的底数用 $(x)_y$ 表示，如 $(10)_2$ 表 $3$</p>
+<h2 id="底数和数的关系">底数和数的关系</h2>
+<h3 id="纸上得来终觉浅">纸上得来终觉浅</h3>
+<p>设有正整数 $(x)_b$ , 其中 $b$ 为进制, $d_n$ 表示 x (从左往右) 第 $n$ 位数的值</p>
+<p>可推出 $0 \le d_n \lt b, n \in N$</p>
+<p>那么 $b$进制 数的值为
+$d_1b^{n-1} + d_2b^{n-2} + \cdots + d_nb^0$</p>
+<blockquote>
+<p>⚠️ <strong>注意:</strong> 这里的 $b$ 也可以是负数，分数&hellip; 但是 <strong>不能</strong> 为 $0$, 原因在于 $0^0$ 不是 $1$, 也就不是 <em>个位</em></p>
+</blockquote>
+<p>其第 $n$ 位数分别是 $b^n$位，$b^{n-1}$位，$\cdots$，$b^1$位，$b^0$位(个位)<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<h3 id="绝知此事要躬行">绝知此事要躬行</h3>
+<p>以数字 $(100)_{16}$ 为例</p>
+<p>其值应为 $1 \times 16^{2} + 0 \times 16^{1} + 0 \times 16^{0} = 256$</p>
+<p>相应的，$1$ 应该是 $256$位，第一个 $0$ 是 $16$位，第二个 $0$ 是 个位</p>
+<h4 id="解释">解释</h4>
+<p><del>我觉得，应该不用解释吧&hellip;</del></p>
+<p>刚刚举了16进制的例子，现在看看10进制</p>
+<p>比如 $(111)_{10}$</p>
+<p>其值应为 $1 \times 10^{2} + 1 \times 10^{1} + 0 \times 10^{0} = 111$</p>
+<p>是不是，突然就看懂了！</p>
+<p>如果没看懂，想一想小学是不是做过求一个数字十位、个位的题目，那个式子是 $\text{十位上的数字} \times 10 + \text{个位上的数字} \times 1$</p>
+<p>这个 <em>十位上的数字</em> 和 <em>个位上的数字</em> 分别是 $d_{n-1}$ 和 $d_n$</p>
+<p>再把 <em>其第 $n$ 位数分别是 $b^n$位，$b^{n-1}$位，$\cdots$，$b^1$位，个位</em> 翻译到十进制中就是</p>
+<p>其第 $n$ 位数分别是 $10^n$位,$10^{n-1}$位, $\cdots$, $10^1$位, 个位，也就是 <em>个、十、百、千、万</em> 等</p>
+<p>或者，直接利用下面这张表<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>理解 <del>虽然它是给计量单位的</del></p>
+<p>所表示的因数就是我们说的 $b^n$，不难看出 $b^n$位 与下面的这些 <em>词头</em> 只不过是有名字和没名字的关系罢了</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>所表示的因数</th>
+<th>词头名称</th>
+<th>词头符号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$10^{24}$</td>
+<td>尧[它]</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>$10^{21}$</td>
+<td>泽[它]</td>
+<td>Z</td>
+</tr>
+<tr>
+<td>$10^{18}$</td>
+<td>艾[可萨]</td>
+<td>E</td>
+</tr>
+<tr>
+<td>$10^{15}$</td>
+<td>拍[它]</td>
+<td>P</td>
+</tr>
+<tr>
+<td>$10^{12}$</td>
+<td>太[拉]</td>
+<td>T</td>
+</tr>
+<tr>
+<td>$10^{9}$</td>
+<td>吉[咖]</td>
+<td>G</td>
+</tr>
+<tr>
+<td>$10^{6}$</td>
+<td>兆</td>
+<td>M</td>
+</tr>
+<tr>
+<td>$10^{3}$</td>
+<td>千</td>
+<td>k</td>
+</tr>
+<tr>
+<td>$10^{2}$</td>
+<td>百</td>
+<td>h</td>
+</tr>
+<tr>
+<td>$10^{1}$</td>
+<td>十</td>
+<td>da</td>
+</tr>
+<tr>
+<td>$10^{-1}$</td>
+<td>分</td>
+<td>d</td>
+</tr>
+<tr>
+<td>$10^{-2}$</td>
+<td>厘</td>
+<td>c</td>
+</tr>
+<tr>
+<td>$10^{-3}$</td>
+<td>毫</td>
+<td>m</td>
+</tr>
+<tr>
+<td>$10^{-6}$</td>
+<td>微</td>
+<td>μ</td>
+</tr>
+<tr>
+<td>$10^{-9}$</td>
+<td>纳[诺]</td>
+<td>n</td>
+</tr>
+<tr>
+<td>$10^{-12}$</td>
+<td>皮[可]</td>
+<td>p</td>
+</tr>
+<tr>
+<td>$10^{-15}$</td>
+<td>飞[母托]</td>
+<td>f</td>
+</tr>
+<tr>
+<td>$10^{-18}$</td>
+<td>阿[托]</td>
+<td>a</td>
+</tr>
+<tr>
+<td>$10^{-21}$</td>
+<td>仄[普托]</td>
+<td>z</td>
+</tr>
+<tr>
+<td>$10^{-24}$</td>
+<td>么[科托]</td>
+<td>y</td>
+</tr>
+</tbody>
+</table></div>
+<p>搞明白这个，再看 $d_1b^{n-1} + d_2b^{n-2} + \cdots + d_nb^0$ 是不是就明白了呢？</p>
+<p><del>再不明白我也没办法了</del></p>
+<h3 id="其他一些事">其他一些事</h3>
+<ul>
+<li>
+<p>对于负数，只需要加上“$-$”号</p>
+</li>
+<li>
+<p>对于小数，$b^0$位右边，令 $n \lt 0, n \in Z$ 即可</p>
+</li>
+</ul>
+<h2 id="回到二进制上">回到二进制上</h2>
+<p>有了上面的一堆<del>废话</del>, 那么我们就知道任何 <strong>二进制</strong> 的正整数可以表示为 $d_12^{n-1} + d_22^{n-2} + \cdots + d_n2^0$，这也是 <em>二进制</em> 转换为 <em>十进制</em> 的方式</p>
+<p>由 $0 \le d_n \lt b$ 我们可知, <em>二进制</em> 中每一位上的数只能是 $1$ 或 $0$，也就是常说的 <em><strong>逢二进一</strong></em></p>
+<h1 id="二进制运算">二进制运算</h1>
+<h2 id="四则运算">四则运算</h2>
+<ul>
+<li>加: $0 + 0 = 0$, $1 + 0 = 1$, $1 + 1 = 10$</li>
+</ul>
+<span>
+    
+
+$
+\begin{array}{r}
+10010101\\
++01001011\\
+\hline
+11100000
+\end{array}
+$
+
+
+</span>
+
+<ul>
+<li>减: $0 - 0 = 0$, $1 - 0 = 1$, $10 - 1 = 1$, $1 - 1 = 0$</li>
+</ul>
+<span>
+    
+
+$
+\begin{array}{r}
+10010101\\
+-01001011\\
+\hline
+01001010
+\end{array}
+$
+
+
+</span>
+
+<ul>
+<li>
+<p>乘: $0 \times 0 = 0$, $1 \times 1 = 1$</p>
+</li>
+<li>
+<p>除: $0 \div 1 = 0$, $1 \div 1 = 1$</p>
+</li>
+</ul>
+<h2 id="位运算位操作">位运算（位操作）</h2>
+<p>还是从 <a class="link" href="https://zh.m.wikipedia.org/zh-hans/%E4%BD%8D%E6%93%8D%E4%BD%9C"  target="_blank" rel="noopener"
+    >Wikipedia</a> 抄一下</p>
+<blockquote>
+<p>位操作是程序设计中对位数组或二进制数的一元和二元操作。</p>
+</blockquote>
+<p>利用 <em>位运算</em> 达成目标，相较于 <em>四则运算</em> 使用的资源 <strong>更少</strong> , 因此功耗 <strong>更低</strong> ，而且速度 <strong>更快</strong></p>
+<blockquote>
+<p>💡 <strong>Tips:</strong> 下面所有位操作相关的运算使用<a class="link" href="#%e8%a1%a5%e7%a0%81" >补码</a></p>
+</blockquote>
+<h3 id="取反not-或-">取反(<code>NOT</code> 或 <code>~</code>)</h3>
+<p>取反是 <em>一元运算符</em> ，在大多数现代编程语言中使用 <code>~</code> 表示. 它会对一个 <em>二进制数</em> 按位做 <em>逻辑非(<code>!</code>)</em> 操作.</p>
+<p>比如，<code>~ 1000</code> 得 <code>0111</code></p>
+<blockquote>
+<p>💡 <strong>Tips:</strong> 对某值取反等于该值的相反数减去一，即 $ ~x = -x - 1$</p>
+</blockquote>
+<blockquote>
+<p>⚠️ <strong>Warning:</strong> 逻辑非(<code>!</code>)并不是取反(<code>~</code>)，绝大多数语言会将 <em>逻辑非</em> 作为布尔值的运算符，而不是位操作</p>
+</blockquote>
+<h3 id="按位-或or--异或xor-与and-">按位 或(<code>OR</code>, <code>|</code>) 、异或(<code>XOR</code>, <code>^</code>)、与(<code>AND</code>, <code>&amp;</code>)</h3>
+<blockquote>
+<p>⚠️ <strong>Warning:</strong> 逻辑或(<code>||</code>)、逻辑与(<code>&amp;&amp;</code>) 与 <em>按位或</em> 、 <em>按位与</em> 不同</p>
+</blockquote>
+<p>它们都得 <em>二元运算符</em> ，对二进制中每一个位作相应的逻辑操作.</p>
+<ul>
+<li><strong>逻辑或:</strong> 两个操作数中任意一个为1，则取1</li>
+<li><strong>逻辑异或:</strong> 两个操作数中有且仅有一个为1，则取1</li>
+<li><strong>逻辑与:</strong> 两个操作数都取1，则取1</li>
+</ul>
+<h3 id="如上内容的数学等价物来自-wikipediahttpszhmwikipediaorgzh-hanse4bd8de6938de4bd9ce695b0e5ada6e7ad89e4bbb7e789a9-">如上内容的数学等价物（来自 <a class="link" href="https://zh.m.wikipedia.org/zh-hans/%E4%BD%8D%E6%93%8D%E4%BD%9C#%E6%95%B0%E5%AD%A6%E7%AD%89%E4%BB%B7%E7%89%A9"  target="_blank" rel="noopener"
+    >Wikipedia</a> ）</h3>
+<p>假设${\displaystyle x\geq y}$，对于非负整数（好像是原码），按位运算可以被写成如下形式：</p>
+<span>
+    
+
+${\begin{aligned}\operatorname {NOT} x&=\sum _{n=0}^{\lfloor \log _{2}(x)\rfloor }2^{n}\left[\left(\left\lfloor {\frac {x}{2^{n}}}\right\rfloor {\bmod {2}}+1\right){\bmod {2}}\right]=2^{\left\lfloor \log _{2}(x)\right\rfloor +1}-1-x\\x\operatorname {AND} y&=\sum _{n=0}^{\lfloor \log _{2}(x)\rfloor }2^{n}\left(\left\lfloor {\frac {x}{2^{n}}}\right\rfloor {\bmod {2}}\right)\left(\left\lfloor {\frac {y}{2^{n}}}\right\rfloor {\bmod {2}}\right)\\x\operatorname {OR} y&=\sum _{n=0}^{\lfloor \log _{2}(x)\rfloor }2^{n}\left(\left[\left(\left\lfloor {\frac {x}{2^{n}}}\right\rfloor {\bmod {2}}\right)+\left(\left\lfloor {\frac {y}{2^{n}}}\right\rfloor {\bmod {2}}\right)+\left(\left\lfloor {\frac {x}{2^{n}}}\right\rfloor {\bmod {2}}\right)\left(\left\lfloor {\frac {y}{2^{n}}}\right\rfloor {\bmod {2}}\right)\right]{\bmod {2}}\right)\\x\operatorname {XOR} y&=\sum _{n=0}^{\lfloor \log _{2}(x)\rfloor }2^{n}\left(\left[\left(\left\lfloor {\frac {x}{2^{n}}}\right\rfloor {\bmod {2}}\right)+\left(\left\lfloor {\frac {y}{2^{n}}}\right\rfloor {\bmod {2}}\right)\right]{\bmod {2}}\right)=\sum _{n=0}^{\lfloor \log _{2}(x)\rfloor }2^{n}\left[\left(\left\lfloor {\frac {x}{2^{n}}}\right\rfloor +\left\lfloor {\frac {y}{2^{n}}}\right\rfloor \right){\bmod {2}}\right]\end{aligned}}$
+
+
+</span>
+
+<h3 id="移位">移位</h3>
+<p>位移操作是我花了很久才理解的玩意儿，是利用某个 计算器App 的位键盘才大概明白是个啥玩意，最近我才知道有 <em>逻辑移位</em> 和 <em>算式移位</em> 等几种位移（下列图片来自 <a class="link" href="https://zh.m.wikipedia.org/zh-hans/%E4%BD%8D%E6%93%8D%E4%BD%9C"  target="_blank" rel="noopener"
+    >Wikipedia</a>）</p>
+<ul>
+<li><strong>算术移位:</strong> 左移补0，右移补符号位</li>
+</ul>
+<p><img src="/p/2022/12/bitopt-1/left_logically.png"
+	width="300"
+	height="200"
+	srcset="/p/2022/12/bitopt-1/left_logically_huce529222ef7cfe28307d2040ff1b4703_5117_480x0_resize_box_3.png 480w, /p/2022/12/bitopt-1/left_logically_huce529222ef7cfe28307d2040ff1b4703_5117_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="left_logically"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="150"
+		data-flex-basis="360px"
+	
+>
+<em>算术左移</em><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></p>
+<p><img src="/p/2022/12/bitopt-1/right_arithmetically.png"
+	width="300"
+	height="240"
+	srcset="/p/2022/12/bitopt-1/right_arithmetically_hu7745cccf9da19d68b6d7ed43f6424223_5797_480x0_resize_box_3.png 480w, /p/2022/12/bitopt-1/right_arithmetically_hu7745cccf9da19d68b6d7ed43f6424223_5797_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="right_arithmetically"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="125"
+		data-flex-basis="300px"
+	
+>
+<em>算术右移</em></p>
+<ul>
+<li><strong>逻辑移位:</strong> 左右移都补0，因此 <em>逻辑左移</em> 等价于 <em>算术左移</em></li>
+</ul>
+<p><img src="/p/2022/12/bitopt-1/left_logically.png"
+	width="300"
+	height="200"
+	srcset="/p/2022/12/bitopt-1/left_logically_huce529222ef7cfe28307d2040ff1b4703_5117_480x0_resize_box_3.png 480w, /p/2022/12/bitopt-1/left_logically_huce529222ef7cfe28307d2040ff1b4703_5117_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="left_logically"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="150"
+		data-flex-basis="360px"
+	
+>
+<em>逻辑左移</em></p>
+<p><img src="/p/2022/12/bitopt-1/right_logically.png"
+	width="300"
+	height="200"
+	srcset="/p/2022/12/bitopt-1/right_logically_huce529222ef7cfe28307d2040ff1b4703_5117_480x0_resize_box_3.png 480w, /p/2022/12/bitopt-1/right_logically_huce529222ef7cfe28307d2040ff1b4703_5117_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="right_logically"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="150"
+		data-flex-basis="360px"
+	
+>
+<em>逻辑右移</em></p>
+<p>据 Wikipedia 所说，在类 C 语言和 Python 中，是 <em>逻辑移位</em> ，但是据我观察，C++ 是 <em>算术移位</em> ( 使用 <code>GCC g++ 12.2.0</code>)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">short</span> <span class="n">a</span> <span class="o">=</span> <span class="o">-</span><span class="mi">32768</span><span class="p">;</span> <span class="c1">// 1000 0000 0000 0000
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span><span class="p">);</span> <span class="c1">// 1100 0000 0000 0000
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">a</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span> <span class="c1">// 输出 -16384
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>关于无符号位移：无符号位移就是不管符号的位移&hellip;它会直接无视符号位，也就是说，它会把一个数字视为 <code>0数字</code>，0 是符号位</p>
+<h2 id="二进制与十进制的转化">二进制与十进制的转化</h2>
+<h3 id="二进制---十进制">二进制 -&gt; 十进制</h3>
+<p>我们知道二进制可以表示为 $d_12^{n-1} + d_22^{n-2} + \cdots + d_n2^0$ (参见<a class="link" href="#%e5%9b%9e%e5%88%b0%e4%ba%8c%e8%bf%9b%e5%88%b6%e4%b8%8a" >回到二进制上</a> 一节)，这就是 <em>二进制</em> 转化为 <em>十进制</em> 的基本方法（可称为 <em><strong>按位计数法</strong></em> ），可是在转换较大的二进制数时，<strong>幂运算会把你折磨死</strong>，这时，就需要一个 <em>Plan B</em> 了</p>
+<h4 id="plan-b-----双倍法">Plan B &mdash; 双倍法</h4>
+<p>这个时候写一段程序说明如何转换会让人愉悦</p>
+<ul>
+<li>Python</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">bin_to_dec</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># return int(n, 2) (bushi)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">last</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">n</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">last</span> <span class="o">=</span> <span class="n">last</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">last</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>C++</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">bin_to_dec</span><span class="p">(</span><span class="k">const</span> <span class="n">string</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">last</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">char</span> <span class="nl">i</span> <span class="p">:</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">last</span> <span class="o">=</span> <span class="n">last</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="sc">&#39;0&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">last</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>C</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">bin_to_dec</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">last</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">(</span><span class="o">*</span><span class="n">n</span> <span class="o">!=</span> <span class="sc">&#39;\0&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">last</span> <span class="o">=</span> <span class="n">last</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="o">*</span><span class="n">n</span> <span class="o">-</span> <span class="sc">&#39;0&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">n</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">last</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>Java</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nc">Bin2Dec</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">final</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">bin2dec</span><span class="o">(</span><span class="kd">final</span> <span class="n">String</span> <span class="n">n</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">last</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="kt">char</span> <span class="n">i</span> <span class="o">:</span> <span class="n">n</span><span class="o">.</span><span class="na">toCharArray</span><span class="o">())</span>
+</span></span><span class="line"><span class="cl">            <span class="n">last</span> <span class="o">=</span> <span class="n">last</span> <span class="o">*</span> <span class="n">2</span> <span class="o">+</span> <span class="n">Character</span><span class="o">.</span><span class="na">getNumericValue</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">last</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>什——么———？你还是想听人话？</p>
+<p>假设要把 $1011001_2$ 转换为十进制</p>
+<!---无聊的小伙伴才能发现的彩蛋，这里的代码块指定的语言是 NL-Chinese--->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1. 从它最左边的数开始；在 1011001 中，是第一个 1
+</span></span><span class="line"><span class="cl">2. 每向右移动一位，就计算
+</span></span><span class="line"><span class="cl">2 * 前一次计算得到的值 + 当前位数上的数字
+</span></span><span class="line"><span class="cl">；在 1011001 中是
+</span></span><span class="line"><span class="cl">第二位 0 : 2 * 1 + 0 = 2
+</span></span><span class="line"><span class="cl">第三位 1 : 2 * 2 + 1 = 5
+</span></span><span class="line"><span class="cl">第四位 1 : 2 * 5 + 1 = 11
+</span></span><span class="line"><span class="cl">第五位 0 : 2 * 11 + 0 = 22
+</span></span><span class="line"><span class="cl">第六位 0 : 2 * 22 + 0 = 44
+</span></span><span class="line"><span class="cl">第七位 1 : 2 * 44 + 1 = 89
+</span></span><span class="line"><span class="cl">( 其实第一位是 )
+</span></span><span class="line"><span class="cl">第一位 1 : 2 * 0 + 1 = 1
+</span></span><span class="line"><span class="cl">3. 最后一次计算得到数字就是十进制数
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="十进制---二进制">十进制 -&gt; 二进制</h3>
+<p>十进制转二进制的转换有两种方法比较常见，这里称为 <em>余数短除法</em> 和 <em>降幂法</em></p>
+<h4 id="余数短除法">余数短除法</h4>
+<p>还是用一段代码解释吧 <code>:-)</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">dec_to_bin</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="s2">&#34;0&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="s2">&#34;-&#34;</span> <span class="o">+</span> <span class="n">dec_to_bin</span><span class="p">(</span><span class="o">-</span><span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bin_str</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">n</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">bin_str</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">2</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">        <span class="n">n</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="p">(</span><span class="n">n</span> <span class="o">%</span> <span class="mi">2</span><span class="p">))</span> <span class="o">/</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s2">&#34;&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="n">bin_str</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>用人话解释：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1. 将数字除以 2，记下余数，用得到的商减去余数
+</span></span><span class="line"><span class="cl">2. 使用 步骤1 得到的结果重复 步骤1 直至商为 0
+</span></span><span class="line"><span class="cl">3. 将记下的余数逆向连接起来，就是目标二进制数
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="降幂法">降幂法</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">dec_to_bin</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bin_str</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">power</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">2</span> <span class="o">**</span> <span class="p">(</span><span class="n">power</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span> <span class="c1"># 确定最大幂</span>
+</span></span><span class="line"><span class="cl">        <span class="n">power</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="n">power</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span> <span class="c1"># 降幂</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">**</span> <span class="n">power</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">bin_str</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&#34;0&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">n</span> <span class="o">-=</span> <span class="mi">2</span> <span class="o">**</span> <span class="n">power</span>
+</span></span><span class="line"><span class="cl">            <span class="n">bin_str</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&#34;1&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">power</span> <span class="o">-=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s2">&#34;&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">bin_str</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>人话就是</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1. 令 f(x) = 2 ^ x
+</span></span><span class="line"><span class="cl">2. 求出 f(x) 不超过十进制数的最大值
+</span></span><span class="line"><span class="cl">3. 从 x = 0 开始列表直到为步骤 2. 中的值（x是自然数）
+</span></span><span class="line"><span class="cl">4. 将待转换数字与最大值做差，再与小于此次差的最大值做差，重复，直到为0
+</span></span><span class="line"><span class="cl">5. 在表格中减数的下方写上1，其他地方写上0，就是答案
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="原码反码和补码">原码、反码和补码</h1>
+<p>咱这会用尽可能通俗的方式介绍这三个玩意，如果有更多的求知欲，可以去 Wikipedia 上阅读，<a class="link" href="https://zh.m.wikipedia.org/wiki/%e5%8e%9f%e7%a0%81"  target="_blank" rel="noopener"
+    >戳这可直达 原码 的 Wikipedia 页面</a></p>
+<h2 id="原码">原码</h2>
+<p>原，就是原，没有改变的码，就是原码（暴论</p>
+<p>也就是说，原码表示为 <code>符号 + 数值</code> 的形式；举个例子：11 原码: +1011；-11  原码: -1011</p>
+<p>第一位可以表示符号，正数0负数1，最后就变成了 01011 和 11011</p>
+<p>原码的好处是显而易见的，那就是，能第一眼看到数值，坏处也是显而易见的，它不能直接参与运算</p>
+<h2 id="反码">反码</h2>
+<p>反，就是反，在原码的基础上反过来，就是反码（暴论</p>
+<p>这个反，意思是按位取反，对于负数，在原码的基础上，对表示数值的位按位取反，得到的就是反码</p>
+<p>打个比方，-11 的原码是 11011，那么它的反码就是 1011 按位取反再在前面加 1，就是 10100</p>
+<p>反码，是没有什么好处滴，看上去它能直接参与运算了，实际上，只要差了个符号，就会有 1 的误差</p>
+<p>问题就在 0 上了，0 的反码即是 00 也可以是 10，所以，就有了补码</p>
+<h2 id="补码">补码</h2>
+<p>补，就是补，在反码的基础上补一，就是补码（暴论</p>
+<p>这个补，意思是补一，对于负数，给它的反码加个一，就得到了补码</p>
+<p>还是用 -11，-11 的反码是 10100 给它加 1 就是 10101</p>
+<p>这样就算是解决了计算的问题（</p>
+<h1 id="位运算的奇淫技巧">位运算的奇淫技巧</h1>
+<p>这应该算是本文最核心的内容，在 <del>铺垫了</del> 或者说 <del>水了</del> 478行后开始写 <del>才开始写</del> 的内容，话不多说，切入正题</p>
+<h2 id="判断数字的奇偶">判断数字的奇偶</h2>
+<p>二进制是以二为底的，而偶数则是二的倍数，所以，任何偶数在二进制中末位都是 0，奇数则都是 1，那么只要把数字和 1 作与运算，看看值是 1 还是 0，就有结果了</p>
+<p>举个例子</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"> 11 01011
+</span></span><span class="line"><span class="cl">&amp; 1 00001
+</span></span><span class="line"><span class="cl">       1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="求整数绝对值">求整数绝对值</h2>
+<p>任何一个数右移其补码长度减一得到的结果，就是其符号位填充了整个补码的结果，也就是说，负数一定为 -1，非负数一定为 0，对负数的补码按位取反再加一，得到的就是它的绝对值，而任何数异或 -1 的结果等于它取反。</p>
+<p>对于补码长度为 N 的数 x，其绝对值为<code>(x ^ (x &gt;&gt; N)) - (x &gt;&gt; N)</code></p>
+<h1 id="last">Last</h1>
+<p><code>Date: 2022-09-26T02:17:14+08:00</code> -&gt; <code>Date: 2022-12-29T01:40:08+08:00</code></p>
+<p>可算是，写完了，睡觉！</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>为什么进制接近e最有效率? - <a class="link" href="https://www.zhihu.com/question/314924440/answer/617706217"  target="_blank" rel="noopener"
+    >知乎用户的回答</a>(编辑于 2019-03-09 15:22)&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><del>感谢 Wikipedia 帮查的资料</del>，Mano, M. Morris; Kime, Charles. Logic and Computer Design Fundamentals 4th. Harlow: Pearson. 2014: 13–14. ISBN 978-1-292-02468-4 及 <a class="link" href="https://experimonkey.com/articles/?aid=binary-how-do-computers-talk"  target="_blank" rel="noopener"
+    >Binary: How Do Computers Talk?</a> <sup>但是这个链接挂了 <s>当然 WebArchive 也没有</s></sup>| Experimonkey. <a class="link" href="experimonkey.com" >experimonkey.com</a> [2018-12-02].&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p><em>《中华人民共和国法定计量单位》</em> 中的 <em>表5 《用于构成十进倍数和分数单位的词头》</em> &mdash; <a class="link" href="https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E6%B3%95%E5%AE%9A%E8%AE%A1%E9%87%8F%E5%8D%95%E4%BD%8D/374931"  target="_blank" rel="noopener"
+    >百度百科</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>这其实是逻辑左移的图&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/basic/">basic</a>
+        
+            <a href="/tags/code/">code</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-SA 4.0</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 2022-12-28 17:53 UTC
+        </span>
+    </section></footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/2022/10/python-findall/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Python re.findall() 的巨坑</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2022/08/apply-github-student-development-pack/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2022/08/apply-github-student-development-pack/github.36d57d5c48bcfadf19866078c0148f8f_hu708e48adc66ab4993a5b7ee02770f72b_18842_250x150_fill_q75_h2_box_smart1_2.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 白嫖Github学生开发包"
+                        data-key="apply-github-student-development-pack" 
+                        data-hash="md5-NtV9XEi8&#43;t8ZhmB4wBSPjw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">白嫖Github学生开发包</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2022/07/install-arch-from-linux/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2022/07/install-arch-from-linux/archlinux.8c4c8b498e274b5bd74f6b5d3bef5219_huabecfadfdd744de844b8ea7b92f798ac_30720_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 利用Bootstrap从已有的Linux发行版上安装ArchLinux"
+                        data-key="install-arch-from-linux" 
+                        data-hash="md5-jEyLSY4nS1vXT2tdO&#43;9SGQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">利用Bootstrap从已有的Linux发行版上安装ArchLinux</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2022/07/nginx-quic/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2022/07/nginx-quic/internet.787f5c2eba360eb7a75fff0d3a7af5d7_hude5ec0799e6727eb2b0caf20abd48656_209693_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post nginx-quic部署笔记"
+                        data-key="nginx-quic" 
+                        data-hash="md5-eH9cLro2DrenX/8NOnr11w==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">nginx-quic部署笔记</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script src="https://utteranc.es/client.js" 
+        repo="DreamOneX/DawnLight-source"
+        issue-term="pathname"
+        
+        label="💬✨comment"
+        
+        crossorigin="anonymous"
+        async
+        >
+</script>
+
+<style>
+    .utterances {
+        max-width: unset;
+    }
+</style>
+
+<script>
+    function setUtterancesTheme(theme) {
+        let utterances = document.querySelector('.utterances iframe');
+        if (utterances) {
+            utterances.contentWindow.postMessage(
+                {
+                    type: 'set-theme',
+                    theme: `github-${theme}`
+                },
+                'https://utteranc.es'
+            );
+        }
+    }
+
+    addEventListener('message', event => {
+        if (event.origin !== 'https://utteranc.es') return;
+        setUtterancesTheme(document.documentElement.dataset.scheme)
+    });
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        setUtterancesTheme(e.detail)
+    })
+</script>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2022 点点晨曦 | DreamOneX&#39;s Blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.13.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+
+    <section class="powerby">
+        <a href="https://icp.gov.moe/?keyword=20229192" target="_blank">
+            <img src="/img/moe_icp.png" alt="MoeICP" style="vertical-align:middle" width="15px" height="15px" />
+            <span>萌ICP备20229192号</span>
+        </a>
+    </section>
+
+    <section class="powerby">
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+        <span>共摸了 11.93k 字  · 共水了 12篇 post.</span>
+    </section>
+
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#历史遗留问题">历史遗留问题</a>
+      <ol>
+        <li><a href="#tl-dr二进制究竟是啥"><a href="#%E4%BA%8C%E8%BF%9B%E5%88%B6%E7%A9%B6%E7%AB%9F%E6%98%AF%E5%95%A5">TL; DR</a></a></li>
+        <li><a href="#为什么是二进制">为什么是二进制</a></li>
+      </ol>
+    </li>
+    <li><a href="#二进制究竟是啥">二进制究竟是啥</a>
+      <ol>
+        <li><a href="#tl-dr二进制运算"><a href="#%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BF%90%E7%AE%97">TL; DR</a></a></li>
+        <li><a href="#底数和数的关系">底数和数的关系</a>
+          <ol>
+            <li><a href="#纸上得来终觉浅">纸上得来终觉浅</a></li>
+            <li><a href="#绝知此事要躬行">绝知此事要躬行</a>
+              <ol>
+                <li><a href="#解释">解释</a></li>
+              </ol>
+            </li>
+            <li><a href="#其他一些事">其他一些事</a></li>
+          </ol>
+        </li>
+        <li><a href="#回到二进制上">回到二进制上</a></li>
+      </ol>
+    </li>
+    <li><a href="#二进制运算">二进制运算</a>
+      <ol>
+        <li><a href="#四则运算">四则运算</a></li>
+        <li><a href="#位运算位操作">位运算（位操作）</a>
+          <ol>
+            <li><a href="#取反not-或-">取反(<code>NOT</code> 或 <code>~</code>)</a></li>
+            <li><a href="#按位-或or--异或xor-与and-">按位 或(<code>OR</code>, <code>|</code>) 、异或(<code>XOR</code>, <code>^</code>)、与(<code>AND</code>, <code>&amp;</code>)</a></li>
+            <li><a href="#如上内容的数学等价物来自-wikipediahttpszhmwikipediaorgzh-hanse4bd8de6938de4bd9ce695b0e5ada6e7ad89e4bbb7e789a9-">如上内容的数学等价物（来自 <a href="https://zh.m.wikipedia.org/zh-hans/%E4%BD%8D%E6%93%8D%E4%BD%9C#%E6%95%B0%E5%AD%A6%E7%AD%89%E4%BB%B7%E7%89%A9">Wikipedia</a> ）</a></li>
+            <li><a href="#移位">移位</a></li>
+          </ol>
+        </li>
+        <li><a href="#二进制与十进制的转化">二进制与十进制的转化</a>
+          <ol>
+            <li><a href="#二进制---十进制">二进制 -&gt; 十进制</a>
+              <ol>
+                <li><a href="#plan-b-----双倍法">Plan B &mdash; 双倍法</a></li>
+              </ol>
+            </li>
+            <li><a href="#十进制---二进制">十进制 -&gt; 二进制</a>
+              <ol>
+                <li><a href="#余数短除法">余数短除法</a></li>
+                <li><a href="#降幂法">降幂法</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#原码反码和补码">原码、反码和补码</a>
+      <ol>
+        <li><a href="#原码">原码</a></li>
+        <li><a href="#反码">反码</a></li>
+        <li><a href="#补码">补码</a></li>
+      </ol>
+    </li>
+    <li><a href="#位运算的奇淫技巧">位运算的奇淫技巧</a>
+      <ol>
+        <li><a href="#判断数字的奇偶">判断数字的奇偶</a></li>
+        <li><a href="#求整数绝对值">求整数绝对值</a></li>
+      </ol>
+    </li>
+    <li><a href="#last">Last</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
