@@ -11,19 +11,24 @@ Welcome to add links'><title>Links</title>
 Welcome to add links'>
 <meta property='og:url' content='https://blog.dreamonex.eu.org/en/page/links/'>
 <meta property='og:site_name' content='Dawn Light | DreamOneX&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='article:modified_time' content='2023-01-08T06:35:13&#43;00:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='article:modified_time' content='2023-01-08T13:49:07&#43;00:00'/>
 <meta name="twitter:title" content="Links">
 <meta name="twitter:description" content="Thanks to my friends and everyone who helped me
 Welcome to add links">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-10XR3FX2WN"></script>
 <script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-10XR3FX2WN', { 'anonymize_ip': false });
-}
+    
+    if (navigator.doNotTrack == "1") {
+        window['ga-disable-G-10XR3FX2WN'] = true;
+    }
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-10XR3FX2WN');
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -446,7 +451,7 @@ Welcome to add links</p>
 
 
         <span>
-            Last updated on 2023-01-08 06:35 UTC
+            Last updated on 2023-01-08 13:49 UTC
         </span>
     </section></footer>
 
