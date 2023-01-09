@@ -975,10 +975,8 @@ ${\begin{aligned}\operatorname {NOT} x&amp;=\sum _{n=0}^{\lfloor \log _{2}(x)\rf
 &lt;p&gt;嗯，这也是个问题，如果使用不支持&lt;code&gt;GPS&lt;/code&gt;的设备貌似要在卫星地图上选择学校位置，听说有不少人是&lt;strong&gt;在这&lt;/strong&gt;被坑了~~（感谢前人避坑）~~，所以建议使用手机，另外，建议使用一个正常点的浏览器（比如Kiwi，Firefox，Chrome）&lt;/p&gt;
 &lt;h1 id=&#34;准备证明资料&#34;&gt;准备证明资料&lt;/h1&gt;
 &lt;p&gt;如果你的学校提供了edu邮箱，请掠过&lt;br&gt;
-如准考证，学生证，甚至课程表，成绩单。网上教程很多，GitHub给的文档也很 &lt;del&gt;详细&lt;/del&gt;（可以看&lt;a class=&#34;link&#34; href=&#34;https://docs.github.com/cn/education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-for-your-schoolwork/apply-for-a-student-developer-pack#requirements&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;这里&lt;/a&gt;）&lt;/p&gt;
-&lt;h2 id=&#34;更多提示&#34;&gt;更多提示&lt;/h2&gt;
-&lt;p&gt;如果以上资料一个都没有，可以前往教导处要求提供在校证明；另外，一些竞赛的获奖证书也可以用作证明资料&lt;/p&gt;
+如准考证，学生证，甚至课程表，成绩单。网上教程很多，GitHub给的文档也很&lt;del&gt;详细&lt;/del&gt;（可以看&lt;a class=&#34;link&#34; href=&#34;https://docs.github.com/cn/education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-for-your-schoolwork/apply-for-a-student-developer-pack#requirements&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;这里&lt;/a&gt;），此处不再赘述&lt;/p&gt;
 &lt;h1 id=&#34;主要过程&#34;&gt;主要过程&lt;/h1&gt;
 &lt;p&gt;如果你打算申请学生开发包，我相信你已经看过Github的文档了，如果你没看过，就在我上面提到过的文档下面（甚至是同一个页面）（好吧，&lt;a class=&#34;link&#34; href=&#34;https://docs.github.com/cn/education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-for-your-schoolwork/apply-for-a-student-developer-pack#%E7%94%B3%E8%AF%B7-github-student-developer-pack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;戳这&lt;/a&gt;）&lt;/p&gt;
@@ -995,8 +993,8 @@ ${\begin{aligned}\operatorname {NOT} x&amp;=\sum _{n=0}^{\lfloor \log _{2}(x)\rf
 &lt;/blockquote&gt;
 &lt;p&gt;一般不会太难为你的，如果这里真卡住了，再提交一次&lt;/p&gt;
 &lt;h1 id=&#34;避坑&#34;&gt;&lt;strong&gt;避坑&lt;/strong&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;del&gt;坑这东西，前人踩了，就要告诉后人&lt;/del&gt;&lt;/p&gt;
-&lt;h2 id=&#34;证明需要翻译成英语&#34;&gt;证明需要翻译成英语&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;重点啊，重点来了！！&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;证明需要翻译&#34;&gt;证明需要翻译&lt;/h2&gt;
 &lt;p&gt;我就是栽在这里，连栽两次，Github的邮件写的是&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;System could not translate proof.&lt;/p&gt;
