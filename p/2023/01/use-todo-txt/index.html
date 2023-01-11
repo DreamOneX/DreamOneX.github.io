@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='If you want to get it done, first write it down.'><title>使用 Todo.txt</title>
+
+<link rel='canonical' href='https://blog.dreamonex.eu.org/p/2023/01/use-todo-txt/'>
+
+<link rel="stylesheet" href="/scss/style.min.e91b53cc2dc88ccfb465a1271a7b09ff859ff1213da2c7a5f392fbf58ddc5868.css"><meta property='og:title' content='使用 Todo.txt'>
+<meta property='og:description' content='If you want to get it done, first write it down.'>
+<meta property='og:url' content='https://blog.dreamonex.eu.org/p/2023/01/use-todo-txt/'>
+<meta property='og:site_name' content='点点晨曦 | DreamOneX&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='todo' /><meta property='article:tag' content='linux' /><meta property='article:published_time' content='2023-01-11T00:30:03&#43;08:00'/><meta property='article:modified_time' content='2023-01-11T10:28:33&#43;00:00'/><meta property='og:image' content='https://blog.dreamonex.eu.org/p/2023/01/use-todo-txt/yes.png' />
+<meta name="twitter:title" content="使用 Todo.txt">
+<meta name="twitter:description" content="If you want to get it done, first write it down."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://blog.dreamonex.eu.org/p/2023/01/use-todo-txt/yes.png' />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-10XR3FX2WN"></script>
+<script>
+	
+	var DNT = 'unspecified'; 
+	if (typeof navigator.doNotTrack != 'undefined') {
+		DNT = navigator.doNotTrack;
+	} else if (typeof window.doNotTrack != 'undefined') {
+		DNT = window.doNotTrack;
+	} else if (typeof navigator.msDoNotTrack != 'undefined') {
+		DNT = navigator.msDoNotTrack;
+	} 
+	if (DNT == 'yes') {
+		DNT = '1'; 
+	} else if (DNT == 'no') {
+		DNT = '0';
+	}
+
+	if (DNT == '1') {
+		window['ga-disable-G-10XR3FX2WN'] = true;
+	}
+
+	window.dataLayer = window.dataLayer || [];
+
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'G-10XR3FX2WN');
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+SC&family=Noto+Serif&family=Noto+Serif+SC&family=Ubuntu+Mono&family=ZCOOL+KuaiLe&family=Source+Code+Pro:wght@500&family=Noto+Color+Emoji&family=Noto+Emoji&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont/lxgwwenkaiscreen.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/twemoji-colr-font/twemoji.scss" rel="stylesheet">
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            localStorage.setItem(colorSchemeKey, "dark");
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hua0079ca89f3d360774fc5d1667ca8afb_4542306_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">DreamOneX</a></h1>
+            <h2 class="site-description">实践是检验真理的唯一标准</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='mailto:me@dreamonex.eu.org'
+                        target="_blank"
+                        title="Email"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <rect x="3" y="5" width="18" height="14" rx="2" />
+  <polyline points="3 7 12 13 21 7" />
+</svg>
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/DreamOneX'
+                        target="_blank"
+                        title="GitHub"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='/post/feed.xml'
+                        target="_blank"
+                        title="RSS"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rss" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="5" cy="19" r="1" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <path d="M4 11a9 9 0 0 1 9 9" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://t.me/dreamonex1'
+                        target="_blank"
+                        title="Telegram"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-telegram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" />
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com/dreamonex1'
+                        target="_blank"
+                        title="Twitter"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/page/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/page/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/page/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/page/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+                <li id="i18n-switch">  
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                    <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
+                        
+                            <option value="https://blog.dreamonex.eu.org/" selected>中文</option>
+                        
+                            <option value="https://blog.dreamonex.eu.org/en/" >English</option>
+                        
+                    </select>
+                </li>
+            
+            
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/2023/01/use-todo-txt/">
+                <img src="/p/2023/01/use-todo-txt/yes_hu76b77244b90acdb66e65ec010bc97375_625529_800x0_resize_box_3.png"
+                        srcset="/p/2023/01/use-todo-txt/yes_hu76b77244b90acdb66e65ec010bc97375_625529_800x0_resize_box_3.png 800w, /p/2023/01/use-todo-txt/yes_hu76b77244b90acdb66e65ec010bc97375_625529_1600x0_resize_box_3.png 1600w"
+                        width="800" 
+                        height="420" 
+                        loading="lazy"
+                        alt="Featured image of post 使用 Todo.txt" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/code/" style="background-color: #a39e9e; color: #fff;">
+                计算机
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/2023/01/use-todo-txt/">使用 Todo.txt</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            If you want to get it done, first write it down.
+        </h3>
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2023-01-11</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 4 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="todosh">todo.sh</h1>
+<blockquote>
+<p>想完成一件事，最好先把它加进 ToDo List (<a class="link" href="http://en.wikipedia.org/wiki/Getting_Things_Done%27"  target="_blank" rel="noopener"
+    >GTD</a>)</p>
+</blockquote>
+<h2 id="缘起何方">缘起何方</h2>
+<p><code>todo.txt</code> 是 <a class="link" href="https://ginatrapani.org"  target="_blank" rel="noopener"
+    >ginatrapani</a> 编写的一个基于 cli 的简易 todo list 管理工具。你可以在命令行下对 <code>~/.todo/todo.txt</code> 做任何你能想到的事（当然也可以是 <code>done.txt</code> 或者其他文件），比如添加，修改，删除或者完成。</p>
+<h2 id="我怎么做">我怎么做</h2>
+<p>例如（假定你已经执行<code>alias t=todo.sh</code>)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">t add @菜市场 买菜 +购物 <span class="c1"># 添加一个 todo task</span>
+</span></span><span class="line"><span class="cl">t p <span class="m">1</span> A <span class="c1"># 把 task 1 的优先级设为 A</span>
+</span></span><span class="line"><span class="cl">t ls <span class="c1"># 列出所有未完成的 tasks</span>
+</span></span><span class="line"><span class="cl">t lsp <span class="c1"># 列出优先级为 A, B, C 的 tasks</span>
+</span></span><span class="line"><span class="cl">t <span class="k">do</span> <span class="m">1</span> <span class="c1"># 标记完成 task 1</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>更多的使用方式可已通过<code>t help</code>查看</p>
+<h1 id="todotxt">todo.txt</h1>
+<p><code>todo.txt</code> 使用纯文本(和 Markdown 一样)， <del>这意味着你可以使用大脑进行渲染</del></p>
+<h2 id="为什么用纯文本">为什么用纯文本</h2>
+<p>如前文，不需要特殊的工具进行渲染是一个 <strong>实实在在</strong> 的优点。举个例子，无论是 <em>Office OpenXML</em> 还是 <em>Portable Document Format</em> 都是难以用脑子渲染的东西，而 <em>Markdown</em> 或 $\LaTeX$ 都是人类可读的，就不需要各种复杂的（动辄上百兆）渲染工具，也更便于和 <strong>其他程序</strong> 一同工作，尤其是 <strong>在 Shell 的环境下</strong>。</p>
+<p>另外，如果使用纯文本，你就不必担心文件损坏 (点名批评 Microsoft Office) <del>(除非你的硬盘坏了)</del>，而且易于传输和备份（你可以把你的 todo.txt 上传到 pastebin ，这绝对比粘贴一堆 HEX 上去好多了）</p>
+<p>最重要的是，纯文本意味着 <strong>开放</strong>，纯文本 <strong>不会像预先设置的规则那样</strong> 告诉你 <strong>你该做什么你不该做什么</strong>，你可以自由发挥，使用自己想用的语法（你可以轻易的通过 <em>管道</em> 和 <em>sed</em> (或其他命令) 实现对特定语法的解析）</p>
+<h2 id="语法">语法</h2>
+<p><img src="/p/2023/01/use-todo-txt/rules.svg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="todo.txt 语法"
+	
+	
+></p>
+<p><del>很多时候，解决问题只需要一张图</del></p>
+<blockquote>
+<p><strong>💡Tips:</strong> 请注意这只是一个推荐的方式，完全不影响你自由发挥去决定如何使用 @ 或 + 或 key-value 或其他东西</p>
+</blockquote>
+<h3 id="priority---优先级">Priority - 优先级</h3>
+<blockquote>
+<p><strong>⚠️Warning:</strong> 很多应用程序会丢弃以 <code>(A-Z)</code> 形式保留的优先级，如需保留，可使用键值对的形式，如 <code>pri:A</code></p>
+</blockquote>
+<p>todo list 里的 Context Tag 和 Project Tag 应该能告诉你现在最重要的事情是什么，但不排除在某些情况下需要提高某件事情的优先级(当然你也可以为每件事情都分配优先级，确保能清楚的明白现在去干什么)，这时你可以通过 <code>(A-Z)</code> 的形式给出某件事情的优先级，使他们出现在<code>t ls</code>或类似命令的顶部</p>
+<h3 id="project-tag---项目标签">Project Tag - 项目标签</h3>
+<p>如果有一个特大项目需要完成，GTD 的最好方式一定是把每一个需要完成的小项目罗列出来，逐步去完成每个小项目。todo list 应该告诉明确地告诉你下一步做什么，因此，一个 todo task 的周期不易过长，否则你就会和没有 todo list 一样手足无措。打个比方，<code>完成数学习题册</code> 和 <code>完成这本数学习题册的 p42 面</code> 相比，显然后者是一个更合乎逻辑的 todo task，因为完成一面练习需要的时间是比较合理的，而完成整本数学习题册可能需要几天。</p>
+<blockquote>
+<p><strong>💡Tips:</strong> 一个 todo task 的周期也不易过短，如果这是你可以在两分钟之内完成的任务，你没有必要将它加入 todo list，除非这个 task 需要在特定时间完成。</p>
+</blockquote>
+<p>所以在将某一特定项目的所有子任务加入 todo list 的时候，可以使用 <code>+&lt;str&gt;</code> 进行标记，比如 <code>+数学习题</code></p>
+<p>再次强调，这并不意味着 <code>+</code> 只能表示一种意思，你完全可以使用 <code>+&lt;任务量&gt;</code> 的形式告诉自己任务量有多大，以方便自己合理的规划时间。再比如，你可以用 <code>+</code> 标记一个 task 是另一个 task 的子任务</p>
+<h3 id="context-tag---上下文标签">Context Tag - 上下文标签</h3>
+<p>上下文，即一个 task 进行的地点，时间和参与者等信息，在 todo list 中使用 context tag 可以帮助你确定到什么地方干什么事，比如你打开邮箱的时候可以查看一下 <code>@email</code> 相关的 task，避免重复操作。如果今天会见到某个人，（比如他叫 kevin），你可以查看一下@kevin 相关的 task 来检查有什么要做的。
+<details>
+<summary></summary>
+    
+<s>怎么这么怪啊</s>
+
+</details>
+</p>
+<h3 id="creation-date---创建日期">Creation Date - 创建日期</h3>
+<p><del>它可以告诉你，你白蓝了多久</del></p>
+<h3 id="completion-date---完成日期">Completion Date - 完成日期</h3>
+<blockquote>
+<p><strong>⚠️Warning:</strong> 建议在添加 <code>x</code> 的时候添加完成日期，以防和创建日期混淆</p>
+</blockquote>
+<p>(除非手写 todo.txt 不然几乎不用关心这点，几乎所有应用程序都会自动追加完成日期)</p>
+<h3 id="x---完成">x - 完成</h3>
+<p>一个以 <strong>小写的 <code>x</code> 加上一个空格</strong> 开头的 task 被标记为完成</p>
+<h3 id="keyvalue-tag---键值对">key/value tag - 键值对</h3>
+<p>形如 <code>key:value</code> 的东西被称为键值对，有一些常用的键值对如下</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>key/value</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>t:2023-01-25</td>
+<td>在 2023.1.25 之后才需要完成</td>
+</tr>
+<tr>
+<td>due:2023-02-06</td>
+<td>2023.2.6 是这个 task 的 ddl<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></td>
+</tr>
+<tr>
+<td>pri: A</td>
+<td>前文已经提到,这是表示优先级的方式</td>
+</tr>
+</tbody>
+</table></div>
+<p>建议多用 <code>t:----</code> tag 阻止一个 task 在无法做或者完全不需要做之前来烦你；少用 <code>due:----</code> tag，除非它真的是 ddl</p>
+<h1 id="so-easy2-">so easy<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> ?</h1>
+<blockquote>
+<p>Keep It Simple, Stupid</p>
+</blockquote>
+<p>和 Arch 一样，todo.txt 只把最简单的东西提供给用户，剩下的由用户自己动手，自由发挥，这意味着，你可以让事情变得复杂起来</p>
+<p>因为 todo.txt 的简单，你可以轻易的把它同任何工具组合起来使用:</p>
+<ul>
+<li>你可以编写一个简单的 nonebot2 插件，把 todo.txt 对接到任何 IM 平台(当然你可能需要写一个 Adapter)上， <del>借助 IM 提供者的网络</del>，轻易的访问待办事项</li>
+<li>你可以把 <code>~/.todo</code> 添加到 <a class="link" href="https://www.resilio.com"  target="_blank" rel="noopener"
+    >rslsync</a> 的同步目录，在任何设备上查看待办事项</li>
+<li>你可以把在 <code>polybar</code> 等桌面组件类的工具中显示待办事项数或待办事项</li>
+<li>你可以写一个 <code>crontab</code> 每天把高优先级的待办事项发到自己的邮箱，如果你使用 Gmail 可以加一个 tag 顺便写一个简单的东西将它添加到日历</li>
+<li>你可以把它集成进浏览器，编辑器甚至智能家居设备中 ( <del>比如你可以把闹铃声设成朗读最高优先级待办事项们</del> )</li>
+<li>你甚至可以写一个 Web Panel 管理 todo.txt ( <del>但这听着好像有些疯狂</del> )</li>
+<li>etc.</li>
+</ul>
+<p><strong>这就是 KISS，适合喜欢动手折腾的人，在简单中强大，在强大中简单</strong></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Dead Line，死亡线，意思是一个 task 必须完成的日期，比如寒假作业必须在报道那天晚上（或更早）创造奇迹（也可以循序渐进）&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>其实这里最好用 Simple&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/todo/">todo</a>
+        
+            <a href="/tags/linux/">linux</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-SA 4.0</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 2023-01-11 10:28 UTC
+        </span>
+    </section></footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css"integrity="sha256-J&#43;iAE0sgH8QSz9hpcDxXIftnj65JEZgNhGcgReTTK9s="crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"integrity="sha256-InsNdER1b2xUewP&#43;pKCUJpkhiqwHgqiPXDlIk7GzBu4="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/2022/07/install-arch-from-linux/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2022/07/install-arch-from-linux/archlinux.8c4c8b498e274b5bd74f6b5d3bef5219_huabecfadfdd744de844b8ea7b92f798ac_30720_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 利用Bootstrap从已有的Linux发行版上安装ArchLinux"
+                        data-key="install-arch-from-linux" 
+                        data-hash="md5-jEyLSY4nS1vXT2tdO&#43;9SGQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">利用Bootstrap从已有的Linux发行版上安装ArchLinux</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2022/07/nginx-quic/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2022/07/nginx-quic/internet.787f5c2eba360eb7a75fff0d3a7af5d7_hude5ec0799e6727eb2b0caf20abd48656_209693_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post nginx-quic部署笔记"
+                        data-key="nginx-quic" 
+                        data-hash="md5-eH9cLro2DrenX/8NOnr11w==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">nginx-quic部署笔记</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2022/12/bitopt-1/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2022/12/bitopt-1/binary.83097fcccfb850ca2a2935c73268de77_hu4118a7b697a4ce4f0cc2ee52bd40cfca_4625612_250x150_fill_q75_h2_box_smart1_2.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 位运算笔记"
+                        data-key="bitopt-1" 
+                        data-hash="md5-gwl/zM&#43;4UMoqKTXHMmjedw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">位运算笔记</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/2022/10/python-findall/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Python re.findall() 的巨坑</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/2022/08/apply-github-student-development-pack/">
+        
+        
+            <div class="article-image">
+                <img src="/p/2022/08/apply-github-student-development-pack/github.36d57d5c48bcfadf19866078c0148f8f_hu708e48adc66ab4993a5b7ee02770f72b_18842_250x150_fill_q75_h2_box_smart1_2.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 白嫖Github学生开发包"
+                        data-key="apply-github-student-development-pack" 
+                        data-hash="md5-NtV9XEi8&#43;t8ZhmB4wBSPjw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">白嫖Github学生开发包</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script src="https://utteranc.es/client.js" 
+        repo="DreamOneX/DawnLight-source"
+        issue-term="pathname"
+        
+        label="💬✨comment"
+        
+        crossorigin="anonymous"
+        async
+        >
+</script>
+
+<style>
+    .utterances {
+        max-width: unset;
+    }
+</style>
+
+<script>
+    function setUtterancesTheme(theme) {
+        let utterances = document.querySelector('.utterances iframe');
+        if (utterances) {
+            utterances.contentWindow.postMessage(
+                {
+                    type: 'set-theme',
+                    theme: `github-${theme}`
+                },
+                'https://utteranc.es'
+            );
+        }
+    }
+
+    addEventListener('message', event => {
+        if (event.origin !== 'https://utteranc.es') return;
+        setUtterancesTheme(document.documentElement.dataset.scheme)
+    });
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        setUtterancesTheme(e.detail)
+    })
+</script>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2022 - 
+        
+        2023 点点晨曦 | DreamOneX&#39;s Blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.13.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+
+    <section class="powerby">
+        <a href="https://icp.gov.moe/?keyword=20229192" target="_blank">
+            <img src="/img/moe_icp.png" alt="MoeICP" style="vertical-align:middle" width="15px" height="15px" />
+            <span>萌ICP备20229192号</span>
+        </a>
+    </section>
+
+    <section class="powerby">
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+        <span>共摸了 14.04k 字  · 共水了 13篇 post.</span>
+    </section>
+
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#todosh">todo.sh</a>
+      <ol>
+        <li><a href="#缘起何方">缘起何方</a></li>
+        <li><a href="#我怎么做">我怎么做</a></li>
+      </ol>
+    </li>
+    <li><a href="#todotxt">todo.txt</a>
+      <ol>
+        <li><a href="#为什么用纯文本">为什么用纯文本</a></li>
+        <li><a href="#语法">语法</a>
+          <ol>
+            <li><a href="#priority---优先级">Priority - 优先级</a></li>
+            <li><a href="#project-tag---项目标签">Project Tag - 项目标签</a></li>
+            <li><a href="#context-tag---上下文标签">Context Tag - 上下文标签</a></li>
+            <li><a href="#creation-date---创建日期">Creation Date - 创建日期</a></li>
+            <li><a href="#completion-date---完成日期">Completion Date - 完成日期</a></li>
+            <li><a href="#x---完成">x - 完成</a></li>
+            <li><a href="#keyvalue-tag---键值对">key/value tag - 键值对</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#so-easy2-">so easy ?</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

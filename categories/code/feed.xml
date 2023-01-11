@@ -6,6 +6,145 @@
         <description>Recent content in 计算机 on 点点晨曦 | DreamOneX&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language><atom:link href="https://blog.dreamonex.eu.org/categories/code/feed.xml" rel="self" type="application/rss+xml" /><item>
+        <title>使用 Todo.txt</title>
+        <link>https://blog.dreamonex.eu.org/p/2023/01/use-todo-txt/</link>
+        <pubDate>Wed, 11 Jan 2023 00:30:03 +0800</pubDate>
+        
+        <guid>https://blog.dreamonex.eu.org/p/2023/01/use-todo-txt/</guid>
+        <description>&lt;img src="https://blog.dreamonex.eu.org/p/2023/01/use-todo-txt/yes.png" alt="Featured image of post 使用 Todo.txt" /&gt;&lt;h1 id=&#34;todosh&#34;&gt;todo.sh&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;想完成一件事，最好先把它加进 ToDo List (&lt;a class=&#34;link&#34; href=&#34;http://en.wikipedia.org/wiki/Getting_Things_Done%27&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;GTD&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;缘起何方&#34;&gt;缘起何方&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;todo.txt&lt;/code&gt; 是 &lt;a class=&#34;link&#34; href=&#34;https://ginatrapani.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ginatrapani&lt;/a&gt; 编写的一个基于 cli 的简易 todo list 管理工具。你可以在命令行下对 &lt;code&gt;~/.todo/todo.txt&lt;/code&gt; 做任何你能想到的事（当然也可以是 &lt;code&gt;done.txt&lt;/code&gt; 或者其他文件），比如添加，修改，删除或者完成。&lt;/p&gt;
+&lt;h2 id=&#34;我怎么做&#34;&gt;我怎么做&lt;/h2&gt;
+&lt;p&gt;例如（假定你已经执行&lt;code&gt;alias t=todo.sh&lt;/code&gt;)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;t add @菜市场 买菜 +购物 &lt;span class=&#34;c1&#34;&gt;# 添加一个 todo task&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;t p &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; A &lt;span class=&#34;c1&#34;&gt;# 把 task 1 的优先级设为 A&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;t ls &lt;span class=&#34;c1&#34;&gt;# 列出所有未完成的 tasks&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;t lsp &lt;span class=&#34;c1&#34;&gt;# 列出优先级为 A, B, C 的 tasks&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;t &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;# 标记完成 task 1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;更多的使用方式可已通过&lt;code&gt;t help&lt;/code&gt;查看&lt;/p&gt;
+&lt;h1 id=&#34;todotxt&#34;&gt;todo.txt&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;todo.txt&lt;/code&gt; 使用纯文本(和 Markdown 一样)， &lt;del&gt;这意味着你可以使用大脑进行渲染&lt;/del&gt;&lt;/p&gt;
+&lt;h2 id=&#34;为什么用纯文本&#34;&gt;为什么用纯文本&lt;/h2&gt;
+&lt;p&gt;如前文，不需要特殊的工具进行渲染是一个 &lt;strong&gt;实实在在&lt;/strong&gt; 的优点。举个例子，无论是 &lt;em&gt;Office OpenXML&lt;/em&gt; 还是 &lt;em&gt;Portable Document Format&lt;/em&gt; 都是难以用脑子渲染的东西，而 &lt;em&gt;Markdown&lt;/em&gt; 或 $\LaTeX$ 都是人类可读的，就不需要各种复杂的（动辄上百兆）渲染工具，也更便于和 &lt;strong&gt;其他程序&lt;/strong&gt; 一同工作，尤其是 &lt;strong&gt;在 Shell 的环境下&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;另外，如果使用纯文本，你就不必担心文件损坏 (点名批评 Microsoft Office) &lt;del&gt;(除非你的硬盘坏了)&lt;/del&gt;，而且易于传输和备份（你可以把你的 todo.txt 上传到 pastebin ，这绝对比粘贴一堆 HEX 上去好多了）&lt;/p&gt;
+&lt;p&gt;最重要的是，纯文本意味着 &lt;strong&gt;开放&lt;/strong&gt;，纯文本 &lt;strong&gt;不会像预先设置的规则那样&lt;/strong&gt; 告诉你 &lt;strong&gt;你该做什么你不该做什么&lt;/strong&gt;，你可以自由发挥，使用自己想用的语法（你可以轻易的通过 &lt;em&gt;管道&lt;/em&gt; 和 &lt;em&gt;sed&lt;/em&gt; (或其他命令) 实现对特定语法的解析）&lt;/p&gt;
+&lt;h2 id=&#34;语法&#34;&gt;语法&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://blog.dreamonex.eu.org/p/2023/01/use-todo-txt/rules.svg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;todo.txt 语法&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;很多时候，解决问题只需要一张图&lt;/del&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;💡Tips:&lt;/strong&gt; 请注意这只是一个推荐的方式，完全不影响你自由发挥去决定如何使用 @ 或 + 或 key-value 或其他东西&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;priority---优先级&#34;&gt;Priority - 优先级&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;⚠️Warning:&lt;/strong&gt; 很多应用程序会丢弃以 &lt;code&gt;(A-Z)&lt;/code&gt; 形式保留的优先级，如需保留，可使用键值对的形式，如 &lt;code&gt;pri:A&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;todo list 里的 Context Tag 和 Project Tag 应该能告诉你现在最重要的事情是什么，但不排除在某些情况下需要提高某件事情的优先级(当然你也可以为每件事情都分配优先级，确保能清楚的明白现在去干什么)，这时你可以通过 &lt;code&gt;(A-Z)&lt;/code&gt; 的形式给出某件事情的优先级，使他们出现在&lt;code&gt;t ls&lt;/code&gt;或类似命令的顶部&lt;/p&gt;
+&lt;h3 id=&#34;project-tag---项目标签&#34;&gt;Project Tag - 项目标签&lt;/h3&gt;
+&lt;p&gt;如果有一个特大项目需要完成，GTD 的最好方式一定是把每一个需要完成的小项目罗列出来，逐步去完成每个小项目。todo list 应该告诉明确地告诉你下一步做什么，因此，一个 todo task 的周期不易过长，否则你就会和没有 todo list 一样手足无措。打个比方，&lt;code&gt;完成数学习题册&lt;/code&gt; 和 &lt;code&gt;完成这本数学习题册的 p42 面&lt;/code&gt; 相比，显然后者是一个更合乎逻辑的 todo task，因为完成一面练习需要的时间是比较合理的，而完成整本数学习题册可能需要几天。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;💡Tips:&lt;/strong&gt; 一个 todo task 的周期也不易过短，如果这是你可以在两分钟之内完成的任务，你没有必要将它加入 todo list，除非这个 task 需要在特定时间完成。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;所以在将某一特定项目的所有子任务加入 todo list 的时候，可以使用 &lt;code&gt;+&amp;lt;str&amp;gt;&lt;/code&gt; 进行标记，比如 &lt;code&gt;+数学习题&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;再次强调，这并不意味着 &lt;code&gt;+&lt;/code&gt; 只能表示一种意思，你完全可以使用 &lt;code&gt;+&amp;lt;任务量&amp;gt;&lt;/code&gt; 的形式告诉自己任务量有多大，以方便自己合理的规划时间。再比如，你可以用 &lt;code&gt;+&lt;/code&gt; 标记一个 task 是另一个 task 的子任务&lt;/p&gt;
+&lt;h3 id=&#34;context-tag---上下文标签&#34;&gt;Context Tag - 上下文标签&lt;/h3&gt;
+&lt;p&gt;上下文，即一个 task 进行的地点，时间和参与者等信息，在 todo list 中使用 context tag 可以帮助你确定到什么地方干什么事，比如你打开邮箱的时候可以查看一下 &lt;code&gt;@email&lt;/code&gt; 相关的 task，避免重复操作。如果今天会见到某个人，（比如他叫 kevin），你可以查看一下@kevin 相关的 task 来检查有什么要做的。
+&lt;details&gt;
+&lt;summary&gt;&lt;/summary&gt;
+    
+&lt;s&gt;怎么这么怪啊&lt;/s&gt;
+
+&lt;/details&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;creation-date---创建日期&#34;&gt;Creation Date - 创建日期&lt;/h3&gt;
+&lt;p&gt;&lt;del&gt;它可以告诉你，你白蓝了多久&lt;/del&gt;&lt;/p&gt;
+&lt;h3 id=&#34;completion-date---完成日期&#34;&gt;Completion Date - 完成日期&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;⚠️Warning:&lt;/strong&gt; 建议在添加 &lt;code&gt;x&lt;/code&gt; 的时候添加完成日期，以防和创建日期混淆&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(除非手写 todo.txt 不然几乎不用关心这点，几乎所有应用程序都会自动追加完成日期)&lt;/p&gt;
+&lt;h3 id=&#34;x---完成&#34;&gt;x - 完成&lt;/h3&gt;
+&lt;p&gt;一个以 &lt;strong&gt;小写的 &lt;code&gt;x&lt;/code&gt; 加上一个空格&lt;/strong&gt; 开头的 task 被标记为完成&lt;/p&gt;
+&lt;h3 id=&#34;keyvalue-tag---键值对&#34;&gt;key/value tag - 键值对&lt;/h3&gt;
+&lt;p&gt;形如 &lt;code&gt;key:value&lt;/code&gt; 的东西被称为键值对，有一些常用的键值对如下&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;key/value&lt;/th&gt;
+&lt;th&gt;含义&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;t:2023-01-25&lt;/td&gt;
+&lt;td&gt;在 2023.1.25 之后才需要完成&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;due:2023-02-06&lt;/td&gt;
+&lt;td&gt;2023.2.6 是这个 task 的 ddl&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;pri: A&lt;/td&gt;
+&lt;td&gt;前文已经提到,这是表示优先级的方式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;建议多用 &lt;code&gt;t:----&lt;/code&gt; tag 阻止一个 task 在无法做或者完全不需要做之前来烦你；少用 &lt;code&gt;due:----&lt;/code&gt; tag，除非它真的是 ddl&lt;/p&gt;
+&lt;h1 id=&#34;so-easy2-&#34;&gt;so easy&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; ?&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Keep It Simple, Stupid&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;和 Arch 一样，todo.txt 只把最简单的东西提供给用户，剩下的由用户自己动手，自由发挥，这意味着，你可以让事情变得复杂起来&lt;/p&gt;
+&lt;p&gt;因为 todo.txt 的简单，你可以轻易的把它同任何工具组合起来使用:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;你可以编写一个简单的 nonebot2 插件，把 todo.txt 对接到任何 IM 平台(当然你可能需要写一个 Adapter)上， &lt;del&gt;借助 IM 提供者的网络&lt;/del&gt;，轻易的访问待办事项&lt;/li&gt;
+&lt;li&gt;你可以把 &lt;code&gt;~/.todo&lt;/code&gt; 添加到 &lt;a class=&#34;link&#34; href=&#34;https://www.resilio.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;rslsync&lt;/a&gt; 的同步目录，在任何设备上查看待办事项&lt;/li&gt;
+&lt;li&gt;你可以把在 &lt;code&gt;polybar&lt;/code&gt; 等桌面组件类的工具中显示待办事项数或待办事项&lt;/li&gt;
+&lt;li&gt;你可以写一个 &lt;code&gt;crontab&lt;/code&gt; 每天把高优先级的待办事项发到自己的邮箱，如果你使用 Gmail 可以加一个 tag 顺便写一个简单的东西将它添加到日历&lt;/li&gt;
+&lt;li&gt;你可以把它集成进浏览器，编辑器甚至智能家居设备中 ( &lt;del&gt;比如你可以把闹铃声设成朗读最高优先级待办事项们&lt;/del&gt; )&lt;/li&gt;
+&lt;li&gt;你甚至可以写一个 Web Panel 管理 todo.txt ( &lt;del&gt;但这听着好像有些疯狂&lt;/del&gt; )&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;这就是 KISS，适合喜欢动手折腾的人，在简单中强大，在强大中简单&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Dead Line，死亡线，意思是一个 task 必须完成的日期，比如寒假作业必须在报道那天晚上（或更早）创造奇迹（也可以循序渐进）&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;其实这里最好用 Simple&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        <item>
         <title>位运算笔记</title>
         <link>https://blog.dreamonex.eu.org/p/2022/12/bitopt-1/</link>
         <pubDate>Thu, 29 Dec 2022 01:40:08 +0800</pubDate>
