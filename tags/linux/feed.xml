@@ -18,7 +18,8 @@
     &gt;GTD&lt;/a&gt;)&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;缘起何方&#34;&gt;缘起何方&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;todo.txt&lt;/code&gt; 是 &lt;a class=&#34;link&#34; href=&#34;https://ginatrapani.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://todotxt.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;code&gt;todo.txt&lt;/code&gt;&lt;/a&gt; 是 &lt;a class=&#34;link&#34; href=&#34;https://ginatrapani.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;ginatrapani&lt;/a&gt; 编写的一个基于 cli 的简易 todo list 管理工具。你可以在命令行下对 &lt;code&gt;~/.todo/todo.txt&lt;/code&gt; 做任何你能想到的事（当然也可以是 &lt;code&gt;done.txt&lt;/code&gt; 或者其他文件），比如添加，修改，删除或者完成。&lt;/p&gt;
 &lt;h2 id=&#34;我怎么做&#34;&gt;我怎么做&lt;/h2&gt;
 &lt;p&gt;例如（假定你已经执行&lt;code&gt;alias t=todo.sh&lt;/code&gt;)&lt;/p&gt;
@@ -39,12 +40,14 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;更多的使用方式可已通过&lt;code&gt;t help&lt;/code&gt;查看&lt;/p&gt;
+&lt;h2 id=&#34;更远的路&#34;&gt;更远的路&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Todo.txt&lt;/code&gt; 名扬天下，随着使用者的增加，各式各样的花式客户端也登上了舞台；由于 &lt;code&gt;todo.txt&lt;/code&gt; 的简单，为维护其客户端提供了莫大的便利，无论是传统的各平台原生客户端，还是老生常谈的文本编辑器插件，少见的浏览器插件，甚至 Web UI，都出现了它的身影，选择一个适合你的客户端开始，会获得更好的效果&lt;/p&gt;
 &lt;h1 id=&#34;todotxt&#34;&gt;todo.txt&lt;/h1&gt;
 &lt;p&gt;&lt;code&gt;todo.txt&lt;/code&gt; 使用纯文本(和 Markdown 一样)， &lt;del&gt;这意味着你可以使用大脑进行渲染&lt;/del&gt;&lt;/p&gt;
 &lt;h2 id=&#34;为什么用纯文本&#34;&gt;为什么用纯文本&lt;/h2&gt;
 &lt;p&gt;如前文，不需要特殊的工具进行渲染是一个 &lt;strong&gt;实实在在&lt;/strong&gt; 的优点。举个例子，无论是 &lt;em&gt;Office OpenXML&lt;/em&gt; 还是 &lt;em&gt;Portable Document Format&lt;/em&gt; 都是难以用脑子渲染的东西，而 &lt;em&gt;Markdown&lt;/em&gt; 或 $\LaTeX$ 都是人类可读的，就不需要各种复杂的（动辄上百兆）渲染工具，也更便于和 &lt;strong&gt;其他程序&lt;/strong&gt; 一同工作，尤其是 &lt;strong&gt;在 Shell 的环境下&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;另外，如果使用纯文本，你就不必担心文件损坏 (点名批评 Microsoft Office) &lt;del&gt;(除非你的硬盘坏了)&lt;/del&gt;，而且易于传输和备份（你可以把你的 todo.txt 上传到 pastebin ，这绝对比粘贴一堆 HEX 上去好多了）&lt;/p&gt;
-&lt;p&gt;最重要的是，纯文本意味着 &lt;strong&gt;开放&lt;/strong&gt;，纯文本 &lt;strong&gt;不会像预先设置的规则那样&lt;/strong&gt; 告诉你 &lt;strong&gt;你该做什么你不该做什么&lt;/strong&gt;，你可以自由发挥，使用自己想用的语法（你可以轻易的通过 &lt;em&gt;管道&lt;/em&gt; 和 &lt;em&gt;sed&lt;/em&gt; (或其他命令) 实现对特定语法的解析）&lt;/p&gt;
+&lt;p&gt;最重要的是，纯文本意味着 &lt;strong&gt;开放&lt;/strong&gt;，纯文本 &lt;strong&gt;不会像预先设置的规则那样&lt;/strong&gt; 告诉你 &lt;strong&gt;你该做什么你不该做什么&lt;/strong&gt;，你可以自由发挥，使用自己想用的语法（你可以轻易的通过 &lt;em&gt;管道&lt;/em&gt; 和 &lt;em&gt;sed&lt;/em&gt; (或其他命令) 实现对特定语法的解析，当然，也包括直接使用或开发新的 &lt;em&gt;插件&lt;/em&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; 或 &lt;em&gt;客户端&lt;/em&gt;）&lt;/p&gt;
 &lt;h2 id=&#34;语法&#34;&gt;语法&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&#34;https://blog.dreamonex.eu.org/p/2023/01/use-todo-txt/rules.svg&#34;
 	
@@ -106,7 +109,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;due:2023-02-06&lt;/td&gt;
-&lt;td&gt;2023.2.6 是这个 task 的 ddl&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+&lt;td&gt;2023.2.6 是这个 task 的 ddl&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;pri: A&lt;/td&gt;
@@ -115,7 +118,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;建议多用 &lt;code&gt;t:----&lt;/code&gt; tag 阻止一个 task 在无法做或者完全不需要做之前来烦你；少用 &lt;code&gt;due:----&lt;/code&gt; tag，除非它真的是 ddl&lt;/p&gt;
-&lt;h1 id=&#34;so-easy2-&#34;&gt;so easy&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; ?&lt;/h1&gt;
+&lt;h1 id=&#34;so-easy3-&#34;&gt;so easy&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; ?&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Keep It Simple, Stupid&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -129,6 +132,7 @@
 &lt;li&gt;你可以写一个 &lt;code&gt;crontab&lt;/code&gt; 每天把高优先级的待办事项发到自己的邮箱，如果你使用 Gmail 可以加一个 tag 顺便写一个简单的东西将它添加到日历&lt;/li&gt;
 &lt;li&gt;你可以把它集成进浏览器，编辑器甚至智能家居设备中 ( &lt;del&gt;比如你可以把闹铃声设成朗读最高优先级待办事项们&lt;/del&gt; )&lt;/li&gt;
 &lt;li&gt;你甚至可以写一个 Web Panel 管理 todo.txt ( &lt;del&gt;但这听着好像有些疯狂&lt;/del&gt; )&lt;/li&gt;
+&lt;li&gt;通过 &lt;code&gt;crontab&lt;/code&gt; 和自定义 &lt;code&gt;key-value&lt;/code&gt; 来实现周期任务&lt;/li&gt;
 &lt;li&gt;etc.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;这就是 KISS，适合喜欢动手折腾的人，在简单中强大，在强大中简单&lt;/strong&gt;&lt;/p&gt;
@@ -136,10 +140,14 @@
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34;&gt;
-&lt;p&gt;Dead Line，死亡线，意思是一个 task 必须完成的日期，比如寒假作业必须在报道那天晚上（或更早）创造奇迹（也可以循序渐进）&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;从 &lt;a class=&#34;link&#34; href=&#34;https://github.com/todotxt/todo.txt-cli/wiki/Creating-Add-ons:-Examples&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github&lt;/a&gt; 获取更多信息&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34;&gt;
-&lt;p&gt;其实这里最好用 Simple&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Dead Line，死亡线，意思是一个 task 必须完成的日期，比如寒假作业必须在报道那天晚上（或更早）创造奇迹（也可以循序渐进）&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;其实这里最好用 Simple&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;

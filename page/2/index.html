@@ -11,7 +11,7 @@
 <meta property='og:description' content='实践是检验真理的唯一标准'>
 <meta property='og:url' content='https://blog.dreamonex.eu.org/'>
 <meta property='og:site_name' content='点点晨曦 | DreamOneX&#39;s Blog'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2023-02-09T15:09:50&#43;00:00 '/>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2023-02-25T03:13:23&#43;00:00 '/>
 <meta name="twitter:title" content="点点晨曦 | DreamOneX&#39;s Blog">
 <meta name="twitter:description" content="实践是检验真理的唯一标准"><link rel="alternate" type="application/rss&#43;xml" href="https://blog.dreamonex.eu.org/feed.xml">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-10XR3FX2WN"></script>
@@ -48,9 +48,9 @@
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+SC&family=Noto+Serif&family=Noto+Serif+SC&family=Ubuntu+Mono&family=ZCOOL+KuaiLe&family=Source+Code+Pro:wght@500&family=Noto+Color+Emoji&family=Noto+Emoji&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+SC&family=Noto+Serif&family=Noto+Serif+SC&family=Ubuntu+Mono&family=ZCOOL+KuaiLe&family=Source+Code+Pro:wght@500&family=Noto+Color+Emoji&family=Noto+Emoji&family=Poppins:wght@500&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont/lxgwwenkaiscreen.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/twemoji-colr-font/twemoji.scss" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/twemoji-colr-font@14.0.2/twemoji.css" rel="stylesheet">
 
     </head>
     <body class="">
@@ -543,6 +543,9 @@
                     '山外青山楼外楼,自然探秘永无休;成功易使人陶醉,莫把百尺当尽头',
                     '遗传造就生命延续的根基,变异激起进化的层层涟漪',
                     '最好的报复是美丽,最美的盛开是反击',
+                    '非曰能之,愿学焉',
+                    '目的可求完美,举步勿需周全',
+                    '一切学习与思考的目的,并不都是为了可用,更是为了心灵的自我完善',
                 ],
                 startDelay: 300,
                 typeSpeed: 100,
@@ -554,6 +557,27 @@
                 showCursor: true,
                 cursorChar: '_',
                 autoInsertCss: true,
+                preStringTyped: (arrayPos, self) => {
+                    
+                    
+                    
+                    
+                    const NotoSerifList = [12, 18, 20]
+                    const HandWriteList = [3, 4, 13, 14, 15, 17, 21, 22];
+                    const SourceCodeProList = [9]
+                    const PoppinsList = [10]
+                    if (HandWriteList.includes(parseInt(self.sequence[self.arrayPos]))) {
+                        document.getElementById('typed').setAttribute('style', 'font-family: "LXGW WenKai Screen", "Noto Sans SC"');
+                    } else if (SourceCodeProList.includes(parseInt(self.sequence[self.arrayPos]))) {
+                        document.getElementById('typed').setAttribute('style', 'font-family: "Source Code Pro", "Noto Sans SC"');
+                    } else if (PoppinsList.includes(parseInt(self.sequence[self.arrayPos]))) {
+                        document.getElementById('typed').setAttribute('style', 'font-family: "Poppins", "Noto Sans SC"');
+                    } else if (NotoSerifList.includes(parseInt(self.sequence[self.arrayPos]))) {
+                        document.getElementById('typed').setAttribute('style', 'font-family: "Noto Serif SC", "Noto Sans SC"');
+                    } else {
+                        document.getElementById('typed').setAttribute('style', 'font-family: "ZCOOL KuaiLe", "Noto Sans SC"');
+                    }
+                },
             });
         }
     </script>
@@ -973,7 +997,7 @@
         
             
         
-        <span>共摸了 14.04k 字  · 共水了 13篇 post.</span>
+        <span>共摸了 14.24k 字  · 共水了 13篇 post.</span>
     </section>
 
 </footer>
